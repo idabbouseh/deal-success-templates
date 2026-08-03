@@ -75,7 +75,7 @@ button{font-family:inherit;cursor:pointer}
 .fav{position:absolute;top:9px;right:11px;background:none;border:none;font-size:17px;color:#C9D3DC;line-height:1}
 .fav.on{color:#E9A800}
 .fliphint{position:absolute;bottom:9px;right:11px;color:#B6C3D0;font-size:11px}
-.back{transform:rotateY(180deg);cursor:default;gap:8px}
+.back{transform:rotateY(180deg);cursor:pointer;gap:8px}
 .back h4{font-size:13.5px;color:var(--blue-dk)}
 .back .desc{font-size:12px;color:var(--txt2);line-height:1.45;overflow:hidden;flex:0 1 auto}
 .back .draftflag{font-size:10px;color:var(--warn);font-weight:700}
@@ -383,15 +383,16 @@ function renderGrid(){
           </div>
           <span class="fliphint">flip ⟳</span>
         </div>
-        <div class="face back">
+        <div class="face back" onclick="toggleFlip('${c.id}')" title="Click to flip back">
           <h4>${c.name}</h4>
           <div class="draftflag">⚠ description drafted — owner to confirm</div>
           <div class="desc">${c.desc}</div>
           <div class="chips">${chips || '<span class="chip">no variants yet</span>'}</div>
-          <div class="backbtns">
+          <div class="backbtns" onclick="event.stopPropagation()">
             ${c.soon ? `<a class="btn pri" href="https://sap.sharepoint.com/teams/Americas-CBDO/SitePages/Requesting%20Support.aspx" target="_blank" rel="noopener">Request content</a>` : `<button class="btn pri" onclick="openPanel('${c.id}')">Explore →</button>`}
             <a class="btn sec" href="${foldUrl(c.name)}" target="_blank" rel="noopener">Folder ↗</a>
           </div>
+          <span class="fliphint">flip back ⟲</span>
         </div>
       </div>
     </div>`;
