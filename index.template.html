@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deal Success Center · Templates Explorer (Draft v0.2)</title>
+<style>
+:root{
+  --blue:#0070F2; --blue-dk:#0064D9; --blue-lt:#1B90FF; --ice:#EAF5FE;
+  --txt:#1D2D3E; --txt2:#556B82; --line:#E5EAF0; --card:#FFFFFF;
+  --ok:#36A41D; --warn:#E76500; --grey:#8396A8;
+  --shadow:0 2px 10px rgba(27,54,84,.09); --shadow-hi:0 8px 24px rgba(27,54,84,.16);
+  --r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"72","72full",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--txt);
+  background:linear-gradient(135deg,#EAF3FC 0%,#F2F7FD 45%,#F5F1FB 100%);min-height:100vh;font-size:14px}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+button{font-family:inherit;cursor:pointer}
+
+.hdr{background:#fff;border-bottom:1px solid var(--line);padding:10px 28px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:50}
+.saplogo{background:linear-gradient(135deg,#1B90FF,#0040B0);color:#fff;font-weight:800;font-size:17px;padding:4px 10px;border-radius:6px;letter-spacing:.5px}
+.hdr h1{font-size:16px;font-weight:700}
+.hdr .sub{color:var(--txt2);font-size:12px}
+.kbd{background:#F4F6F8;border:1px solid var(--line);border-radius:5px;padding:1px 7px;font-size:11px;color:var(--txt2);font-family:Consolas,monospace}
+.draftchip{margin-left:auto;background:#FFF3E8;color:#C35500;border:1px solid #F5C69B;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
+
+.hero{max-width:1280px;margin:22px auto 0;padding:0 28px}
+.banner{background:linear-gradient(90deg,#D8ECFC 0%,#EAF5FE 60%,#E8E3F8 100%);border-radius:var(--r);padding:26px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:var(--shadow)}
+.banner h2{font-size:30px;color:#0A3D8F;line-height:1.1}
+.banner .bsub{color:#33557F;font-size:15px;margin-top:4px}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 6px}
+.pill{border:1.5px solid var(--blue);color:var(--blue);background:#fff;font-weight:600;font-size:13px;padding:8px 18px;border-radius:8px;transition:.15s}
+.pill:hover{background:var(--ice);text-decoration:none}
+.pill.on{background:var(--blue);color:#fff}
+.intro{color:var(--txt2);margin:12px 2px 2px;font-size:14px}
+
+.wrap{max-width:1280px;margin:0 auto;padding:8px 28px 90px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0 6px}
+.search{flex:1 1 280px;max-width:430px;position:relative}
+.search input{width:100%;padding:9px 12px 9px 36px;border:1.5px solid var(--line);border-radius:8px;font-size:14px;background:#fff}
+.search input:focus{outline:none;border-color:var(--blue)}
+.search svg{position:absolute;left:10px;top:9px;opacity:.45}
+.fchip{border:1.5px solid var(--line);background:#fff;color:var(--txt2);font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:999px;transition:.15s}
+.fchip.on{border-color:var(--blue);color:var(--blue);background:var(--ice)}
+
+.newstrip{margin:14px 0 4px}
+.newstrip h3{font-size:13px;color:var(--txt2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.newrow{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}
+.newcard{flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 14px;font-size:12.5px;box-shadow:var(--shadow);max-width:280px}
+.newcard b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:250px}
+.newcard span{color:var(--txt2);font-size:11.5px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px;margin-top:16px}
+.flip{perspective:1200px;height:220px}
+.flipin{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flip.flipped .flipin{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);display:flex;flex-direction:column;padding:16px}
+.flip:hover .face{box-shadow:var(--shadow-hi)}
+.front{align-items:center;justify-content:center;text-align:center;gap:10px;cursor:pointer}
+.front .icon{height:84px;display:flex;align-items:center}
+.front h4{font-size:14.5px;font-weight:700}
+.badges{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:center}
+.badge{background:var(--ice);color:#0A5DC2;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px}
+.badge.soon{background:#F4F6F8;color:var(--grey)}
+.badge.px{background:#EBF9E6;color:#1E7A0E}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.fav{position:absolute;top:9px;right:11px;background:none;border:none;font-size:17px;color:#C9D3DC;line-height:1}
+.fav.on{color:#E9A800}
+.fliphint{position:absolute;bottom:9px;right:11px;color:#B6C3D0;font-size:11px}
+.back{transform:rotateY(180deg);cursor:pointer;gap:8px}
+.back h4{font-size:13.5px;color:var(--blue-dk)}
+.back .desc{font-size:12px;color:var(--txt2);line-height:1.45;overflow:hidden;flex:0 1 auto}
+.back .draftflag{font-size:10px;color:var(--warn);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:5px;overflow:hidden;max-height:44px}
+.chip{background:#F4F8FD;border:1px solid #D5E4F5;color:#33557F;font-size:10.5px;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.backbtns{margin-top:auto;display:flex;gap:8px}
+.btn{border-radius:8px;font-weight:600;font-size:12.5px;padding:7px 13px;border:1.5px solid var(--blue);transition:.15s}
+.btn.pri{background:var(--blue);color:#fff}
+.btn.pri:hover{background:var(--blue-dk)}
+.btn.sec{background:#fff;color:var(--blue)}
+.btn.sec:hover{background:var(--ice);text-decoration:none}
+.btn.mini{padding:3px 9px;font-size:11px;border-radius:6px}
+.flip.soon .face{border-style:dashed;background:#FBFCFE}
+.flip.soon .front .icon{opacity:.45}
+.flip.hide{display:none}
+
+.ov{position:fixed;inset:0;background:rgba(20,40,70,.35);opacity:0;pointer-events:none;transition:.25s;z-index:90}
+.ov.open{opacity:1;pointer-events:auto}
+.panel{position:fixed;top:0;right:-760px;width:min(760px,97vw);height:100vh;background:#fff;z-index:100;box-shadow:-6px 0 30px rgba(20,40,70,.25);transition:right .3s;display:flex;flex-direction:column}
+.panel.open{right:0}
+.phead{padding:16px 24px 0;border-bottom:1px solid var(--line)}
+.phead .row1{display:flex;align-items:flex-start;gap:12px}
+.phead .icon{height:44px}
+.phead h3{font-size:18px}
+.phead .crumb{font-size:11.5px;color:var(--txt2)}
+.pclose{margin-left:auto;background:none;border:none;font-size:22px;color:var(--txt2)}
+.ptabs{display:flex;gap:4px;margin-top:10px}
+.ptab{border:none;background:none;font-size:13px;font-weight:700;color:var(--txt2);padding:9px 13px;border-bottom:3px solid transparent}
+.ptab.on{color:var(--blue);border-color:var(--blue)}
+.pbody{flex:1;overflow-y:auto;padding:16px 24px 40px}
+.pdesc{font-size:13px;color:var(--txt2);line-height:1.5;background:var(--ice);border-radius:8px;padding:10px 14px;margin-bottom:14px}
+.caro{display:flex;gap:10px;overflow-x:auto;margin-bottom:14px;padding-bottom:4px}
+.caro img{height:120px;border:1px solid var(--line);border-radius:8px;cursor:zoom-in;flex:0 0 auto}
+.caro img.zoom{height:auto;max-width:100%;cursor:zoom-out}
+.acc{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.acchead{width:100%;background:#F7FAFD;border:none;padding:11px 15px;display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:700;color:var(--txt);text-align:left}
+.acchead .n{margin-left:auto;color:var(--txt2);font-weight:600;font-size:12px}
+.accbody{display:none;padding:6px 15px 12px}
+.acc.open .accbody{display:block}
+.arow{display:flex;align-items:center;gap:9px;padding:7px 4px;border-bottom:1px solid #F1F4F8;font-size:13px}
+.arow:last-child{border-bottom:none}
+.arow .t{width:24px;text-align:center;flex:0 0 auto}
+.arow .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.arow .dt{color:var(--grey);font-size:11.5px;flex:0 0 auto}
+.sizechip{background:#0070F2;color:#fff;font-size:10px;font-weight:800;border-radius:5px;padding:1.5px 6px;flex:0 0 auto}
+.emptynote{color:var(--grey);font-size:12.5px;font-style:italic;padding:8px 4px}
+.pfoot{border-top:1px solid var(--line);padding:12px 24px;display:flex;gap:10px}
+
+/* size matrix */
+.offsel{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.offbtn{border:1.5px solid var(--line);background:#fff;border-radius:999px;font-size:12px;font-weight:600;color:var(--txt2);padding:6px 13px}
+.offbtn.on{border-color:var(--blue);color:var(--blue);background:var(--ice)}
+.mtxwrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.mtx{border-collapse:collapse;width:100%;min-width:520px;font-size:12.5px}
+.mtx th{background:#0A3D8F;color:#fff;padding:10px 12px;text-align:left;font-size:12px}
+.mtx th .tier{display:block;font-weight:400;font-size:10.5px;opacity:.85}
+.mtx td{border-bottom:1px solid #F1F4F8;padding:8px 12px;vertical-align:top}
+.mtx tr.hd td{background:#F7FAFD;font-weight:700;font-size:11px;color:var(--txt2);text-transform:uppercase;letter-spacing:.04em}
+.mtx .price{font-size:16px;font-weight:800;color:var(--blue-dk)}
+.mtx .cad{font-size:11px;color:var(--txt2)}
+.mtx ul{margin-left:15px}
+.mtx li{margin:3px 0;line-height:1.35}
+.mtx .reco{outline:3px solid var(--ok);outline-offset:-3px}
+.srcflag{font-size:10.5px;color:var(--warn);font-weight:700;margin:8px 2px}
+.wizbox{border:1.5px dashed #B8D4F5;border-radius:10px;background:#F7FBFF;padding:12px 15px;margin-bottom:13px}
+.wizbox h5{font-size:12.5px;color:#0A5DC2;margin-bottom:7px}
+.wizq{margin:7px 0}
+.wizq .q{font-size:12px;font-weight:700;margin-bottom:4px}
+.wizq .opts{display:flex;gap:6px;flex-wrap:wrap}
+.wopt{border:1.5px solid var(--line);background:#fff;border-radius:999px;font-size:11.5px;padding:4px 11px;color:var(--txt2)}
+.wopt.on{border-color:var(--ok);color:#1E7A0E;background:#EBF9E6;font-weight:700}
+.wizres{font-size:12.5px;font-weight:700;color:#1E7A0E;margin-top:6px}
+
+/* compare tray + kit */
+.tray{position:fixed;left:0;right:0;bottom:-90px;background:#fff;border-top:2px solid var(--blue);box-shadow:0 -4px 20px rgba(20,40,70,.18);z-index:80;transition:bottom .25s;padding:10px 28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tray.show{bottom:0}
+.tray .titem{background:var(--ice);border:1px solid #B8D4F5;border-radius:999px;font-size:12px;font-weight:600;color:#0A5DC2;padding:5px 12px;display:flex;gap:7px;align-items:center}
+.tray .titem button{border:none;background:none;color:#0A5DC2;font-size:13px;padding:0}
+.cmpov{position:fixed;inset:0;background:rgba(20,40,70,.45);z-index:110;display:none;align-items:center;justify-content:center;padding:30px}
+.cmpov.show{display:flex}
+.cmpbox{background:#fff;border-radius:14px;max-width:1050px;width:100%;max-height:88vh;overflow:auto;padding:22px 26px}
+.cmpbox h3{margin-bottom:12px}
+/* palette */
+.pal{position:fixed;inset:0;background:rgba(20,40,70,.45);z-index:120;display:none;justify-content:center;padding-top:12vh}
+.pal.show{display:flex}
+.palbox{background:#fff;border-radius:12px;width:min(600px,92vw);height:fit-content;max-height:60vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(20,40,70,.4)}
+.palbox input{border:none;border-bottom:1px solid var(--line);padding:15px 18px;font-size:15px;outline:none}
+.palist{overflow-y:auto}
+.palit{padding:10px 18px;font-size:13px;display:flex;gap:9px;align-items:center;cursor:pointer;border-bottom:1px solid #F7FAFD}
+.palit:hover,.palit.sel{background:var(--ice)}
+.palit .k{font-size:10.5px;color:var(--grey);margin-left:auto;white-space:nowrap}
+
+.section-tabs{display:flex;gap:10px;margin:26px 0 4px}
+.stab{border:none;background:none;font-size:15px;font-weight:700;color:var(--txt2);padding:8px 2px;border-bottom:3px solid transparent}
+.stab.on{color:var(--blue);border-color:var(--blue)}
+.health{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);margin-top:14px;overflow-x:auto;display:none}
+.health.show{display:block}
+.health table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:820px}
+.health th{background:#F7FAFD;text-align:left;padding:10px 14px;color:var(--txt2);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--line)}
+.health td{padding:9px 14px;border-bottom:1px solid #F1F4F8;vertical-align:top}
+.pillst{font-size:10.5px;font-weight:800;border-radius:999px;padding:2px 9px;white-space:nowrap}
+.st-ok{background:#EBF9E6;color:#1E7A0E}.st-gap{background:#FFF3E8;color:#C35500}.st-empty{background:#F4F6F8;color:#68788C}.st-data{background:#FDEBF2;color:#A9265C}
+.hnote{font-size:12px;color:var(--txt2)}
+
+.foot{max-width:1280px;margin:30px auto 40px;padding:0 28px;color:var(--grey);font-size:11.5px;line-height:1.6}
+@media print{.hdr,.pills,.controls,.newstrip,.panel,.ov,.tray,.pal,.cmpov{display:none!important}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <span class="saplogo">SAP</span>
+  <div><h1>Deal Success Center</h1><div class="sub">Americas – CBDO · Fast Track Team</div></div>
+  <span class="kbd" title="Command palette">Ctrl K</span>
+  <span class="draftchip">INTERACTIVE DRAFT · v0.2 · not the system of record</span>
+</div>
+
+<div class="hero">
+  <div class="banner">
+    <div><h2>Templates Page</h2><div class="bsub">Deal Success Center — pre-approved t-shirt designs &amp; templates for fast, consistent ROMs</div></div>
+    <svg width="150" height="80" viewBox="0 0 150 80" fill="none"><rect x="8" y="14" width="86" height="56" rx="6" fill="#fff" stroke="#7FB5F0" stroke-width="2"/><rect x="16" y="24" width="34" height="7" rx="3" fill="#1B90FF"/><rect x="16" y="37" width="56" height="5" rx="2.5" fill="#C9E1F9"/><rect x="16" y="47" width="48" height="5" rx="2.5" fill="#C9E1F9"/><rect x="16" y="57" width="52" height="5" rx="2.5" fill="#C9E1F9"/><circle cx="118" cy="34" r="17" fill="#fff" stroke="#7FB5F0" stroke-width="2"/><path d="M111 34l5 5 9-10" stroke="#36A41D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="103" y="56" width="30" height="9" rx="4.5" fill="#0070F2"/></svg>
+  </div>
+  <div class="pills">
+    <a class="pill" href="https://sap.sharepoint.com/teams/Americas-CBDO/SitePages/DSC-Home.aspx">Home</a>
+    <a class="pill on" href="#">Templates</a>
+    <a class="pill" href="https://sap.sharepoint.com/teams/Americas-CBDO/SitePages/Copy%20of%20FTT%20Page.aspx">Fast Track Team</a>
+    <a class="pill" href="https://sap.sharepoint.com/teams/Americas-CBDO/SitePages/Process-%26-Workstreams.aspx">Process &amp; Workstreams</a>
+    <a class="pill" href="https://sap.sharepoint.com/teams/Americas-CBDO/SitePages/DashboardLinks.aspx">Dashboard Links</a>
+    <a class="pill" href="https://sap.sharepoint.com/teams/Americas-CBDO/SitePages/Requesting%20Support.aspx">Request Support</a>
+  </div>
+  <p class="intro">Flip a card for a summary · <b>Explore</b> for T-shirt pricing matrices &amp; assets · <b>⇄ Compare</b> sizes across categories · <b>+ Kit</b> to build a shareable deal packet · <span class="kbd">Ctrl K</span> to jump anywhere.</p>
+</div>
+
+<div class="wrap">
+  <div class="section-tabs">
+    <button class="stab on" id="tabCat" onclick="showTab('cat')">Template Catalog</button>
+    <button class="stab" id="tabHealth" onclick="showTab('health')">Catalog Health <span style="font-size:11px;color:var(--warn)">●</span></button>
+  </div>
+
+  <div id="catView">
+  <div class="controls">
+    <div class="search"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="7" cy="7" r="5" stroke="#556B82" stroke-width="1.6" fill="none"/><path d="M11 11l3.4 3.4" stroke="#556B82" stroke-width="1.6"/></svg>
+      <input id="q" type="text" placeholder="Search categories, offerings, assets… (e.g. 'Joule', 'MDG Material', 'Payroll')" oninput="applyFilters()">
+    </div>
+    <button class="fchip on" data-f="all" onclick="setFilter(this)">All</button>
+    <button class="fchip" data-f="priced" onclick="setFilter(this)">Priced matrices</button>
+    <button class="fchip" data-f="tshirt" onclick="setFilter(this)">Sized T-shirts</button>
+    <button class="fchip" data-f="soon" onclick="setFilter(this)">Coming soon</button>
+    <button class="fchip" data-f="fav" onclick="setFilter(this)">★ Favorites</button>
+  </div>
+
+  <div class="newstrip"><h3>Recently added / updated</h3><div class="newrow" id="newrow"></div></div>
+
+  <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="health" id="healthView">
+    <table>
+      <thead><tr><th>Category</th><th>Status</th><th>Variants</th><th>Assets</th><th>Latest</th><th>Owner</th><th>Findings / actions</th></tr></thead>
+      <tbody id="healthBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="ov" id="ov" onclick="closePanel()"></div>
+<div class="panel" id="panel" role="dialog" aria-modal="true">
+  <div class="phead">
+    <div class="row1">
+      <div class="icon" id="pIcon"></div>
+      <div><div class="crumb">Templates › <span id="pCrumb"></span></div><h3 id="pTitle"></h3></div>
+      <button class="pclose" onclick="closePanel()" aria-label="Close">×</button>
+    </div>
+    <div class="ptabs" id="pTabs"></div>
+  </div>
+  <div class="pbody" id="pBody"></div>
+  <div class="pfoot"><a class="btn pri" id="pFolder" target="_blank" rel="noopener">Open SharePoint folder ↗</a><button class="btn sec" onclick="closePanel()">Close</button></div>
+</div>
+
+<div class="tray" id="tray">
+  <b style="font-size:13px">⇄ Compare</b><span id="trayItems" style="display:flex;gap:8px;flex-wrap:wrap"></span>
+  <button class="btn pri mini" onclick="showCompare()">Compare side-by-side</button>
+  <span style="width:14px"></span>
+  <b style="font-size:13px">🧰 Deal kit</b><span id="kitCount" class="badge">0</span>
+  <button class="btn sec mini" onclick="generateKit()">Generate packet</button>
+  <button class="btn sec mini" onclick="clearTray()" style="margin-left:auto">Clear all</button>
+</div>
+
+<div class="cmpov" id="cmpov" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="cmpbox"><h3>Side-by-side comparison</h3><div id="cmpBody"></div>
+  <div style="margin-top:14px"><button class="btn sec" onclick="document.getElementById('cmpov').classList.remove('show')">Close</button></div></div>
+</div>
+
+<div class="pal" id="pal" onclick="if(event.target===this)hidePal()">
+  <div class="palbox"><input id="palq" placeholder="Jump to category, offering, or asset…" oninput="palFilter()" autocomplete="off">
+  <div class="palist" id="palist"></div></div>
+</div>
+
+<div class="foot">
+  <b>Draft v0.2 for discussion — Deal Success Center Templates redesign concept.</b> Catalog structure indexed from the live template library (30-Jul-2026); T-shirt pricing matrices extracted from the decks stored in that library (June 2026 editions) — all figures indicative, non-binding, and pending owner confirmation. ISBN (Ariba &amp; FG) is seeded from the FG T-Shirt ROM Explorer 2026 refresh draft. Slide previews rendered from the same decks. Links open live SharePoint content (SAP SSO). In SharePoint hosting, live mode re-indexes the library automatically — the document library remains the single governed data source.
+</div>
+
+<script>
+const SP = "https://sap.sharepoint.com";
+const BASE = "/teams/Americas-CBDO/Shared%20Documents/Deal%20Success%20Center/Sharepoint%20resources/Templates/";
+const foldUrl = p => SP + BASE + encodeURIComponent(p).replace(/%2F/g,"/");
+
+const IC = {
+  cloud:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M18 42a10 10 0 1 1 2-19.8A14 14 0 0 1 47 26a9 9 0 0 1-1 17.9H18z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><rect x="24" y="30" width="10" height="8" rx="1.5" fill="#33C1B0"/><rect x="36" y="30" width="6" height="8" rx="1.5" fill="#1B90FF"/></svg>',
+  globe:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="17" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><ellipse cx="32" cy="32" rx="8" ry="17" stroke="#1B90FF" stroke-width="1.5" fill="none"/><path d="M16 27h32M16 37h32" stroke="#1B90FF" stroke-width="1.5"/><circle cx="45" cy="20" r="4" fill="#33C1B0"/></svg>',
+  puzzle:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="14" y="22" width="14" height="14" rx="2" stroke="#1D2D3E" stroke-width="1.8" fill="#33C1B0"/><rect x="34" y="22" width="14" height="14" rx="2" stroke="#1D2D3E" stroke-width="1.8" fill="#1B90FF"/><rect x="24" y="38" width="14" height="12" rx="2" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><path d="M28 22v-5m8 5v-5" stroke="#1D2D3E" stroke-width="1.8"/></svg>',
+  ai:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M32 14l3.2 9.6L45 27l-9.8 3.4L32 40l-3.2-9.6L19 27l9.8-3.4L32 14z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><circle cx="46" cy="42" r="5" fill="#1B90FF"/><circle cx="20" cy="44" r="3.5" fill="#33C1B0"/></svg>',
+  chart:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M15 48V18m0 30h34" stroke="#1D2D3E" stroke-width="1.8"/><rect x="21" y="34" width="6" height="12" fill="#1B90FF"/><rect x="31" y="26" width="6" height="20" fill="#33C1B0"/><rect x="41" y="20" width="6" height="26" fill="#0070F2"/></svg>',
+  people:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M25 40c-5 0-9 3-10 8h20c-1-5-5-8-10-8z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><circle cx="25" cy="30" r="6" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><path d="M41 21l1.8 3.6 4 .6-2.9 2.8.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.8 4-.6L41 21z" fill="#1B90FF"/><circle cx="43" cy="42" r="5" fill="#33C1B0"/></svg>',
+  wallet:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="16" y="20" width="32" height="24" rx="4" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><path d="M16 28h32" stroke="#1D2D3E" stroke-width="1.8"/><rect x="18" y="30" width="28" height="7" fill="#33C1B0"/><rect x="18" y="38" width="28" height="4" fill="#1B90FF"/></svg>',
+  boxes:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="16" y="30" width="14" height="14" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><rect x="34" y="30" width="14" height="14" stroke="#1D2D3E" stroke-width="1.8" fill="#1B90FF"/><rect x="25" y="16" width="14" height="14" stroke="#1D2D3E" stroke-width="1.8" fill="#33C1B0"/><path d="M12 48h40" stroke="#1D2D3E" stroke-width="1.8"/></svg>',
+  circuit:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M20 44a9 9 0 1 1 1.8-17.8A12 12 0 0 1 45 29a8 8 0 0 1-1 15H20z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><path d="M26 38l6-6 5 5 6-8" stroke="#1B90FF" stroke-width="1.8" fill="none"/><circle cx="26" cy="38" r="2" fill="#33C1B0"/><circle cx="43" cy="29" r="2" fill="#33C1B0"/></svg>',
+  rocket:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M32 14c6 5 8 13 6 22l-6 6-6-6c-2-9 0-17 6-22z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><circle cx="32" cy="27" r="3.5" fill="#1B90FF"/><path d="M26 38l-5 4m17-4l5 4" stroke="#1D2D3E" stroke-width="1.8"/><path d="M32 44v7" stroke="#0070F2" stroke-width="2.4"/></svg>',
+  tools:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M22 16v10m-4-10h8v6l-4 4-4-4v-6z" stroke="#1D2D3E" stroke-width="1.8" fill="#1B90FF"/><path d="M22 30v18" stroke="#1D2D3E" stroke-width="1.8"/><path d="M44 48V30a6 6 0 0 0 2-11l-4 4-4-4a6 6 0 0 0 2 11v18" stroke="#1D2D3E" stroke-width="1.8" fill="#33C1B0"/></svg>',
+  db:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="20" rx="14" ry="5.5" stroke="#1D2D3E" stroke-width="1.8" fill="#1B90FF"/><path d="M18 20v24c0 3 6.3 5.5 14 5.5s14-2.5 14-5.5V20" stroke="#1D2D3E" stroke-width="1.8" fill="none"/><path d="M18 32c0 3 6.3 5.5 14 5.5S46 35 46 32" stroke="#1D2D3E" stroke-width="1.8"/></svg>',
+  doccheck:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M22 14h14l8 8v26H22V14z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><path d="M36 14v8h8" stroke="#1D2D3E" stroke-width="1.8"/><path d="M27 34l4 4 8-9" stroke="#36A41D" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>',
+  ux:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="14" y="18" width="28" height="20" rx="2.5" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><rect x="18" y="23" width="9" height="10" fill="#1B90FF"/><rect x="30" y="23" width="9" height="4" fill="#33C1B0"/><rect x="38" y="30" width="12" height="18" rx="2.5" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><rect x="41" y="34" width="6" height="5" fill="#1B90FF"/></svg>',
+  factory:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M16 46V26l10 7v-7l10 7v-7l12 8v12H16z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><rect x="21" y="38" width="5" height="5" fill="#1B90FF"/><rect x="31" y="38" width="5" height="5" fill="#33C1B0"/><rect x="41" y="38" width="5" height="5" fill="#1B90FF"/></svg>',
+  grid:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="16" y="16" width="14" height="14" rx="2" stroke="#1D2D3E" stroke-width="1.8" fill="#1B90FF"/><rect x="34" y="16" width="14" height="14" rx="2" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><rect x="16" y="34" width="14" height="14" rx="2" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><rect x="34" y="34" width="14" height="14" rx="2" stroke="#1D2D3E" stroke-width="1.8" fill="#33C1B0"/></svg>',
+  shield:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M32 14l14 5v12c0 10-6 16-14 19-8-3-14-9-14-19V19l14-5z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><path d="M26 31l4.5 4.5L39 27" stroke="#1B90FF" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>',
+  pen:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M20 44l2-8 18-18 6 6-18 18-8 2z" stroke="#1D2D3E" stroke-width="1.8" fill="#fff"/><path d="M38 20l6 6" stroke="#1D2D3E" stroke-width="1.8"/><path d="M22 36l6 6" stroke="#1B90FF" stroke-width="1.8"/><rect x="16" y="48" width="32" height="3" rx="1.5" fill="#33C1B0"/></svg>',
+  layers:'<svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M32 14l16 8-16 8-16-8 16-8z" stroke="#1D2D3E" stroke-width="1.8" fill="#1B90FF"/><path d="M16 32l16 8 16-8" stroke="#1D2D3E" stroke-width="1.8" fill="none"/><path d="M16 42l16 8 16-8" stroke="#1D2D3E" stroke-width="1.8" fill="none"/></svg>'
+};
+
+const SIZES = __SIZES__;
+const THUMBS = __THUMBS__;
+
+const CATALOG = [
+ {id:"s4pce", name:"SAP S4 HANA Cloud Private", icon:"cloud",
+  desc:"RISE with SAP S/4HANA Cloud Private Edition t-shirts — Greenfield S/M/L fully priced ($3.8M–$14.1M, 31–54 wks) with scope-item, RICEFW and staffing detail; Brownfield track pending content.",
+  vars:[{n:"S4 HANA Private Cloud - Greenfield", files:[{n:"S4H_PCE_Greenfield_TShirts_June_2026.pptx",t:"deck",d:"2026-07"},{n:"NA S4H Cloud PCE Grnfld Small T Shirt",t:"link",s:"S",d:"2026-07"},{n:"NA S4H Cloud PCE Grnfld Medium T Shirt",t:"link",s:"M",d:"2026-07"},{n:"NA S4H Cloud PCE Grnfld Large T Shirt",t:"link",s:"L",d:"2026-07"}]},
+        {n:"S4 HANA Private Cloud - Brownfield", files:[], empty:true}]},
+ {id:"cerp", name:"SAP Cloud ERP (Public)", icon:"globe",
+  desc:"Public Cloud ERP (GROW) t-shirt content split by market unit — NA and LAC tracks. Both folders currently await content.",
+  vars:[{n:"NA", files:[], empty:true},{n:"LAC", files:[], empty:true}]},
+ {id:"s4ext", name:"SAP S4 HANA Extensions", icon:"puzzle",
+  desc:"Line-of-business extensions on S/4: Group Reporting (S/M/L $270K–$964K), Receivables Management (Credit Mgmt + Collections & Disputes), AFC, PaPM, CLM, MBC.",
+  vars:[{n:"Receivables Management (RM)", files:[{n:"ROM Receivables Management June 2026 - English.pptx",t:"deck",d:"2026-07"}]},
+        {n:"Group Reporting", files:[{n:"SAP Group Reporting June 2026.pptx",t:"deck",d:"2026-07"},{n:"Tshirt S4HANA Extension Group Reporting S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt S4HANA Extension Group Reporting M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt S4HANA Extension Group Reporting L",t:"link",s:"L",d:"2026-07"}]},
+        {n:"AFC", files:[], unindexed:true},{n:"PaPM", files:[], unindexed:true},{n:"CLM", files:[], unindexed:true},{n:"MBC", files:[], unindexed:true}]},
+ {id:"bai", name:"Business AI", icon:"ai",
+  desc:"AI Activation and Joule Activation offers — activation bundles (S/M/L), Spark service, and LAC Joule decks (June 2026).",
+  vars:[{n:"AI Activation", files:[{n:"AIActivationOnePager June 2026.pptx",t:"deck",d:"2026-07"},{n:"AI Activation Bundle",t:"link",d:"2026-07"},{n:"AI Spark service",t:"link",d:"2026-07"}]},
+        {n:"Joule Activation", files:[{n:"Joule Activation LAC June 2026.pptx",t:"deck",d:"2026-07"},{n:"Joule Activation LAC V2 June 2026.pptx",t:"deck",d:"2026-07"}]}]},
+ {id:"bdc", name:"Analytics & BDC", icon:"chart",
+  desc:"Business Data Cloud, SAC, Datasphere and Databricks scoping assets — BW-on-PCE upgrade/migration scope options and a Datasphere+SAC S/M/L ROM.",
+  vars:[{n:"BDC", files:[{n:"NA version - ASC BDC Analytics D@S - Upgrade Migration BW on PCE V1.0.pptx",t:"deck",d:"2026-07"},{n:"ASC BDC Analytics D@S - Scope options … V1.0.pptx",t:"deck",d:"2026-07"}]},
+        {n:"Datasphere", files:[{n:"ROM Datasphere + SAC June 2026.pptx",t:"deck",d:"2026-07"}]},
+        {n:"SAC", files:[], empty:true},{n:"Databricks", files:[], empty:true}]},
+ {id:"sf", name:"Success Factors", icon:"people",
+  desc:"Full HCM t-shirt pricing (NA, June 2026): EC $248–483K, ECP $1.4–2.7M, Recruiting, Onboarding, Learning, Compensation, P&G and more — plus per-module effort-estimation templates.",
+  rootFiles:[{n:"HCM NA SAP SuccessFactors T-Shirts June 2026.pptx",t:"deck",d:"2026-07"}],
+  vars:[{n:"Performance and Goals", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Performance and Goals", files:[{n:"Tshirt SuccessFactors Performance and Goals S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt SuccessFactors Performance and Goals M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt SuccessFactors Performance and Goals L",t:"link",s:"L",d:"2026-07"}]},
+        {n:"Employee Central", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Employee Central", files:[], unindexed:true},
+        {n:"Employee Central Payroll", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Employee Central Payroll", files:[], unindexed:true},
+        {n:"Recruiting", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Recruiting", files:[], unindexed:true},
+        {n:"Onboarding", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Onboarding", files:[], unindexed:true},
+        {n:"Learning", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Learning", files:[], unindexed:true},
+        {n:"Compensation", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Compensation", files:[], unindexed:true},
+        {n:"Succession and Development", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Succession and Development", files:[], unindexed:true},
+        {n:"Workforce Analytics", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Workforce Analytics", files:[], unindexed:true},
+        {n:"Platform Foundation", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Platform Foundation", files:[], unindexed:true},
+        {n:"Cloud Architecture", sub:"Effort Estimations - Solutioning Templates/SuccessFactors Cloud Architecture", files:[], unindexed:true}]},
+ {id:"isbn", name:"ISBN (Ariba & FG)", icon:"wallet", seeded:true,
+  desc:"Intelligent Spend & Business Network — Fieldglass ↔ SuccessFactors EC and Fieldglass ↔ Ariba B&I integration t-shirts, seeded from the FG T-Shirt ROM Explorer 2026 refresh draft while the library folder awaits content.",
+  vars:[]},
+ {id:"scm", name:"Supply Chain", icon:"boxes", soon:true,
+  desc:"Digital supply chain t-shirts (IBP, EWM, TM…). No content published yet — request via the Fast Track Team.",
+  vars:[]},
+ {id:"btp", name:"SAP BTP", icon:"circuit",
+  desc:"BTP service t-shirts with full pricing: Work Zone Jump Start/Foundation/Expand ($70K/$249K/$486K), Intelligent Forms ($191–389K), Custom Integrations ($118–232K), DXP and Process Automation.",
+  rootFiles:[{n:"SAP BTP UX Services Overview - NA T shirts summary v0.1.pptx",t:"deck",d:"2026-07"}],
+  vars:[{n:"SAP Build", files:[{n:"SAP Work Zone.pptx",t:"deck",d:"2026-07"},{n:"Tshirt BTP SAP Work Zone S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt BTP SAP Work Zone M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt BTP SAP Work Zone L",t:"link",s:"L",d:"2026-07"}]},
+        {n:"BTP Intelligent Forms and Processes Framework", files:[{n:"BTP Intelligent Forms and Processes Framework.pptx",t:"deck",d:"2026-07"},{n:"Tshirt … Intelligent Forms S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt … Intelligent Forms M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt … Intelligent Forms L",t:"link",s:"L",d:"2026-07"}]},
+        {n:"BTP Digital Experience Platform", files:[{n:"BTP as the Digital Experience Platform.pptx",t:"deck",d:"2026-07"}], partial:true},
+        {n:"BTP Process Automation and Orchestration", files:[], unindexed:true},
+        {n:"Custom Integrations Leveraging BTP", files:[{n:"Custom Integrations Leveraging BTP.pptx",t:"deck",d:"2026-07"},{n:"T-shirt Custom Integrations Leveraging BTP S",t:"link",s:"S",d:"2026-07"},{n:"T-shirt Custom Integrations Leveraging BTP M",t:"link",s:"M",d:"2026-07"},{n:"T-shirt Custom Integrations Leveraging BTP L",t:"link",s:"L",d:"2026-07"}]}]},
+ {id:"vas", name:"VAS", icon:"rocket",
+  desc:"Value Assurance Services — 2026 services catalog & briefing decks, solutioning-tool links (AI, BDC, Joule, Signavio bundles) and real scope-document samples.",
+  rootFiles:[{n:"VAS_Services_Catalog-2026-05-20-v2.pptx",t:"deck",d:"2026-07"},{n:"VAS_Services_Briefing.pptx",t:"deck",d:"2026-07"},{n:"VAS_Services_Catalog-2026.pptx",t:"deck",d:"2026-07"}],
+  vars:[{n:"Solutioning Tool Links", files:[{n:"SAP Business AI — AI Lead + Activation Bundles",t:"link",d:"2026-07"},{n:"BDC Strategy & Roadmap",t:"link",d:"2026-07"},{n:"BDC Build Foundation",t:"link",d:"2026-07"},{n:"BDC Innovation Use Cases",t:"link",d:"2026-07"},{n:"SAP Joule Setup & Enablement",t:"link",d:"2026-07"},{n:"SAP Signavio — Process Intelligence",t:"link",d:"2026-07"}]},
+        {n:"Scope Document Samples", files:[{n:"Scope_Document_Lubrizol_AI_Agents_VAS-2026-06-30.docx",t:"doc",d:"2026-07"},{n:"Adobe VAS_BDC_SIG_AI_7.7.docx",t:"doc",d:"2026-07"}]}]},
+ {id:"btm", name:"BTM", icon:"tools",
+  desc:"Business Transformation Management — accelerated service links (AI activation for PCE, test automation, automotive consulting solutions…) plus CALM, Signavio and LeanIX tracks.",
+  vars:[{n:"Accelerated Services", files:[{n:"AI Activation Service for RISE with SAP S4HANA Cloud Private Edition",t:"link",d:"2026-08"},{n:"Optimization for Test Automation",t:"link",d:"2026-08"},{n:"Automotive Consulting Solution Material Management",t:"link",d:"2026-08"},{n:"Automotive Consulting Solution Sales and Service",t:"link",d:"2026-08"}], partial:true},
+        {n:"CALM", files:[], unindexed:true},{n:"Signavio", files:[], unindexed:true},{n:"LeanIX", files:[], unindexed:true}]},
+ {id:"mdg", name:"MDG", icon:"db",
+  desc:"Master Data Governance t-shirts in four domains — Finance, Material, BP-Customer, BP-Supplier — each priced XS ($191K) through L ($1M), plus the MDG overview deck.",
+  rootFiles:[{n:"Master Data Governance.pptx",t:"deck",d:"2026-07"}],
+  vars:[{n:"Finance", files:[{n:"Tshirt MDG Finance XS",t:"link",s:"XS",d:"2026-07"},{n:"Tshirt MDG Finance S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt MDG Finance M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt MDG Finance L",t:"link",s:"L",d:"2026-07"}]},
+        {n:"Material", files:[{n:"Tshirt MDG Material XS",t:"link",s:"XS",d:"2026-07"},{n:"Tshirt MDG Material S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt MDG Material M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt MDG Material L",t:"link",s:"L",d:"2026-07"}]},
+        {n:"Business Partner - Customer", files:[{n:"Tshirt MDG BP-Customer XS",t:"link",s:"XS",d:"2026-07"},{n:"Tshirt MDG BP-Customer S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt MDG BP-Customer M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt MDG BP-Customer L",t:"link",s:"L",d:"2026-07"}]},
+        {n:"Business Partner - Supplier", files:[{n:"Tshirt MDG BP-Supplier XS",t:"link",s:"XS",d:"2026-07"},{n:"Tshirt MDG BP-Supplier S",t:"link",s:"S",d:"2026-07"},{n:"Tshirt MDG BP-Supplier M",t:"link",s:"M",d:"2026-07"},{n:"Tshirt MDG BP-Supplier L",t:"link",s:"L",d:"2026-07"}]}]},
+ {id:"drc", name:"DRC", icon:"doccheck",
+  desc:"Document & Reporting Compliance implementations — country tracks for Belgium + Singapore (incl. customer read-out) and Poland.",
+  vars:[{n:"DRC Implementation for Belgium and Singapore", files:[{n:"Huntsman_DRC_Impl_Read-out_20_Jun_2025.pptx",t:"deck",d:"2026-07"},{n:"DRC Implementation for Belgium and Singapore",t:"link",d:"2026-07"}], partial:true},
+        {n:"DRC Implementation for Poland", files:[], unindexed:true}]},
+ {id:"ux", name:"UX", icon:"ux",
+  desc:"User experience t-shirts — Fiori apps, Work Zone sizer & Mobile Start, and Service & Asset Management UX tracks.",
+  vars:[{n:"UX Fiori Apps", files:[], unindexed:true},{n:"UX WorkZone Sizer and Mobile Start", files:[], unindexed:true},{n:"Service and Asset Management", files:[], unindexed:true}]},
+ {id:"mc", name:"Model Company", icon:"factory",
+  desc:"Model Company for SAP Business Suite — L1 overview plus ten industry template packs (Automotive, Retail, CPG, Utilities, Oil & Gas, Fashion, Airline Back Office, EAM, R&D, EHS).",
+  rootFiles:[{n:"L1_model company for SAP Business Suite.pptx",t:"deck",d:"2026-07"},{n:"Model Company for SAP Business Suite",t:"link",d:"2026-07"}],
+  vars:["Automotive","Retail","CPG","Utilities","Oil and Gas","Fashion","Airline Back Office","Enterprise Asset Management","Research and Development","EHS"].map(v=>({n:"Model Company Template "+v, label:v, files:[], unindexed:true}))},
+ {id:"ind", name:"Industry Templates", icon:"grid", soon:true,
+  desc:"Industry-specific t-shirt packs. No content published yet — request via the Fast Track Team.", vars:[]},
+ {id:"sec", name:"Security", icon:"shield",
+  desc:"Security services t-shirts — Identity Access Governance (IAG) track.",
+  vars:[{n:"IAG", files:[], unindexed:true}]},
+ {id:"ds2", name:"Design Success 2.0", icon:"pen", soon:true,
+  desc:"Design Success 2.0 assets. No content published yet — request via the Fast Track Team.", vars:[]},
+ {id:"base", name:"Baseline Templates", icon:"layers",
+  desc:"The working baseline: NA Fast Track template, America's baseline template, FLC rates link, and the EMT (HLRE) estimation workbook with how-to guide.",
+  vars:[{n:"NA Fast Track Template", files:[{n:"NA Fast Track Template",t:"link",d:"2026-07"}]},
+        {n:"America's Baseline template", files:[{n:"America's Baseline template",t:"link",d:"2026-07"}]},
+        {n:"FLC Rates", files:[{n:"FLC Rates",t:"link",d:"2026-07"}]},
+        {n:"EMT", files:[{n:"NASC_EMT_HLRE_Template_2026Jan14.xlsm",t:"sheet",d:"2026-07"},{n:"How to fill out an EMT (HLRE).msg",t:"mail",d:"2026-07"}]}]}
+];
+
+const HEALTH = [
+ {c:"ISBN (Ariba & FG)", st:"empty", note:"Library folder empty; this draft seeds it from the FG T-Shirt ROM Explorer (2026 refresh) — adopt or replace with owned content."},
+ {c:"Supply Chain", st:"empty", note:"Empty folder behind a live tile — marked 'coming soon' in this draft."},
+ {c:"Industry Templates", st:"empty", note:"Empty folder behind a live tile."},
+ {c:"Design Success 2.0", st:"empty", note:"Empty folder behind a live tile."},
+ {c:"SAP Cloud ERP (Public)", st:"gap", note:"NA and LAC subfolders both empty — category advertises regional coverage that isn't there yet."},
+ {c:"SAP S4 HANA Cloud Private", st:"gap", note:"Brownfield subfolder empty while Greenfield is complete. Deck-internal: comparison slides state 16,666/38,769/71,159 total hrs while staffing slides state 19,070/44,359/80,885 (incl. Governance & PMO) — reconcile which total is quoted."},
+ {c:"Analytics & BDC", st:"gap", note:"SAC and Databricks subfolders empty. BDC scope-options deck carries '(1) (1) (3) (1)' copy suffixes. Datasphere+SAC deck is partially in Spanish ('Paquete') for an NA/LAC-shared asset."},
+ {c:"VAS", st:"gap", note:"Two catalog versions side-by-side (2026 and 2026-05-20-v2) — retire the stale one or mark current."},
+ {c:"Success Factors", st:"data", note:"Deck data-quality: EC phase splits sum short of stated durations at every size (e.g. L sums 30 vs 34 wks); Work Zone splits exceed stated durations; Recruiting/Onboarding XL columns show scope+phases but no price; Cloud Architecture M has no duration and XL no price; Work Zone FX ratio (~1.11) differs from the rest of the deck (~1.40)."},
+ {c:"MDG", st:"data", note:"BP-Supplier Medium ($595K) sits ~$175-195K below the other three domains' Mediums ($770-792K) with the same scope structure — verify intentional. Medium CAD values rounded to '1.0M' break the deck's ~1.37 FX ratio. Overview deck filename has a double space."},
+ {c:"SAP BTP", st:"data", note:"Work Zone deck: slide-6 matrix and slide-15 detail show two different Medium phase plans; Small phase bars sum 4 wks against a stated 3. Overview deck still titled v0.1."},
+ {c:"BTM", st:"ok", note:"Accelerated services actively updated (Aug 2026 — newest content in the catalog)."},
+ {c:"All categories", st:"gap", note:"No owner or description metadata exists in the library — this register proposes tracking both; descriptions and pricing extractions in this draft are AI-generated pending owner sign-off."}
+];
+
+/* wizard configs: each answer adds weight to sizes */
+const WIZ = {
+ mdg: {intro:"Which MDG t-shirt fits?", qs:[
+   {q:"How many master-data domains are in scope?", opts:[["One domain",{XS:2,S:1}],["Two domains",{S:2,M:1}],["Three or more",{M:1,L:2}]]},
+   {q:"Data volume & source complexity?", opts:[["Single system, low volume",{XS:2,S:1}],["Few systems, moderate",{S:1,M:2}],["Many systems / high volume",{L:2,M:1}]]},
+   {q:"Governance workflows needed?", opts:[["Central create only",{XS:1,S:2}],["Create + change + mass processing",{M:2}],["Full governance incl. consolidation",{L:2}]]}]},
+ btp: {intro:"Which BTP t-shirt fits?", qs:[
+   {q:"What are you building?", opts:[["Portal / launchpad (Work Zone)",{S:2,M:1}],["Forms & workflow automation",{M:2}],["Custom integrations",{S:1,M:1,L:1}]]},
+   {q:"Scale of rollout?", opts:[["Team / pilot",{S:2}],["Department",{M:2}],["Enterprise-wide",{L:2}]]}]},
+ isbn: {intro:"Which FG integration t-shirt fits?", qs:[
+   {q:"What is being integrated?", opts:[["Worker download only",{S:2}],["P2R or master data (pick one flavor)",{M:2}],["Full P2R + WD + master data",{L:2}]]},
+   {q:"How many files/connectors?", opts:[["Up to 2",{S:2}],["Up to 5",{M:2}],["10 or more",{L:2}]]}]}
+};
+
+let FILTER = "all";
+const favs = new Set(JSON.parse(localStorage.getItem("dsc.favs")||"[]"));
+const recents = JSON.parse(localStorage.getItem("dsc.recents")||"[]");
+let tray = JSON.parse(localStorage.getItem("dsc.tray")||"[]");   // [{cat, off, size}]
+let kit = JSON.parse(localStorage.getItem("dsc.kit")||"[]");     // [{label, url, meta}]
+const saveFavs = () => localStorage.setItem("dsc.favs", JSON.stringify([...favs]));
+const saveTray = () => localStorage.setItem("dsc.tray", JSON.stringify(tray));
+const saveKit = () => localStorage.setItem("dsc.kit", JSON.stringify(kit));
+const pushRecent = id => { const r = [id, ...recents.filter(x=>x!==id)].slice(0,6); recents.length=0; recents.push(...r); localStorage.setItem("dsc.recents", JSON.stringify(r)); };
+
+const counts = c => {
+  const vs = (c.vars||[]).filter(v=>!v.hidden);
+  let files = (c.rootFiles||[]).length;
+  vs.forEach(v => files += (v.files||[]).length);
+  return {v: vs.length, f: files};
+};
+const hasSized = c => (c.vars||[]).some(v => (v.files||[]).some(f=>f.s));
+const hasDeck = c => (c.rootFiles||[]).some(f=>f.t==="deck") || (c.vars||[]).some(v => (v.files||[]).some(f=>f.t==="deck"));
+const latest = c => { let m=""; const scan = f => { if(f.d && f.d>m) m=f.d; }; (c.rootFiles||[]).forEach(scan); (c.vars||[]).forEach(v=>(v.files||[]).forEach(scan)); return m; };
+const searchable = c => [c.name, c.desc, ...(c.vars||[]).map(v=>v.label||v.n), ...(c.rootFiles||[]).map(f=>f.n),
+  ...(c.vars||[]).flatMap(v=>(v.files||[]).map(f=>f.n)),
+  ...((SIZES[c.id]||[]).flatMap(o=>[o.offering, ...(o.sizes||[]).flatMap(s=>s.scope||[])]))].join(" ").toLowerCase();
+const TYPEICON = {deck:"📊", link:"🔗", sheet:"📈", doc:"📄", mail:"✉️"};
+const fmtUsd = v => v >= 1000 ? "$" + (v/1000).toFixed(1).replace(/\.0$/,"") + "M" : "$" + v + "K";
+
+function renderGrid(){
+  const g = document.getElementById("grid");
+  g.innerHTML = CATALOG.map(c => {
+    const k = counts(c);
+    const fresh = latest(c);
+    const priced = (SIZES[c.id]||[]).length;
+    const dotCol = c.soon ? "var(--grey)" : (fresh >= "2026-06" || priced ? "var(--ok)" : "var(--warn)");
+    const chips = (c.vars||[]).filter(v=>!v.hidden).slice(0,5).map(v=>`<span class="chip">${v.label||v.n}</span>`).join("") + ((c.vars||[]).filter(v=>!v.hidden).length>5?`<span class="chip">+${(c.vars||[]).filter(v=>!v.hidden).length-5} more</span>`:"");
+    return `<div class="flip ${c.soon?"soon":""}" id="card-${c.id}" data-id="${c.id}">
+      <div class="flipin">
+        <div class="face front" onclick="toggleFlip('${c.id}')" title="Click to flip">
+          <button class="fav ${favs.has(c.id)?"on":""}" onclick="event.stopPropagation();toggleFav('${c.id}',this)" title="Pin to favorites">★</button>
+          <div class="icon">${IC[c.icon]}</div>
+          <h4>${c.name}</h4>
+          <div class="badges">
+            ${c.soon ? `<span class="badge soon">coming soon</span>` :
+              (c.seeded ? `<span class="badge px">seeded draft</span>` : `<span class="badge">${k.v} variant${k.v!==1?"s":""}</span>`) +
+              (priced ? `<span class="badge px">💲 ${priced} priced</span>` : (c.soon?"":`<span class="badge">${k.f} asset${k.f!==1?"s":""}</span>`))}
+            <span class="dot" style="background:${dotCol}"></span>
+          </div>
+          <span class="fliphint">flip ⟳</span>
+        </div>
+        <div class="face back" onclick="toggleFlip('${c.id}')" title="Click to flip back">
+          <h4>${c.name}</h4>
+          <div class="draftflag">⚠ description drafted — owner to confirm</div>
+          <div class="desc">${c.desc}</div>
+          <div class="chips">${chips || '<span class="chip">no variants yet</span>'}</div>
+          <div class="backbtns" onclick="event.stopPropagation()">
+            ${c.soon ? `<a class="btn pri" href="https://sap.sharepoint.com/teams/Americas-CBDO/SitePages/Requesting%20Support.aspx" target="_blank" rel="noopener">Request content</a>` : `<button class="btn pri" onclick="openPanel('${c.id}')">Explore →</button>`}
+            <a class="btn sec" href="${foldUrl(c.name)}" target="_blank" rel="noopener">Folder ↗</a>
+          </div>
+          <span class="fliphint">flip back ⟲</span>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+  applyFilters();
+}
+function toggleFlip(id){ document.getElementById("card-"+id).classList.toggle("flipped"); }
+function toggleFav(id, el){ favs.has(id) ? favs.delete(id) : favs.add(id); el.classList.toggle("on"); saveFavs(); if(FILTER==="fav") applyFilters(); }
+
+function setFilter(el){
+  document.querySelectorAll(".fchip").forEach(x=>x.classList.remove("on"));
+  el.classList.add("on"); FILTER = el.dataset.f; applyFilters();
+}
+function applyFilters(){
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  CATALOG.forEach(c => {
+    let show = true;
+    if(FILTER==="tshirt") show = hasSized(c);
+    else if(FILTER==="priced") show = (SIZES[c.id]||[]).length > 0;
+    else if(FILTER==="deck") show = hasDeck(c);
+    else if(FILTER==="soon") show = !!c.soon;
+    else if(FILTER==="fav") show = favs.has(c.id);
+    if(show && q) show = searchable(c).includes(q);
+    document.getElementById("card-"+c.id).classList.toggle("hide", !show);
+  });
+}
+
+function renderNew(){
+  const items = [];
+  CATALOG.forEach(c => {
+    (c.rootFiles||[]).forEach(f=>items.push({...f, cat:c.name, id:c.id}));
+    (c.vars||[]).forEach(v=>(v.files||[]).forEach(f=>items.push({...f, cat:c.name, id:c.id})));
+  });
+  items.sort((a,b)=>(b.d||"").localeCompare(a.d||""));
+  const seen = new Set();
+  const top = items.filter(i=>{ if(seen.has(i.cat)) return false; seen.add(i.cat); return true; }).slice(0,7);
+  document.getElementById("newrow").innerHTML = top.map(i =>
+    `<div class="newcard"><b title="${i.n}">${TYPEICON[i.t]||""} ${i.n}</b><span>${i.cat} · ${i.d}</span></div>`).join("");
+}
+
+/* ---------- panel ---------- */
+let CUR = null, CURTAB = "matrix", CUROFF = 0;
+function openPanel(id, tab, offIdx){
+  const c = CATALOG.find(x=>x.id===id); if(!c) return;
+  CUR = c; CUROFF = offIdx || 0;
+  const hasMatrix = (SIZES[id]||[]).length > 0;
+  CURTAB = tab || (hasMatrix ? "matrix" : "assets");
+  pushRecent(id);
+  location.hash = "#/" + id + (CUROFF ? "/" + CUROFF : "");
+  document.getElementById("pIcon").innerHTML = IC[c.icon];
+  document.getElementById("pTitle").textContent = c.name;
+  document.getElementById("pCrumb").textContent = c.name;
+  document.getElementById("pFolder").href = foldUrl(c.name);
+  document.getElementById("pTabs").innerHTML = hasMatrix
+    ? `<button class="ptab ${CURTAB==="matrix"?"on":""}" onclick="switchTab('matrix')">💲 T-shirt matrix</button><button class="ptab ${CURTAB==="assets"?"on":""}" onclick="switchTab('assets')">📁 Assets & links</button>`
+    : `<button class="ptab on">📁 Assets & links</button>`;
+  renderPanelBody();
+  document.getElementById("panel").classList.add("open");
+  document.getElementById("ov").classList.add("open");
+}
+function switchTab(t){ CURTAB = t;
+  document.querySelectorAll(".ptab").forEach((b,i)=>b.classList.toggle("on",(t==="matrix")===(i===0)));
+  renderPanelBody();
+}
+function renderPanelBody(){
+  const c = CUR;
+  let html = `<div class="pdesc">⚠ <i>Draft — descriptions & extracted pricing pending owner confirmation.</i><br>${c.desc}</div>`;
+  if(CURTAB === "matrix" && (SIZES[c.id]||[]).length){
+    html += matrixHtml(c);
+  } else {
+    html += assetsHtml(c);
+  }
+  document.getElementById("pBody").innerHTML = html;
+}
+function matrixHtml(c){
+  const offs = SIZES[c.id];
+  let html = "";
+  if(offs.length > 1){
+    html += `<div class="offsel">` + offs.map((o,i)=>`<button class="offbtn ${i===CUROFF?"on":""}" onclick="CUROFF=${i};renderPanelBody()">${o.offering}</button>`).join("") + `</div>`;
+  }
+  const o = offs[Math.min(CUROFF, offs.length-1)];
+  /* carousel */
+  const imgs = [];
+  if(o.thumb && THUMBS[o.thumb]) imgs.push(THUMBS[o.thumb]);
+  if(o.priceThumb && THUMBS[o.priceThumb]) imgs.push(THUMBS[o.priceThumb]);
+  if(imgs.length) html += `<div class="caro">` + imgs.map(u=>`<img src="${u}" onclick="this.classList.toggle('zoom')" alt="deck preview">`).join("") + `</div>`;
+  /* wizard */
+  if(WIZ[c.id]) html += wizardHtml(c.id);
+  /* matrix table */
+  const ss = o.sizes;
+  html += `<div class="mtxwrap"><table class="mtx"><tr><th style="min-width:110px">${o.offering}</th>` +
+    ss.map((s,i)=>`<th id="szcol-${i}">${s.size==="one-size" ? "" : s.size}${s.tier?`<span class="tier">${s.tier}</span>`:""}</th>`).join("") + `</tr>`;
+  html += `<tr><td><b>Price</b></td>` + ss.map(s=>`<td>${s.usd?`<span class="price">${fmtUsd(s.usd)}</span><div class="cad">${s.cad?("C"+fmtUsd(s.cad)):""} USD list</div>`:`<span class="cad">see deck</span>`}</td>`).join("") + `</tr>`;
+  html += `<tr><td><b>Duration</b></td>` + ss.map(s=>`<td>${s.weeks?s.weeks+" wks":"—"}</td>`).join("") + `</tr>`;
+  if(ss.some(s=>s.hours)) html += `<tr><td><b>Est. hours</b></td>` + ss.map(s=>`<td>${s.hours?s.hours.toLocaleString():"—"}</td>`).join("") + `</tr>`;
+  if(ss.some(s=>s.phases)) html += `<tr><td><b>Phases</b></td>` + ss.map(s=>`<td style="font-size:11px">${s.phases||"—"}</td>`).join("") + `</tr>`;
+  html += `<tr class="hd"><td colspan="${ss.length+1}">Scope highlights</td></tr>`;
+  html += `<tr><td></td>` + ss.map(s=>`<td><ul>${(s.scope||[]).map(x=>`<li>${x}</li>`).join("")}</ul></td>`).join("") + `</tr>`;
+  html += `<tr><td></td>` + ss.map((s,i)=>`<td><button class="btn sec mini" onclick="addCompare('${c.id}',${CUROFF},${i})">⇄ Compare</button> <button class="btn sec mini" onclick="addKitSize('${c.id}',${CUROFF},${i})">+ Kit</button></td>`).join("") + `</tr>`;
+  html += `</table></div>`;
+  html += `<div class="srcflag">⚠ Extracted from “${o.deck}” — indicative & non-binding, owner to confirm. Variant: ${o.variant}.</div>`;
+  return html;
+}
+function wizardHtml(catId){
+  const w = WIZ[catId];
+  const state = (window.__wiz = window.__wiz || {})[catId] || (window.__wiz[catId] = w.qs.map(()=>null));
+  let html = `<div class="wizbox"><h5>🧭 ${w.intro}</h5>`;
+  w.qs.forEach((q,qi)=>{
+    html += `<div class="wizq"><div class="q">${q.q}</div><div class="opts">` +
+      q.opts.map((o,oi)=>`<button class="wopt ${state[qi]===oi?"on":""}" onclick="wizPick('${catId}',${qi},${oi})">${o[0]}</button>`).join("") + `</div></div>`;
+  });
+  if(state.every(x=>x!==null)){
+    const w8 = {};
+    state.forEach((oi,qi)=>{ const m = w.qs[qi].opts[oi][1]; for(const k in m) w8[k]=(w8[k]||0)+m[k]; });
+    const best = Object.entries(w8).sort((a,b)=>b[1]-a[1])[0][0];
+    html += `<div class="wizres">→ Recommended size: ${best} (highlighted below)</div>`;
+    setTimeout(()=>{ document.querySelectorAll(".mtx th[id^=szcol]").forEach(th=>{ th.classList.toggle("reco", th.textContent.trim().startsWith(best)); }); },0);
+  }
+  html += `</div>`;
+  return html;
+}
+function wizPick(catId, qi, oi){ window.__wiz[catId][qi] = oi; renderPanelBody(); }
+
+function assetsHtml(c){
+  let html = "";
+  if((c.rootFiles||[]).length) html += acc("Overview assets", c.rootFiles, c.name, true);
+  (c.vars||[]).filter(v=>!v.hidden).forEach((v,i) => {
+    const sub = c.name + "/" + (v.sub || v.n);
+    html += acc(v.label||v.n, v.files||[], sub, i===0 && !(c.rootFiles||[]).length, v);
+  });
+  if(!(c.vars||[]).length && !(c.rootFiles||[]).length)
+    html += `<div class="emptynote">No library content yet${c.seeded?" — the T-shirt matrix tab is seeded from the FG T-Shirt ROM Explorer":""}. Flagged in Catalog Health.</div>`;
+  return html;
+}
+function acc(title, files, subPath, open, v){
+  const rows = files.map(f =>
+    `<div class="arow"><span class="t">${TYPEICON[f.t]||"📁"}</span><span class="nm" title="${f.n}">${f.n}</span>${f.s?`<span class="sizechip">${f.s}</span>`:""}<span class="dt">${f.d||""}</span><button class="btn sec mini" onclick='addKitAsset(${JSON.stringify(f.n)}, ${JSON.stringify(foldUrl(subPath))})'>+ Kit</button><a href="${foldUrl(subPath)}" target="_blank" rel="noopener">open ↗</a></div>`).join("");
+  let note = "";
+  if(v && v.empty) note = `<div class="emptynote">Folder exists but has no files yet (as of last index).</div>`;
+  else if(v && v.unindexed) note = `<div class="emptynote">Contents not yet indexed in this draft — open the folder to browse. (Live mode indexes automatically.)</div>`;
+  else if(v && v.partial) note = `<div class="emptynote">Partial index — more files in the folder.</div>`;
+  return `<div class="acc ${open?"open":""}"><button class="acchead" onclick="this.parentElement.classList.toggle('open')">▸ ${title}<span class="n">${files.length?files.length+" indexed":""}</span></button><div class="accbody">${rows}${note}</div></div>`;
+}
+function closePanel(){
+  document.getElementById("panel").classList.remove("open");
+  document.getElementById("ov").classList.remove("open");
+  if(location.hash) history.replaceState(null,"", location.pathname + location.search);
+}
+document.addEventListener("keydown", e => {
+  if(e.key==="Escape"){ closePanel(); hidePal(); document.getElementById('cmpov').classList.remove('show'); }
+  if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="k"){ e.preventDefault(); showPal(); }
+});
+
+/* ---------- compare + kit ---------- */
+function addCompare(cat, off, sz){
+  if(tray.length >= 3){ alert("Compare holds up to 3 — remove one first."); return; }
+  tray.push({cat, off, sz}); saveTray(); renderTray();
+}
+function addKitSize(cat, off, sz){
+  const o = SIZES[cat][off], s = o.sizes[sz];
+  kit.push({label: `${o.offering} — ${s.tier||s.size}${s.usd?" ("+fmtUsd(s.usd)+")":""}`, url: foldUrl(CATALOG.find(c=>c.id===cat).name), meta: (s.weeks?s.weeks+" wks":"") + (s.usd?" · "+fmtUsd(s.usd):"")});
+  saveKit(); renderTray();
+}
+function addKitAsset(name, url){ kit.push({label:name, url, meta:"asset"}); saveKit(); renderTray(); }
+function renderTray(){
+  const t = document.getElementById("tray");
+  document.getElementById("trayItems").innerHTML = tray.map((x,i)=>{
+    const o = SIZES[x.cat][x.off], s = o.sizes[x.sz];
+    return `<span class="titem">${o.offering} · ${s.tier||s.size}<button onclick="tray.splice(${i},1);saveTray();renderTray()">×</button></span>`;
+  }).join("");
+  document.getElementById("kitCount").textContent = kit.length;
+  t.classList.toggle("show", tray.length>0 || kit.length>0);
+}
+function clearTray(){ tray=[]; kit=[]; saveTray(); saveKit(); renderTray(); }
+function showCompare(){
+  if(!tray.length) return;
+  const cols = tray.map(x => ({o: SIZES[x.cat][x.off], s: SIZES[x.cat][x.off].sizes[x.sz], cat: CATALOG.find(c=>c.id===x.cat).name}));
+  let h = `<div class="mtxwrap"><table class="mtx"><tr><th></th>` + cols.map(c=>`<th>${c.o.offering}<span class="tier">${c.s.tier||c.s.size} · ${c.cat}</span></th>`).join("") + `</tr>`;
+  h += `<tr><td><b>Price</b></td>` + cols.map(c=>`<td>${c.s.usd?`<span class="price">${fmtUsd(c.s.usd)}</span><div class="cad">${c.s.cad?("C"+fmtUsd(c.s.cad)):""}</div>`:"—"}</td>`).join("") + `</tr>`;
+  h += `<tr><td><b>Duration</b></td>` + cols.map(c=>`<td>${c.s.weeks?c.s.weeks+" wks":"—"}</td>`).join("") + `</tr>`;
+  h += `<tr><td><b>Hours</b></td>` + cols.map(c=>`<td>${c.s.hours?c.s.hours.toLocaleString():"—"}</td>`).join("") + `</tr>`;
+  h += `<tr><td><b>Phases</b></td>` + cols.map(c=>`<td style="font-size:11px">${c.s.phases||"—"}</td>`).join("") + `</tr>`;
+  h += `<tr class="hd"><td colspan="${cols.length+1}">Scope</td></tr><tr><td></td>` + cols.map(c=>`<td><ul>${(c.s.scope||[]).map(x=>`<li>${x}</li>`).join("")}</ul></td>`).join("") + `</tr></table></div>`;
+  h += `<div class="srcflag">⚠ Extracted draft data — indicative & non-binding.</div>`;
+  document.getElementById("cmpBody").innerHTML = h;
+  document.getElementById("cmpov").classList.add("show");
+}
+function generateKit(){
+  if(!kit.length){ alert("Kit is empty — use + Kit buttons on sizes or assets."); return; }
+  const w = window.open("", "_blank");
+  w.document.write(`<html><head><title>Deal Success — Template Kit</title><style>
+    body{font-family:"72","Segoe UI",Arial,sans-serif;color:#1D2D3E;max-width:760px;margin:40px auto;padding:0 24px}
+    h1{color:#0A3D8F;font-size:22px} .it{border-bottom:1px solid #E5EAF0;padding:10px 2px}
+    .it b{display:block} .it span{color:#556B82;font-size:12px} a{color:#0070F2;text-decoration:none;font-size:12px}
+    .ft{margin-top:26px;color:#8396A8;font-size:11px;line-height:1.5}</style></head><body>
+    <h1>Deal Success Center — Template Kit</h1>
+    <p style="color:#556B82">Assembled ${new Date().toLocaleDateString()} · ${kit.length} item(s) · links require SAP SSO</p>` +
+    kit.map(k=>`<div class="it"><b>${k.label}</b><span>${k.meta||""}</span><br><a href="${k.url}">${k.url}</a></div>`).join("") +
+    `<div class="ft">Generated from the Deal Success Center Templates Explorer (draft). Pricing indicative &amp; non-binding, pending owner confirmation. Excludes travel &amp; expense.</div>
+    <script>window.print()<\/script></body></html>`);
+  w.document.close();
+}
+
+/* ---------- palette ---------- */
+let palIdx = [];
+function buildPalIndex(){
+  palIdx = [];
+  CATALOG.forEach(c=>{
+    palIdx.push({t:"category", label:c.name, k:"category", go:()=>openPanel(c.id)});
+    (SIZES[c.id]||[]).forEach((o,i)=>palIdx.push({t:"offering", label:o.offering + " — " + c.name, k:"priced t-shirt", go:()=>openPanel(c.id,"matrix",i)}));
+    (c.vars||[]).filter(v=>!v.hidden).forEach(v=>palIdx.push({t:"variant", label:(v.label||v.n) + " — " + c.name, k:"variant", go:()=>openPanel(c.id,"assets")}));
+  });
+}
+function showPal(){ document.getElementById("pal").classList.add("show"); const i=document.getElementById("palq"); i.value=""; palFilter(); i.focus(); }
+function hidePal(){ document.getElementById("pal").classList.remove("show"); }
+function palFilter(){
+  const q = document.getElementById("palq").value.trim().toLowerCase();
+  const hits = palIdx.filter(x=>!q || x.label.toLowerCase().includes(q)).slice(0,12);
+  document.getElementById("palist").innerHTML = hits.map((h,i)=>`<div class="palit" onclick="hidePal();palIdx[${palIdx.indexOf(h)}].go()">${h.t==="category"?"🗂️":h.t==="offering"?"💲":"📁"} ${h.label}<span class="k">${h.k}</span></div>`).join("") || `<div class="palit">no matches</div>`;
+}
+
+/* ---------- health ---------- */
+function renderHealth(){
+  const stMap = {ok:['st-ok','Healthy'], gap:['st-gap','Gaps'], empty:['st-empty','Empty'], data:['st-data','Data quality']};
+  document.getElementById("healthBody").innerHTML = HEALTH.map(h => {
+    const c = CATALOG.find(x=>x.name===h.c);
+    const k = c ? counts(c) : null;
+    return `<tr><td><b>${h.c}</b></td><td><span class="pillst ${stMap[h.st][0]}">${stMap[h.st][1]}</span></td>
+      <td>${k?k.v:"—"}</td><td>${k?k.f:"—"}</td><td>${c?latest(c)||"—":"—"}</td><td class="hnote">unassigned</td><td class="hnote">${h.note}</td></tr>`;
+  }).join("");
+}
+function showTab(t){
+  document.getElementById("tabCat").classList.toggle("on", t==="cat");
+  document.getElementById("tabHealth").classList.toggle("on", t==="health");
+  document.getElementById("catView").style.display = t==="cat" ? "" : "none";
+  document.getElementById("healthView").classList.toggle("show", t==="health");
+}
+
+/* ---------- hash router ---------- */
+function route(){
+  const m = location.hash.match(/^#\/([a-z0-9]+)(?:\/(\d+))?/);
+  if(m){ const c = CATALOG.find(x=>x.id===m[1]); if(c && !c.soon) openPanel(m[1], null, m[2]?parseInt(m[2]):0); }
+}
+
+/* ---------- live mode ---------- */
+const LIVE = location.hostname.endsWith("sharepoint.com");
+async function liveReindex(){
+  if(!LIVE) return;
+  const api = p => fetch(`/teams/Americas-CBDO/_api/web/GetFolderByServerRelativeUrl('${encodeURIComponent("/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint resources/Templates/"+p).replace(/'/g,"%27%27")}')/Files?$select=Name,TimeLastModified&$top=50`, {headers:{Accept:"application/json;odata=nometadata"}}).then(r=>r.ok?r.json():{value:[]});
+  for(const c of CATALOG){
+    for(const v of (c.vars||[])){
+      try{
+        const j = await api(c.name + "/" + (v.sub||v.n));
+        v.files = (j.value||[]).map(f => ({
+          n: f.Name.replace(/\.(url|pptx|xlsx|xlsm|docx|pdf|msg)$/i,""),
+          t: /\.pptx$/i.test(f.Name)?"deck":/\.url$/i.test(f.Name)?"link":/\.(xlsx|xlsm)$/i.test(f.Name)?"sheet":/\.msg$/i.test(f.Name)?"mail":"doc",
+          s: (f.Name.match(/\b(XS|S|M|L|XL)\.url$/i)||[])[1]||null,
+          d: (f.TimeLastModified||"").slice(0,7)
+        }));
+        v.unindexed = false; v.empty = v.files.length===0;
+      }catch(e){}
+    }
+  }
+  renderGrid(); renderNew(); renderHealth(); buildPalIndex();
+  document.querySelector(".draftchip").textContent = "LIVE · indexed from library just now";
+}
+
+renderGrid(); renderNew(); renderHealth(); buildPalIndex(); renderTray(); route();
+window.addEventListener("hashchange", route);
+liveReindex();
+</script>
+</body>
+</html>
