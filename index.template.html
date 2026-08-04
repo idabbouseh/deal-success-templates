@@ -117,6 +117,12 @@ button{font-family:inherit;cursor:pointer}
 .arow .dt{color:var(--grey);font-size:11.5px;flex:0 0 auto}
 .sizechip{background:#0070F2;color:#fff;font-size:10px;font-weight:800;border-radius:5px;padding:1.5px 6px;flex:0 0 auto}
 .emptynote{color:var(--grey);font-size:12.5px;font-style:italic;padding:8px 4px}
+.ptray{border-top:2px solid var(--blue);background:#F7FBFF;padding:9px 24px;display:none;align-items:center;gap:9px;flex-wrap:wrap;font-size:12.5px}
+.ptray.show{display:flex}
+.ptray .titem{background:var(--ice);border:1px solid #B8D4F5;border-radius:999px;font-size:11.5px;font-weight:600;color:#0A5DC2;padding:4px 11px;display:flex;gap:6px;align-items:center}
+.ptray .titem button{border:none;background:none;color:#0A5DC2;font-size:12px;padding:0}
+.toast{position:fixed;bottom:24px;right:24px;background:#1D2D3E;color:#fff;font-size:13px;font-weight:600;padding:11px 18px;border-radius:9px;box-shadow:0 6px 24px rgba(0,0,0,.3);z-index:130;opacity:0;transform:translateY(10px);transition:.25s;pointer-events:none}
+.toast.show{opacity:1;transform:none}
 .pfoot{border-top:1px solid var(--line);padding:12px 24px;display:flex;gap:10px}
 
 /* size matrix */
@@ -246,8 +252,16 @@ button{font-family:inherit;cursor:pointer}
     <div class="ptabs" id="pTabs"></div>
   </div>
   <div class="pbody" id="pBody"></div>
+  <div class="ptray" id="ptray">
+    <b>⇄</b><span id="ptrayItems" style="display:flex;gap:7px;flex-wrap:wrap"></span>
+    <button class="btn pri mini" onclick="showCompare()">Compare</button>
+    <b style="margin-left:8px">🧰</b><span id="pkitCount" class="badge">0</span>
+    <button class="btn sec mini" onclick="generateKit()">Packet</button>
+    <button class="btn sec mini" onclick="clearTray()" style="margin-left:auto">Clear</button>
+  </div>
   <div class="pfoot"><a class="btn pri" id="pFolder" target="_blank" rel="noopener">Open SharePoint folder ↗</a><button class="btn sec" onclick="closePanel()">Close</button></div>
 </div>
+<div class="toast" id="toast"></div>
 
 <div class="tray" id="tray">
   <b style="font-size:13px">⇄ Compare</b><span id="trayItems" style="display:flex;gap:8px;flex-wrap:wrap"></span>
@@ -635,24 +649,38 @@ document.addEventListener("keydown", e => {
 });
 
 /* ---------- compare + kit ---------- */
+let toastT = null;
+function toast(msg){
+  const el = document.getElementById("toast");
+  el.textContent = msg; el.classList.add("show");
+  clearTimeout(toastT); toastT = setTimeout(()=>el.classList.remove("show"), 1800);
+}
 function addCompare(cat, off, sz){
-  if(tray.length >= 3){ alert("Compare holds up to 3 — remove one first."); return; }
+  if(tray.length >= 3){ toast("⚠ Compare holds up to 3 — remove one first"); return; }
+  const o = SIZES[cat][off], s = o.sizes[sz];
   tray.push({cat, off, sz}); saveTray(); renderTray();
+  toast(`✓ ${o.offering} ${s.tier||s.size} added to compare (${tray.length}/3)`);
 }
 function addKitSize(cat, off, sz){
   const o = SIZES[cat][off], s = o.sizes[sz];
   kit.push({label: `${o.offering} — ${s.tier||s.size}${s.usd?" ("+fmtUsd(s.usd)+")":""}`, url: foldUrl(CATALOG.find(c=>c.id===cat).name), meta: (s.weeks?s.weeks+" wks":"") + (s.usd?" · "+fmtUsd(s.usd):"")});
   saveKit(); renderTray();
+  toast(`✓ ${o.offering} ${s.tier||s.size} added to kit (${kit.length})`);
 }
-function addKitAsset(name, url){ kit.push({label:name, url, meta:"asset"}); saveKit(); renderTray(); }
+function addKitAsset(name, url){ kit.push({label:name, url, meta:"asset"}); saveKit(); renderTray(); toast(`✓ Added to kit (${kit.length})`); }
 function renderTray(){
-  const t = document.getElementById("tray");
-  document.getElementById("trayItems").innerHTML = tray.map((x,i)=>{
+  const items = tray.map((x,i)=>{
     const o = SIZES[x.cat][x.off], s = o.sizes[x.sz];
     return `<span class="titem">${o.offering} · ${s.tier||s.size}<button onclick="tray.splice(${i},1);saveTray();renderTray()">×</button></span>`;
   }).join("");
+  const any = tray.length>0 || kit.length>0;
+  document.getElementById("trayItems").innerHTML = items;
   document.getElementById("kitCount").textContent = kit.length;
-  t.classList.toggle("show", tray.length>0 || kit.length>0);
+  document.getElementById("tray").classList.toggle("show", any);
+  /* mirror inside the drill-down panel so actions are visible in the active window */
+  document.getElementById("ptrayItems").innerHTML = items;
+  document.getElementById("pkitCount").textContent = kit.length;
+  document.getElementById("ptray").classList.toggle("show", any);
 }
 function clearTray(){ tray=[]; kit=[]; saveTray(); saveKit(); renderTray(); }
 function showCompare(){
