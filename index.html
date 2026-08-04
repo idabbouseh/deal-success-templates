@@ -201,6 +201,43 @@ button{font-family:inherit;cursor:pointer}
 
 .foot{max-width:1280px;margin:30px auto 40px;padding:0 28px;color:var(--grey);font-size:11.5px;line-height:1.6}
 @media print{.hdr,.pills,.controls,.newstrip,.panel,.ov,.tray,.pal,.cmpov{display:none!important}body{background:#fff}}
+
+/* program estimator */
+.est{display:none;grid-template-columns:330px 1fr;gap:16px;margin-top:14px}
+.est.show{display:grid}
+@media(max-width:900px){.est.show{display:block}}
+.estpick,.estmain{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px}
+.estpick h4,.estmain h4{font-size:14px;margin-bottom:10px}
+.estpick input{width:100%;padding:8px 11px;border:1.5px solid var(--line);border-radius:8px;font-size:13px;margin-bottom:9px}
+.estlist{max-height:520px;overflow-y:auto}
+.estit{display:flex;align-items:center;gap:8px;padding:7px 4px;border-bottom:1px solid #F1F4F8;font-size:12px}
+.estit .m{flex:1;min-width:0}
+.estit .m b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.estit .m span{color:var(--grey);font-size:10.5px}
+.estrow{display:flex;align-items:center;gap:10px;padding:8px 4px;border-bottom:1px solid #F1F4F8;font-size:12.5px}
+.estrow b{flex:1}
+.esttotals{background:var(--ice);border-radius:10px;padding:14px 18px;margin-top:12px;display:flex;gap:26px;flex-wrap:wrap;align-items:center}
+.esttotals .tv{font-size:22px;font-weight:800;color:#0A3D8F}
+.esttotals .tl{font-size:11px;color:var(--txt2)}
+.gantt{margin-top:14px}
+.grow{display:flex;align-items:center;gap:8px;margin:5px 0}
+.grow .gl{width:170px;font-size:11px;color:var(--txt2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grow .gbar{flex:1;display:flex;height:16px;border-radius:4px;overflow:hidden;background:#F4F6F8}
+.ctgwrap{display:flex;align-items:center;gap:10px;font-size:12.5px;margin-top:10px}
+.ctgwrap input[type=range]{flex:1;max-width:220px;accent-color:var(--blue)}
+/* presentation mode */
+body.present .draftchip,body.present .draftflag,body.present .srcflag,body.present #tabHealth,body.present .pdesc i,body.present .hnote,body.present .foot{display:none!important}
+body.present .pdesc{font-style:normal}
+.presbtn{border:1.5px solid var(--line);background:#fff;border-radius:8px;font-size:12px;font-weight:700;color:var(--txt2);padding:6px 12px}
+.presbtn.on{border-color:#A9265C;color:#A9265C;background:#FDEBF2}
+/* tour */
+.tour{position:fixed;inset:0;background:rgba(10,25,45,.55);z-index:140;display:none;align-items:center;justify-content:center}
+.tour.show{display:flex}
+.tourbox{background:#fff;border-radius:14px;max-width:480px;padding:26px 30px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.tourbox h3{color:#0A3D8F;margin-bottom:10px;font-size:18px}
+.tourbox p{font-size:13.5px;line-height:1.55;color:var(--txt2)}
+.tourbox .tstep{font-size:11px;color:var(--grey);margin-bottom:6px}
+.tourbtns{display:flex;gap:10px;margin-top:18px}
 </style>
 </head>
 <body>
@@ -209,6 +246,8 @@ button{font-family:inherit;cursor:pointer}
   <span class="saplogo">SAP</span>
   <div><h1>Deal Success Center</h1><div class="sub">Americas – CBDO · Fast Track Team</div></div>
   <span class="kbd" title="Command palette">Ctrl K</span>
+  <button class="presbtn" id="presBtn" onclick="togglePresent()" title="Hide internal flags/hours for customer screen-shares">🎥 Present</button>
+  <button class="presbtn" onclick="startTour(1)" title="Replay the guided tour">?</button>
   <span class="draftchip">INTERACTIVE DRAFT · v0.3 · not the system of record</span>
 </div>
 
@@ -231,7 +270,33 @@ button{font-family:inherit;cursor:pointer}
 <div class="wrap">
   <div class="section-tabs">
     <button class="stab on" id="tabCat" onclick="showTab('cat')">Template Catalog</button>
+    <button class="stab" id="tabEst" onclick="showTab('est')">🧮 Program Estimator</button>
     <button class="stab" id="tabHealth" onclick="showTab('health')">Catalog Health <span style="font-size:11px;color:var(--warn)">●</span></button>
+  </div>
+
+  <div class="est" id="estView">
+    <div class="estpick">
+      <h4>Add offerings to your program</h4>
+      <input id="estq" placeholder="Filter offerings… (e.g. 'EC', 'MDG', 'Work Zone')" oninput="renderEstPick()">
+      <div class="estlist" id="estList"></div>
+    </div>
+    <div class="estmain">
+      <h4>Program composition</h4>
+      <div id="estRows"><div class="emptynote">Nothing added yet — pick offerings on the left, or use the wizards in each category first.</div></div>
+      <div class="ctgwrap">Contingency <input type="range" id="ctg" min="0" max="30" step="5" value="10" oninput="renderEst()"> <b id="ctgv">10%</b>
+        <span style="margin-left:14px">Currency</span>
+        <button class="fchip on" id="curUsd" onclick="EST.cur='usd';renderEst()">USD</button>
+        <button class="fchip" id="curCad" onclick="EST.cur='cad';renderEst()">CAD</button>
+      </div>
+      <div class="esttotals" id="estTotals"></div>
+      <div class="gantt" id="estGantt"></div>
+      <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+        <button class="btn pri" onclick="generateProgram()">Generate program one-pager</button>
+        <button class="btn sec" onclick="exportProgramXls()">Export Excel</button>
+        <button class="btn sec" onclick="EST.items=[];saveEst();renderEst()">Clear</button>
+      </div>
+      <div class="srcflag" style="margin-top:12px">⚠ Draft planning aid — component prices are deck-list extractions (owner to confirm); duration range assumes parallel vs sequential execution; no cross-offering synergies or shared-PMO discounts modeled.</div>
+    </div>
   </div>
 
   <div id="catView">
@@ -282,6 +347,18 @@ button{font-family:inherit;cursor:pointer}
   <div class="pfoot"><a class="btn pri" id="pFolder" target="_blank" rel="noopener">Open SharePoint folder ↗</a><button class="btn sec" onclick="closePanel()">Close</button></div>
 </div>
 <div class="toast" id="toast"></div>
+
+<div class="tour" id="tour">
+  <div class="tourbox">
+    <div class="tstep" id="tourStep"></div>
+    <h3 id="tourTitle"></h3>
+    <p id="tourBody"></p>
+    <div class="tourbtns">
+      <button class="btn pri" id="tourNext" onclick="tourNext()">Next →</button>
+      <button class="btn sec" onclick="endTour()">Skip tour</button>
+    </div>
+  </div>
+</div>
 
 <div class="reader" id="reader">
   <div class="rhead"><span class="rtitle" id="rTitle"></span><span class="rcount" id="rCount"></span><button onclick="closeReader()" aria-label="Close reader">×</button></div>
@@ -661,7 +738,7 @@ function matrixHtml(c){
   if(ss.some(s=>s.phases)) html += `<tr><td><b>Phases</b></td>` + ss.map(s=>`<td>${phaseBar(s.phases)}</td>`).join("") + `</tr>`;
   html += `<tr class="hd"><td colspan="${ss.length+1}">Scope highlights</td></tr>`;
   html += `<tr><td></td>` + ss.map(s=>`<td><ul>${(s.scope||[]).map(x=>`<li>${x}</li>`).join("")}</ul></td>`).join("") + `</tr>`;
-  html += `<tr><td></td>` + ss.map((s,i)=>`<td><button class="btn sec mini" onclick="addCompare('${c.id}',${CUROFF},${i})">⇄ Compare</button> <button class="btn sec mini" onclick="addKitSize('${c.id}',${CUROFF},${i})">+ Kit</button></td>`).join("") + `</tr>`;
+  html += `<tr><td></td>` + ss.map((s,i)=>`<td><button class="btn sec mini" onclick="addCompare('${c.id}',${CUROFF},${i})">⇄ Compare</button> <button class="btn sec mini" onclick="addKitSize('${c.id}',${CUROFF},${i})">+ Kit</button> <button class="btn sec mini" onclick="addEst('${c.id}',${CUROFF},${i})">🧮 Program</button></td>`).join("") + `</tr>`;
   html += `</table></div>`;
   html += `<div class="srcflag">⚠ Extracted from “${o.deck}” — indicative & non-binding, owner to confirm. Variant: ${o.variant}.</div>`;
   if(o.thumb && SLIDECOUNTS[o.thumb]) html += `<div style="margin:10px 0"><button class="readbtn" onclick="openReader('${o.thumb}')">📖 Read the full deck — ${SLIDECOUNTS[o.thumb]} slides, right here</button></div>`;
@@ -843,10 +920,145 @@ function renderHealth(){
 }
 function showTab(t){
   document.getElementById("tabCat").classList.toggle("on", t==="cat");
+  document.getElementById("tabEst").classList.toggle("on", t==="est");
   document.getElementById("tabHealth").classList.toggle("on", t==="health");
   document.getElementById("catView").style.display = t==="cat" ? "" : "none";
+  document.getElementById("estView").classList.toggle("show", t==="est");
   document.getElementById("healthView").classList.toggle("show", t==="health");
+  if(t==="est"){ renderEstPick(); renderEst(); }
 }
+
+/* ---------- program estimator ---------- */
+const EST = Object.assign({items:[], cur:"usd"}, JSON.parse(localStorage.getItem("dsc.est")||"{}"));
+const saveEst = () => localStorage.setItem("dsc.est", JSON.stringify(EST));
+function estCatalog(){
+  const out = [];
+  Object.entries(SIZES).forEach(([cat, offs]) => offs.forEach((o, oi) => o.sizes.forEach((s, si) => {
+    if(s.usd) out.push({cat, oi, si, label: o.offering, sub: (s.tier||s.size) + " · " + fmtUsd(s.usd) + (s.weeks ? " · " + s.weeks + " wks" : ""), catName: (CATALOG.find(c=>c.id===cat)||{}).name});
+  })));
+  return out;
+}
+function renderEstPick(){
+  const q = (document.getElementById("estq").value||"").toLowerCase();
+  const items = estCatalog().filter(x => !q || (x.label + " " + x.catName + " " + x.sub).toLowerCase().includes(q)).slice(0, 60);
+  document.getElementById("estList").innerHTML = items.map(x =>
+    `<div class="estit"><div class="m"><b>${x.label}</b><span>${x.catName} · ${x.sub}</span></div><button class="btn sec mini" onclick='addEst("${x.cat}",${x.oi},${x.si})'>+ Add</button></div>`).join("") || `<div class="emptynote">no matches</div>`;
+}
+function addEst(cat, oi, si){
+  EST.items.push({cat, oi, si}); saveEst();
+  const o = SIZES[cat][oi];
+  toast(`✓ ${o.offering} ${o.sizes[si].tier||o.sizes[si].size} added to program (${EST.items.length})`);
+  if(document.getElementById("estView").classList.contains("show")) renderEst();
+}
+function estData(){
+  return EST.items.map(x => { const o = SIZES[x.cat][x.oi]; const s = o.sizes[x.si];
+    return {o, s, cat: x.cat, label: o.offering + " — " + (s.tier||s.size||"") }; }).filter(x=>x.s);
+}
+function renderEst(){
+  const ctg = parseInt(document.getElementById("ctg").value);
+  document.getElementById("ctgv").textContent = ctg + "%";
+  document.getElementById("curUsd").classList.toggle("on", EST.cur==="usd");
+  document.getElementById("curCad").classList.toggle("on", EST.cur==="cad");
+  const rows = estData();
+  document.getElementById("estRows").innerHTML = rows.length ? rows.map((r,i) =>
+    `<div class="estrow"><b>${r.o.offering} <span style="color:var(--grey);font-weight:400">· ${r.s.tier||r.s.size}</span></b><span>${r.s.weeks?r.s.weeks+" wks":"—"}</span><span style="font-weight:700;color:#0A3D8F">${money(r.s)}</span><button class="btn sec mini" onclick="EST.items.splice(${i},1);saveEst();renderEst()">×</button></div>`).join("")
+    : `<div class="emptynote">Nothing added yet — pick offerings on the left, or use 🧮 Program buttons in any pricing matrix.</div>`;
+  const sum = rows.reduce((a,r)=>a+(val(r.s)||0),0);
+  const withCtg = Math.round(sum * (1 + ctg/100));
+  const wk = rows.map(r=>r.s.weeks||0).filter(Boolean);
+  const par = wk.length ? Math.max(...wk) : 0, seq = wk.reduce((a,b)=>a+b,0);
+  document.getElementById("estTotals").innerHTML = rows.length ?
+    `<div><div class="tv">${fmtM(withCtg)}</div><div class="tl">total incl. ${ctg}% contingency (${EST.cur.toUpperCase()} list)</div></div>
+     <div><div class="tv" style="font-size:16px">${fmtM(sum)}</div><div class="tl">base sum</div></div>
+     <div><div class="tv" style="font-size:16px">${par}–${seq} wks</div><div class="tl">duration (parallel – sequential)</div></div>
+     <div><div class="tv" style="font-size:16px">${rows.length}</div><div class="tl">components</div></div>` : "";
+  document.getElementById("estGantt").innerHTML = rows.length ?
+    `<h4 style="font-size:12px;color:var(--txt2);text-transform:uppercase;letter-spacing:.05em">Parallel view (weeks to scale)</h4>` +
+    rows.map(r => `<div class="grow"><div class="gl" title="${r.o.offering}">${r.o.offering}</div><div class="gbar" style="max-width:${par?Math.round(100*(r.s.weeks||0)/par):0}%">${ganttSeg(r.s)}</div><span style="font-size:10.5px;color:var(--grey)">${r.s.weeks||"—"}w</span></div>`).join("") : "";
+  function val(s){ return EST.cur==="cad" ? (s.cad || s.usd && Math.round(s.usd*1.38)) : s.usd; }
+  function money(s){ const v = val(s); return v ? fmtUsd(v).replace("$", EST.cur==="cad"?"C$":"$") : "see deck"; }
+  function fmtM(v){ return (EST.cur==="cad"?"C":"") + fmtUsd(v); }
+}
+function ganttSeg(s){
+  if(!s.phases) return `<div style="flex:1;background:#B8D4F5"></div>`;
+  const parts = [...s.phases.matchAll(/(Prep\w*|Explore\w*|Realize|Deploy\w*|Run)\s*&?\s*\w*\s*(\d+(?:\.\d+)?)(?:\s*[-–]\s*(\d+))?/gi)].map(m=>({n:m[1].toLowerCase().slice(0,3), w:parseFloat(m[3]||m[2])}));
+  if(!parts.length) return `<div style="flex:1;background:#B8D4F5"></div>`;
+  return parts.map(p=>{const col=p.n.startsWith("pre")?PHASECOLORS.prep:p.n.startsWith("exp")?PHASECOLORS.explore:p.n.startsWith("rea")?PHASECOLORS.realize:p.n.startsWith("dep")?PHASECOLORS.deploy:PHASECOLORS.run;return `<div style="flex:${p.w}" title="${p.n} ${p.w}w"><div style="height:100%;background:${col}"></div></div>`;}).join("");
+}
+function generateProgram(){
+  const rows = estData();
+  if(!rows.length){ toast("⚠ Program is empty"); return; }
+  const ctg = parseInt(document.getElementById("ctg").value);
+  const sum = rows.reduce((a,r)=>a+((EST.cur==="cad"?(r.s.cad||Math.round((r.s.usd||0)*1.38)):r.s.usd)||0),0);
+  const w = window.open("", "_blank");
+  const cur = EST.cur==="cad"?"C$":"$";
+  w.document.write(`<html><head><title>Program Estimate — Deal Success Center</title><style>
+    body{font-family:"72","Segoe UI",Arial,sans-serif;color:#1D2D3E;max-width:780px;margin:40px auto;padding:0 24px}
+    h1{color:#0A3D8F;font-size:22px} table{width:100%;border-collapse:collapse;margin:16px 0}
+    th{background:#0A3D8F;color:#fff;text-align:left;padding:8px 10px;font-size:12px}
+    td{border-bottom:1px solid #E5EAF0;padding:8px 10px;font-size:13px}
+    .tot{background:#EAF5FE;font-weight:800} .ft{margin-top:24px;color:#8396A8;font-size:11px;line-height:1.5}</style></head><body>
+    <h1>Program Estimate (draft)</h1>
+    <p style="color:#556B82">${new Date().toLocaleDateString()} · ${rows.length} component(s) · list pricing in ${EST.cur.toUpperCase()}</p>
+    <table><tr><th>Component</th><th>Size</th><th>Duration</th><th>List price</th></tr>` +
+    rows.map(r=>`<tr><td>${r.o.offering}</td><td>${r.s.tier||r.s.size}</td><td>${r.s.weeks?r.s.weeks+" wks":"—"}</td><td>${cur}${((EST.cur==="cad"?(r.s.cad||Math.round((r.s.usd||0)*1.38)):r.s.usd)||0)}K</td></tr>`).join("") +
+    `<tr class="tot"><td colspan="3">Base total</td><td>${cur}${sum}K</td></tr>
+     <tr class="tot"><td colspan="3">Incl. ${ctg}% contingency</td><td>${cur}${Math.round(sum*(1+ctg/100))}K</td></tr></table>
+    <div class="ft">Indicative & non-binding draft assembled from deck-list extractions pending owner confirmation. Duration range: ${Math.max(...rows.map(r=>r.s.weeks||0))} weeks (parallel) to ${rows.reduce((a,r)=>a+(r.s.weeks||0),0)} weeks (sequential). Excludes travel & expense; no cross-offering synergies modeled. Generated by the Deal Success Center Templates Explorer.</div>
+    <script>window.print()<\/script></body></html>`);
+  w.document.close();
+}
+function exportProgramXls(){
+  const rows = estData();
+  if(!rows.length){ toast("⚠ Program is empty"); return; }
+  const ctg = parseInt(document.getElementById("ctg").value);
+  const esc = s => String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const cell = (v,t) => typeof v==="number" ? `<Cell${t?` ss:StyleID="${t}"`:""}><Data ss:Type="Number">${v}</Data></Cell>` : `<Cell${t?` ss:StyleID="${t}"`:""}><Data ss:Type="String">${esc(v)}</Data></Cell>`;
+  const row = (cells) => `<Row>${cells.join("")}</Row>`;
+  const sum = rows.reduce((a,r)=>a+(r.s.usd||0),0);
+  let s1 = row([cell("Component","h"),cell("Size","h"),cell("Duration (wks)","h"),cell("USD K (list)","h"),cell("CAD K (list)","h")]);
+  rows.forEach(r=>{ s1 += row([cell(r.o.offering),cell(r.s.tier||r.s.size),cell(r.s.weeks||""),cell(r.s.usd||""),cell(r.s.cad||"")]); });
+  s1 += row([cell("Base total","b"),cell("","b"),cell("","b"),cell(sum,"b"),cell("","b")]);
+  s1 += row([cell(`Incl. ${ctg}% contingency`,"b"),cell("","b"),cell("","b"),cell(Math.round(sum*(1+ctg/100)),"b"),cell("","b")]);
+  let s2 = row([cell("Component","h"),cell("Scope highlight","h")]);
+  rows.forEach(r=>(r.s.scope||[]).forEach(x=>{ s2 += row([cell(r.o.offering),cell(x)]); }));
+  const xml = `<?xml version="1.0"?><?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+<Styles><Style ss:ID="h"><Font ss:Bold="1" ss:Color="#FFFFFF"/><Interior ss:Color="#0A3D8F" ss:Pattern="Solid"/></Style>
+<Style ss:ID="b"><Font ss:Bold="1"/><Interior ss:Color="#EAF5FE" ss:Pattern="Solid"/></Style></Styles>
+<Worksheet ss:Name="Program"><Table>${s1}</Table></Worksheet>
+<Worksheet ss:Name="Scope"><Table>${s2}</Table></Worksheet></Workbook>`;
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([xml], {type:"application/vnd.ms-excel"}));
+  a.download = "DSC_Program_Estimate.xls"; a.click();
+  toast("✓ Excel exported");
+}
+
+/* ---------- presentation mode + tour ---------- */
+function togglePresent(){
+  document.body.classList.toggle("present");
+  document.getElementById("presBtn").classList.toggle("on");
+  toast(document.body.classList.contains("present") ? "🎥 Presentation mode ON — internal flags hidden" : "Presentation mode off");
+}
+const TOURS = [
+  ["Welcome to the Templates Explorer","Every t-shirt template in the Deal Success Center — browsable, priced, and guided. This 30-second tour shows you the five moves."],
+  ["Flip & explore","Click any card to flip it for a summary. Hit Explore to open the drill-down: real pricing matrices per size, deck previews, and a full in-page deck reader — no PowerPoint needed."],
+  ["Get guided","Inside most categories a 🧭 wizard asks 2-3 questions and highlights the recommended size. Use ⇄ Compare to pin up to three sizes from ANY categories side-by-side."],
+  ["Build a program","The 🧮 Program Estimator combines offerings across the catalog into one estimate: total with contingency, parallel-vs-sequential duration, phase-bar timeline, print & Excel export."],
+  ["Power moves","Ctrl+K jumps anywhere. ★ pins favorites. 🎥 Present hides internal flags for customer screen-shares. The Catalog Health tab tracks every content gap and data-quality finding."]
+];
+let tourN = 0;
+function startTour(n){ tourN = n||1; showTourStep(); document.getElementById("tour").classList.add("show"); }
+function showTourStep(){
+  const t = TOURS[tourN-1];
+  document.getElementById("tourStep").textContent = `Step ${tourN} of ${TOURS.length}`;
+  document.getElementById("tourTitle").textContent = t[0];
+  document.getElementById("tourBody").textContent = t[1];
+  document.getElementById("tourNext").textContent = tourN===TOURS.length ? "Done ✓" : "Next →";
+}
+function tourNext(){ if(tourN>=TOURS.length){ endTour(); return; } tourN++; showTourStep(); }
+function endTour(){ document.getElementById("tour").classList.remove("show"); localStorage.setItem("dsc.toured","1"); }
+if(!localStorage.getItem("dsc.toured")) setTimeout(()=>startTour(1), 900);
 
 /* ---------- hash router ---------- */
 function route(){
