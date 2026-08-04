@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deal Success Center · Templates Explorer (Draft v0.2)</title>
+<title>Deal Success Center · Templates Explorer (Draft v0.3)</title>
 <style>
 :root{
   --blue:#0070F2; --blue-dk:#0064D9; --blue-lt:#1B90FF; --ice:#EAF5FE;
@@ -123,6 +123,24 @@ button{font-family:inherit;cursor:pointer}
 .ptray .titem button{border:none;background:none;color:#0A5DC2;font-size:12px;padding:0}
 .toast{position:fixed;bottom:24px;right:24px;background:#1D2D3E;color:#fff;font-size:13px;font-weight:600;padding:11px 18px;border-radius:9px;box-shadow:0 6px 24px rgba(0,0,0,.3);z-index:130;opacity:0;transform:translateY(10px);transition:.25s;pointer-events:none}
 .toast.show{opacity:1;transform:none}
+/* deck reader */
+.reader{position:fixed;inset:0;background:rgba(10,20,35,.92);z-index:125;display:none;flex-direction:column}
+.reader.show{display:flex}
+.rhead{display:flex;align-items:center;gap:14px;padding:12px 22px;color:#fff}
+.rhead .rtitle{font-size:14px;font-weight:700}
+.rhead .rcount{color:#9FB4CA;font-size:12.5px}
+.rhead button{margin-left:auto;background:none;border:none;color:#fff;font-size:24px}
+.rmain{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:0}
+.rmain img{max-height:100%;max-width:min(92vw,1100px);border-radius:6px;box-shadow:0 10px 50px rgba(0,0,0,.5)}
+.rnav{position:absolute;top:0;bottom:0;width:26%;cursor:pointer;display:flex;align-items:center;color:#fff;font-size:34px;opacity:0;transition:.2s;user-select:none}
+.rnav:hover{opacity:.85}
+.rnav.prev{left:0;justify-content:flex-start;padding-left:26px;background:linear-gradient(90deg,rgba(0,0,0,.35),transparent)}
+.rnav.next{right:0;justify-content:flex-end;padding-right:26px;background:linear-gradient(-90deg,rgba(0,0,0,.35),transparent)}
+.rfoot{text-align:center;color:#9FB4CA;font-size:11.5px;padding:8px 0 14px}
+.readbtn{background:#0A3D8F;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:12.5px;padding:8px 15px;display:inline-flex;gap:7px;align-items:center}
+.readbtn:hover{background:#0064D9}
+.ddsec{margin-top:14px}
+.ddsec h5{font-size:12px;color:var(--txt2);text-transform:uppercase;letter-spacing:.05em;margin:12px 0 6px}
 .pfoot{border-top:1px solid var(--line);padding:12px 24px;display:flex;gap:10px}
 
 /* size matrix */
@@ -191,7 +209,7 @@ button{font-family:inherit;cursor:pointer}
   <span class="saplogo">SAP</span>
   <div><h1>Deal Success Center</h1><div class="sub">Americas – CBDO · Fast Track Team</div></div>
   <span class="kbd" title="Command palette">Ctrl K</span>
-  <span class="draftchip">INTERACTIVE DRAFT · v0.2 · not the system of record</span>
+  <span class="draftchip">INTERACTIVE DRAFT · v0.3 · not the system of record</span>
 </div>
 
 <div class="hero">
@@ -263,6 +281,16 @@ button{font-family:inherit;cursor:pointer}
 </div>
 <div class="toast" id="toast"></div>
 
+<div class="reader" id="reader">
+  <div class="rhead"><span class="rtitle" id="rTitle"></span><span class="rcount" id="rCount"></span><button onclick="closeReader()" aria-label="Close reader">×</button></div>
+  <div class="rmain">
+    <div class="rnav prev" onclick="readerNav(-1)">‹</div>
+    <img id="rImg" alt="slide">
+    <div class="rnav next" onclick="readerNav(1)">›</div>
+  </div>
+  <div class="rfoot">← → arrow keys to navigate · Esc to close · content © SAP, internal draft reader</div>
+</div>
+
 <div class="tray" id="tray">
   <b style="font-size:13px">⇄ Compare</b><span id="trayItems" style="display:flex;gap:8px;flex-wrap:wrap"></span>
   <button class="btn pri mini" onclick="showCompare()">Compare side-by-side</button>
@@ -283,7 +311,7 @@ button{font-family:inherit;cursor:pointer}
 </div>
 
 <div class="foot">
-  <b>Draft v0.2 for discussion — Deal Success Center Templates redesign concept.</b> Catalog structure indexed from the live template library (30-Jul-2026); T-shirt pricing matrices extracted from the decks stored in that library (June 2026 editions) — all figures indicative, non-binding, and pending owner confirmation. ISBN (Ariba &amp; FG) is seeded from the FG T-Shirt ROM Explorer 2026 refresh draft. Slide previews rendered from the same decks. Links open live SharePoint content (SAP SSO). In SharePoint hosting, live mode re-indexes the library automatically — the document library remains the single governed data source.
+  <b>Draft v0.3 for discussion — Deal Success Center Templates redesign concept.</b> Catalog structure indexed from the live template library (30-Jul-2026); T-shirt pricing matrices extracted from the decks stored in that library (June 2026 editions) — all figures indicative, non-binding, and pending owner confirmation. ISBN (Ariba &amp; FG) is seeded from the FG T-Shirt ROM Explorer 2026 refresh draft. Slide previews rendered from the same decks. Links open live SharePoint content (SAP SSO). In SharePoint hosting, live mode re-indexes the library automatically — the document library remains the single governed data source.
 </div>
 
 <script>
@@ -315,6 +343,9 @@ const IC = {
 
 const SIZES = __SIZES__;
 const THUMBS = __THUMBS__;
+const DETAILS = __DETAILS__;
+const SLIDECOUNTS = __SLIDES__;
+const SLIDEDIR = "slides/";
 
 const CATALOG = [
  {id:"s4pce", name:"SAP S4 HANA Cloud Private", icon:"cloud",
@@ -421,6 +452,8 @@ const HEALTH = [
  {c:"MDG", st:"data", note:"BP-Supplier Medium ($595K) sits ~$175-195K below the other three domains' Mediums ($770-792K) with the same scope structure — verify intentional. Medium CAD values rounded to '1.0M' break the deck's ~1.37 FX ratio. Overview deck filename has a double space."},
  {c:"SAP BTP", st:"data", note:"Work Zone deck: slide-6 matrix and slide-15 detail show two different Medium phase plans; Small phase bars sum 4 wks against a stated 3. Overview deck still titled v0.1."},
  {c:"BTM", st:"ok", note:"Accelerated services actively updated (Aug 2026 — newest content in the catalog)."},
+ {c:"UX", st:"data", note:"The 'SAP BTP UX Services Overview v0.1' deck stored under SAP BTP is actually 'SAP S/4HANA UX NA T-shirts — Q4 2024' content (Dec 2024): stale vintage, nonstandard size names (X-Small/Standard/Strategic), and no complete price ladder. Rendered here under UX with a stale flag — needs a 2026 refresh."},
+ {c:"VAS", st:"data", note:"The same services catalog is embedded twice (briefing deck slides 9-17 ≡ catalog v2 slides 2-9) — one canonical source needed. Agentic AI Lab-to-Production states '10-20 weeks' in the range line but 'Large: 500d → 26 wks' in the tiers — reconcile."},
  {c:"All categories", st:"gap", note:"No owner or description metadata exists in the library — this register proposes tracking both; descriptions and pricing extractions in this draft are AI-generated pending owner sign-off."}
 ];
 
@@ -596,8 +629,35 @@ function matrixHtml(c){
   html += `<tr><td></td>` + ss.map((s,i)=>`<td><button class="btn sec mini" onclick="addCompare('${c.id}',${CUROFF},${i})">⇄ Compare</button> <button class="btn sec mini" onclick="addKitSize('${c.id}',${CUROFF},${i})">+ Kit</button></td>`).join("") + `</tr>`;
   html += `</table></div>`;
   html += `<div class="srcflag">⚠ Extracted from “${o.deck}” — indicative & non-binding, owner to confirm. Variant: ${o.variant}.</div>`;
+  if(o.thumb && SLIDECOUNTS[o.thumb]) html += `<div style="margin:10px 0"><button class="readbtn" onclick="openReader('${o.thumb}')">📖 Read the full deck — ${SLIDECOUNTS[o.thumb]} slides, right here</button></div>`;
+  html += detailsHtml(o.thumb);
   return html;
 }
+function detailsHtml(deckKey){
+  const d = DETAILS[deckKey];
+  if(!d) return "";
+  const sec = (title, arr) => (arr && arr.length) ?
+    `<div class="acc"><button class="acchead" onclick="this.parentElement.classList.toggle('open')">▸ ${title}<span class="n">${arr.length}</span></button><div class="accbody"><ul style="margin:6px 0 4px 18px;font-size:12.5px;line-height:1.5">${arr.map(x=>`<li>${x}</li>`).join("")}</ul></div></div>` : "";
+  const body = sec("Assumptions", d.assumptions) + sec("Exclusions", d.exclusions) + sec("Prerequisites", d.prerequisites) + sec("Delivery team model", d.team) + sec("Guardrails & highlights", d.highlights);
+  return body ? `<div class="ddsec"><h5>Deck deep-dive (extracted — never open the PPT)</h5>${body}</div>` : "";
+}
+
+/* ---------- deck reader ---------- */
+let RD = {key:null, n:0, total:0};
+function openReader(key, start){
+  if(!SLIDECOUNTS[key]) return;
+  RD = {key, n: start||1, total: SLIDECOUNTS[key]};
+  document.getElementById("rTitle").textContent = key.replace(/_/g," ").toUpperCase();
+  document.getElementById("reader").classList.add("show");
+  readerShow();
+}
+function readerShow(){
+  document.getElementById("rImg").src = SLIDEDIR + RD.key + "/" + String(RD.n).padStart(3,"0") + ".jpg";
+  document.getElementById("rCount").textContent = "slide " + RD.n + " / " + RD.total;
+  if(RD.n < RD.total){ const pre = new Image(); pre.src = SLIDEDIR + RD.key + "/" + String(RD.n+1).padStart(3,"0") + ".jpg"; }
+}
+function readerNav(d){ RD.n = Math.min(Math.max(1, RD.n + d), RD.total); readerShow(); }
+function closeReader(){ document.getElementById("reader").classList.remove("show"); }
 function wizardHtml(catId){
   const w = WIZ[catId];
   const state = (window.__wiz = window.__wiz || {})[catId] || (window.__wiz[catId] = w.qs.map(()=>null));
@@ -644,7 +704,13 @@ function closePanel(){
   if(location.hash) history.replaceState(null,"", location.pathname + location.search);
 }
 document.addEventListener("keydown", e => {
-  if(e.key==="Escape"){ closePanel(); hidePal(); document.getElementById('cmpov').classList.remove('show'); }
+  const readerOpen = document.getElementById("reader").classList.contains("show");
+  if(e.key==="Escape"){
+    if(readerOpen){ closeReader(); return; }
+    closePanel(); hidePal(); document.getElementById('cmpov').classList.remove('show');
+  }
+  if(readerOpen && e.key==="ArrowRight") readerNav(1);
+  if(readerOpen && e.key==="ArrowLeft") readerNav(-1);
   if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="k"){ e.preventDefault(); showPal(); }
 });
 
