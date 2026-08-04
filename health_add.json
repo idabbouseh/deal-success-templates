@@ -1,0 +1,102 @@
+[
+  {
+    "c": "SAP Cloud ERP (Public)",
+    "st": "data",
+    "note": "S/4PC Greenfield prices XL twice: overview s8 and detail s56 both show USD 1.5M / CAD 2.1M while detail s57 shows USD 1.9M / CAD 2.7M for the same 25-week XL. That XL phase split (Prep 1 + Explore 3 + Realize 11 + Deploy 1 + Run 2) sums to 18 weeks, not 25. Slide 26 is titled 'Start-up T-Shirt' but carries XS content - USD 424K / CAD 582K / 16 weeks - while Startup's real USD 156K / CAD 219K / 12 weeks appears only on s6 and s64. Medium CAD 1.0M vs USD 772K implies 1.30 against the deck's 1.37."
+  },
+  {
+    "c": "Analytics & BDC",
+    "st": "data",
+    "note": "SAC Planning carries two conflicting price ladders - overview s6 vs the per-size detail slides: S 205K USD / 282K CAD vs 264K / 366K (s32-33); M 489K / 672K vs 850K / 1.1M (s34-35); L 649K / 891K vs 1M / 1.4M (s36-37); XL 817K / 1.1M vs 1.4M / 1.9M (s38-39). Its M, L and XL phase splits also under-run the stated durations by 3-4 weeks each (27 vs 30, 35 vs 38, 44 vs 48), and Basic Financial Planning (P&L) is Yes at S/M, No at L, Yes again at XL."
+  },
+  {
+    "c": "Supply Chain",
+    "st": "data",
+    "note": "EWM prices itself twice: overview s6 gives S 950K USD / 1.1M CAD, M 1.9M / 2.1M, L 2.8M / 3.2M while detail s19/21/23 give 748K / 1.0M, 1.5M / 2.1M, 2.2M / 3.1M - only Medium CAD agrees, and the sets imply FX 1.11-1.16 vs 1.34-1.41. Retail Medium is 37 weeks (s6), 39 weeks (s19) and '9 months + 1 month RUN' (s7). EPPM Large phase bars sum to 37 against a stated 34, and EPPM sells two different S offerings at an identical 567K USD / 778K CAD / 25 weeks."
+  },
+  {
+    "c": "ISBN (Ariba & FG)",
+    "st": "data",
+    "note": "Scope and duration conflicts across 5 NA Ariba decks: Contracts marks the DocuSign/EchoSign signature provider X (excluded) for Small on overview s6 but P (included) on detail s13; SLP s24 says ERP/MDG integration is Large-only while Medium-with-Integration (s6, s20) includes it; Sourcing prices Small at 67K USD / 94K CAD with 6 weeks on s6 and 8 weeks on s14; Supplier Risk Medium is 'up to 12' risk templates on s6 vs '5 or More' on s15; Buying & Invoicing L/XL imply FX 1.33-1.34 vs 1.40 at S/M."
+  },
+  {
+    "c": "SAP S4 HANA Cloud Private",
+    "st": "data",
+    "note": "PCE North America: System Conversion Medium phase weeks 4+11+16+1 = 32 against the stated '33 weeks + 2 weeks PGLS' (s13), and Lift & Shift Large 2+8+16+2 = 28 against '34 wks go-live + 2 wks PGLS' (s15) - a 6-week gap, while S and M reconcile exactly. The S/4HANA Upgrade + Migration Medium price is printed as '1 to 1 Mil USD' (s14), leaving that band undefined. Functional scope is not cumulative: Medium includes PS and PM but Large drops both, so Large is narrower than Medium."
+  },
+  {
+    "c": "Supply Chain",
+    "st": "data",
+    "note": "Scope in/out contradictions: EAM marks Shutdown & Turnaround included in the Large matrix (s6, s17) but assumptions s19 say it is 'not considered in this estimation'; Retail excludes Customer Activity Report for Medium on s6 yet lists it in scope on s19/s20; Product Compliance Classic Small says deploy 'to a development system only' (s5) while s6/s18 include full landscape deployment. IBP Inventory Optimization, Response & Supply and Control Tower each mark their own priced module Out of Scope."
+  },
+  {
+    "c": "SAP S4 HANA Extensions",
+    "st": "data",
+    "note": "AFC states its key sizing driver at two different values: the scope matrix and ladder (s2-3) say S <250 / M <500 / L <1500 closing tasks while the per-size scope slides say S <100 (s5), M <200 (s7), L <300 (s9). AFC Size L phase weeks (Prep 3 + Explore 5 + Realize 12 + Deploy & Support 4 = 24) fall short of the stated 26-week minimum, though the 48-week maximum reconciles. PaPM Small training reads 'Informal Only' on s6 but 'Internal Only' on s18."
+  },
+  {
+    "c": "BTM",
+    "st": "data",
+    "note": "Cloud ALM cites the same CRM ID 9500188 and PS number 50135434 on all three packages, so the 20-day, 10-day and 25-day services cannot be distinguished at booking; the Implementation Starter Pack claims 20 service days against phase chips totalling ~2.5 weeks (~12.5 business days) with no staffing level given. LeanIX Integration states 12-14 weeks against its own Week 1-2 / 3-10 / 11-12 timeline (12 weeks). Signavio gives price only - no duration, effort or phase split - and no CAD anywhere."
+  },
+  {
+    "c": "UX",
+    "st": "data",
+    "note": "Work Zone sizer effort does not reconcile: s9 Realize activities total 74.5 days against s7's ~84 (9.5-day gap); s8 Prepare & Explore activities total 24 days against s7's ~16, with Prepare alone at 20.5 vs ~12; s5 role days (UX Architect 47 + Platform 59 + UX Developer 14 = 120) miss the stated 121-day total. Critically, s9 costs the selected Large configuration using Small volumes - 20 federated business roles and 3 UI cards against the 60 roles and 7 cards s4 requires for Large."
+  },
+  {
+    "c": "Security",
+    "st": "data",
+    "note": "IAG Large phase weeks (Prep 2 + Explore 2 + Realize 18 + Deploy 18 + RUN 4 = 44) exceed the stated 42-week duration on both s6 and s19; S (22) and M (27) reconcile. Large CAD is rounded to '1.2M' while S and M are given to the thousand (632K / 778K) - at the deck's own 1.371 ratio, 895K USD implies ~1,227K CAD, so the quoted figure understates by ~27K. Slide 5 also carries the leftover footnote 'based on S/4HANA 2025' on a cloud-only IAG offering."
+  },
+  {
+    "c": "SAP BTP",
+    "st": "data",
+    "note": "BTP Process Automation & Orchestration Small does not reconcile: overview s6 shows Prep 1 / Explore 2 / Realize 5 / Deploy 1 / RUN 2 = 11 weeks against a stated 10-week duration, while Small detail s18 shows Explore 1w for a correct 10-week total; Medium (14w) and Large (20w) agree on both. The legend on s6/18/20/22 defines 'X = Excluded' but no cell carries an X - exclusions such as Un-Attended Connections at Small are blank cells. Slide 15 still cites services 'available as of Q3 2022'."
+  },
+  {
+    "c": "SAP Cloud ERP (Public)",
+    "st": "gap",
+    "note": "Testing commitment is contradicted in both S/4PC decks: exclusion s67 says integration testing is not included and is the customer's responsibility, while general assumptions s65 include 1 SIT + 1 UAT for XS/Small/Medium and 2 SIT + 1 UAT for Large/X-Large. Those s65 assumptions omit Startup entirely, so a priced, ID-registered size has no defined test scope; Startup s24 'Scope of Proposed Solution' lists every LoB with no included/excluded marking, and s5 and s23 give different scope matrices."
+  },
+  {
+    "c": "ISBN (Ariba & FG)",
+    "st": "gap",
+    "note": "Ariba LAC is unpriced end to end: LAC Contracts carries five fully scoped sizes (6-22 weeks, 35-113 days) with a blank Service Price and the same Service No. 50116699 on every size; LAC Sourcing has no price on any of its eight decks and no Integrado XXS/XS, so nothing exists below a 15-week / 216-day S. NA Buying & Invoicing gives staffing only for Medium and Large - none for the priced Small and XL - and leaves the Assumptions column empty on all four size slides (s25-28)."
+  },
+  {
+    "c": "Analytics & BDC",
+    "st": "gap",
+    "note": "BDC Lift & Shift has no pricing at all - s58 'Cost (Euro) and Effort (Mandays)' is a bare divider, so nine size/path combinations carry scope and person-days but no figure. BDC Greenfield quotes only EUR T&M (NA Small 148,580 / Medium 208,523 / Large 278,515) with no USD or CAD on an Americas deck, and its database ladder maps 250-500 GB to no size (Small up to 250 GB, Medium 500 GB-1 TB). SAC LA shows the placeholder 'USD XXX.000.-' for all three packages."
+  },
+  {
+    "c": "SAP S4 HANA Cloud Private",
+    "st": "gap",
+    "note": "All three PCE LAC ROM decks show the 'Orden de Magnitud' placeholder 'USD XXX.000.-' - full scope, no price - and none gives weeks per phase, so the 20 and 32-week totals cannot be verified. L&S + Upgrade also contradicts its own source release (s4/s5/s6 say S/4HANA 2020, s20 says 'desde release 2021', s21 assumes 2021 to 2025) and its code-remediation volumes (s5: 800 ABAP + 500 HCA impacts vs s17: 1717 S/4HANA + 3419 HANA Code Adaptation impacts)."
+  },
+  {
+    "c": "SAP S4 HANA Extensions",
+    "st": "gap",
+    "note": "AFC and MBC are both unpriced: AFC's three sizes carry full scope, duration and effort-days with no USD or CAD anywhere, and MBC's three options (S Only Payments 94 days, S Only Bank Statements 92 days, M Payments & Bank Statements) have no figure across 7 slides - and both S options carry the same S badge, so the size letter does not identify scope. Plus stale stamps: AFC file 'June 2026' vs cover 'Agosto, 2025', MBC June 2026 vs August 2025, PaPM v1.2 vs 'Version 1.0' log."
+  },
+  {
+    "c": "BTM",
+    "st": "gap",
+    "note": "No LeanIX deck prices: Accelerated implementation, Cloud readiness and Optimization all end on the 'Service pricing - to be completed by Market Unit service sales person' placeholder, and the Integration one-pager's 'Indicative price:' is blank. The Accelerated ladder skips L entirely (S ~3 months, M ~6, XL ~10), its scope content is identical for S, M and XL so the ladder is duration-only, and its single 8-11 week phase split matches none of those durations."
+  },
+  {
+    "c": "UX",
+    "st": "gap",
+    "note": "Neither UX deck has a price ladder: SSAM's 41 slides express sizing only in person-days, and the Work Zone sizer quantifies only Large (121 days) - Small and Medium have a full scope matrix but no effort, duration or price, and s6 'Effort Comparison by T-Shirt Size' carries no numbers. SSAM scope option 05 (Inventory Manager Single Tier PoC) has a detail slide (s19) but is missing from the Scope Summary (s4) and has no Service Effort slide, so it is scoped with no effort or price."
+  },
+  {
+    "c": "DRC",
+    "st": "gap",
+    "note": "DRC Poland is unpriced: the scope is fully described at 78 person-days but no USD or CAD figure appears, and the EMT summary (s16), high-level plan (s9-11) and resource plan (s13-14) carry titles only, so no duration or phase split can be recovered. The scope commits to eDocument framework and AIF setup for '1 ECC instance' while assumptions state '2 ECC systems (DEV/QAS/PRD)'. Exclusions name Belgium and Singapore statutory reporting but never Poland's, on a Poland-only engagement."
+  },
+  {
+    "c": "Business AI",
+    "st": "gap",
+    "note": "Joule Activation is unpriced: s11 shows the placeholder 'SAP Business AI Consulting Services USD XXX,000.-' and 'Valid until [day] of [month], 2026', so a fully scoped offering has no figure and no usable expiry. Slide 6 gives phase bars of 1 + 2 + 1 weeks but states no overall duration, and 'Prepare & Explore' is collapsed into one bar. Slide 4 puts SAP Work Zone Standard configuration in scope while s10 excludes licenses, leaving the Work Zone entitlement owner undefined."
+  }
+]

@@ -1,0 +1,2895 @@
+{
+ "foldersCrawled": 204,
+ "queueLeft": 0,
+ "tree": {
+  "/": [],
+  "/SAP S4 HANA Cloud Private": [],
+  "/Design Success": [],
+  "/SAP Cloud ERP (Public)": [],
+  "/Business AI": [],
+  "/BTM": [],
+  "/DRC": [],
+  "/SAP BTP": [
+   {
+    "name": "SAP BTP UX Services Overview - NA T shirts summary v0.1 (1).pptx",
+    "mod": "2026-07-17",
+    "kb": 10866,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/SAP BTP UX Services Overview - NA T shirts summary v0.1 (1).pptx"
+   }
+  ],
+  "/MDG": [
+   {
+    "name": "Master Data Governance  .pptx",
+    "mod": "2026-07-28",
+    "kb": 16226,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Master Data Governance  .pptx"
+   }
+  ],
+  "/Model Company": [
+   {
+    "name": "Model Company for SAP Business Suite.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company for SAP Business Suite.url"
+   },
+   {
+    "name": "L1_model company for SAP Business Suite.pptx",
+    "mod": "2026-07-17",
+    "kb": 12427,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/L1_model company for SAP Business Suite.pptx"
+   }
+  ],
+  "/Analytics & BDC": [],
+  "/Baseline Templates": [],
+  "/Supply Chain - Manufacturing": [],
+  "/VAS": [
+   {
+    "name": "VAS_Services_Briefing.pptx",
+    "mod": "2026-07-17",
+    "kb": 3962,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/VAS_Services_Briefing.pptx"
+   },
+   {
+    "name": "VAS_Services_Catalog-2026-05-20-v2.pptx",
+    "mod": "2026-07-17",
+    "kb": 398,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/VAS_Services_Catalog-2026-05-20-v2.pptx"
+   },
+   {
+    "name": "VAS_Services_Catalog-2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 398,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/VAS_Services_Catalog-2026.pptx"
+   }
+  ],
+  "/Content": [
+   {
+    "name": "NA CS&D Contact List \u2013 Practice Leads (2) (1).pdf",
+    "mod": "2026-07-17",
+    "kb": 581,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Content/NA CS&D Contact List \u2013 Practice Leads (2) (1).pdf"
+   },
+   {
+    "name": "Enterprise AI Explorer find SAP AI internal Tools and Use Cases.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Content/Enterprise AI Explorer find SAP AI internal Tools and Use Cases.url"
+   }
+  ],
+  "/Success Factors": [
+   {
+    "name": "HCM NA SAP SuccessFactors T-Shirts June 2026.pptx",
+    "mod": "2026-07-29",
+    "kb": 19144,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/HCM NA SAP SuccessFactors T-Shirts June 2026.pptx"
+   }
+  ],
+  "/Security": [],
+  "/UX": [],
+  "/Industry": [],
+  "/SAP S4 HANA Extensions": [],
+  "/ISBN": [],
+  "/Templates Update List": [
+   {
+    "name": "Templates Update.xlsx",
+    "mod": "2026-07-22",
+    "kb": 16,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Templates Update List/Templates Update.xlsx"
+   }
+  ],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield": [],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Greenfield": [
+   {
+    "name": "NA S4H Cloud PCE Grnfld Large T Shirt.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Greenfield/NA S4H Cloud PCE Grnfld Large T Shirt.url"
+   },
+   {
+    "name": "NA S4H Cloud PCE Grnfld Medium T Shirt.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Greenfield/NA S4H Cloud PCE Grnfld Medium T Shirt.url"
+   },
+   {
+    "name": "NA S4H Cloud PCE Grnfld Small T Shirt.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Greenfield/NA S4H Cloud PCE Grnfld Small T Shirt.url"
+   },
+   {
+    "name": "S4H_PCE_Greenfield_TShirts_June_2026.pptx",
+    "mod": "2026-07-21",
+    "kb": 2744,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Greenfield/S4H_PCE_Greenfield_TShirts_June_2026.pptx"
+   }
+  ],
+  "/SAP Cloud ERP (Public)/LAC": [],
+  "/SAP Cloud ERP (Public)/NA": [],
+  "/Business AI/AI Activation": [
+   {
+    "name": "AI Activation Bundle.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/AI Activation/AI Activation Bundle.url"
+   },
+   {
+    "name": "AIActivationOnePager June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 32,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/AI Activation/AIActivationOnePager June 2026.pptx"
+   },
+   {
+    "name": "AI Spark service.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/AI Activation/AI Spark service.url"
+   }
+  ],
+  "/Business AI/Joule Activation": [
+   {
+    "name": "Joule Activation LAC June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 11627,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/Joule Activation/Joule Activation LAC June 2026.pptx"
+   },
+   {
+    "name": "Joule Activation LAC V2 June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 11632,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/Joule Activation/Joule Activation LAC V2 June 2026.pptx"
+   }
+  ],
+  "/BTM/Accelerated Services": [
+   {
+    "name": "Data Migration Service to SAP S4HANA Cloud (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Data Migration Service to SAP S4HANA Cloud (BTM).url"
+   },
+   {
+    "name": "SAP Program Management (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/SAP Program Management (BTM).url"
+   },
+   {
+    "name": "Project and Architecture Governance for SAP S4HANA (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Project and Architecture Governance for SAP S4HANA (BTM).url"
+   },
+   {
+    "name": "Model Company for SAP Business Suite (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Model Company for SAP Business Suite (BTM).url"
+   },
+   {
+    "name": "AI Activation Service for RISE with SAP S4HANA Cloud Private Edition (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/AI Activation Service for RISE with SAP S4HANA Cloud Private Edition (BTM).url"
+   },
+   {
+    "name": "Project Management Review Service (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Project Management Review Service (BTM).url"
+   },
+   {
+    "name": "Optimization for Test Automation (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Optimization for Test Automation (BTM).url"
+   },
+   {
+    "name": "Accelerated Process Discovery Service with SAP Signavio Process Transformation Suite (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Accelerated Process Discovery Service with SAP Signavio Process Transformation Suite (BTM).url"
+   },
+   {
+    "name": "Implementation Service for SAP S4HANA Cloud for Group Reporting (BTM).url",
+    "mod": "2026-08-04",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Implementation Service for SAP S4HANA Cloud for Group Reporting (BTM).url"
+   },
+   {
+    "name": "Automotive Consulting Solution Material Management (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Automotive Consulting Solution Material Management (BTM).url"
+   },
+   {
+    "name": "Accelerated implementation service for SAP Signavio solutions (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Accelerated implementation service for SAP Signavio solutions (BTM).url"
+   },
+   {
+    "name": "Automotive Consulting Solution Sales and Service (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Automotive Consulting Solution Sales and Service (BTM).url"
+   },
+   {
+    "name": "Enterprise Management layer for SAP S4HANA (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Enterprise Management layer for SAP S4HANA (BTM).url"
+   },
+   {
+    "name": "Signavio Partner Service (BTM).url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Accelerated Services/Signavio Partner Service (BTM).url"
+   }
+  ],
+  "/BTM/CALM": [
+   {
+    "name": "Cloud ALM - paquetes.pptx",
+    "mod": "2026-07-17",
+    "kb": 2679,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/CALM/Cloud ALM - paquetes.pptx"
+   }
+  ],
+  "/BTM/Signavio": [
+   {
+    "name": "BTM Baseline Signavio and LeanIX T-Shirt.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Signavio/BTM Baseline Signavio and LeanIX T-Shirt.url"
+   },
+   {
+    "name": "BTM Baseline Signavio Process Manager T-Shirt.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Signavio/BTM Baseline Signavio Process Manager T-Shirt.url"
+   },
+   {
+    "name": "BTM Baseline Tshirt.pptx",
+    "mod": "2026-07-17",
+    "kb": 29971,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/Signavio/BTM Baseline Tshirt.pptx"
+   }
+  ],
+  "/BTM/LeanIX": [],
+  "/DRC/DRC Implementation for Belgium and Singapore": [
+   {
+    "name": "Huntsman_DRC_Impl_Read-out_20_Jun_2025 (2).pptx",
+    "mod": "2026-07-17",
+    "kb": 2167,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/DRC/DRC Implementation for Belgium and Singapore/Huntsman_DRC_Impl_Read-out_20_Jun_2025 (2).pptx"
+   },
+   {
+    "name": "DRC Implementation for Belgium and Singapore.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/DRC/DRC Implementation for Belgium and Singapore/DRC Implementation for Belgium and Singapore.url"
+   }
+  ],
+  "/DRC/DRC Implementation for Poland": [
+   {
+    "name": "Huntsman_DRC_Impl_Read-out_20_Jun_2025 (1).pptx",
+    "mod": "2026-07-17",
+    "kb": 2167,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/DRC/DRC Implementation for Poland/Huntsman_DRC_Impl_Read-out_20_Jun_2025 (1).pptx"
+   },
+   {
+    "name": "DRC Implementation for Poland.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/DRC/DRC Implementation for Poland/DRC Implementation for Poland.url"
+   }
+  ],
+  "/SAP BTP/SAP Build": [
+   {
+    "name": "Tshirt BTP SAP Work Zone M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/SAP Build/Tshirt BTP SAP Work Zone M.url"
+   },
+   {
+    "name": "SAP Work Zone.pptx",
+    "mod": "2026-07-17",
+    "kb": 16482,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/SAP Build/SAP Work Zone.pptx"
+   },
+   {
+    "name": "Custom Integrations Leveraging BTP.pptx",
+    "mod": "2026-07-17",
+    "kb": 20118,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/SAP Build/Custom Integrations Leveraging BTP.pptx"
+   },
+   {
+    "name": "Tshirt BTP SAP Work Zone S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/SAP Build/Tshirt BTP SAP Work Zone S.url"
+   },
+   {
+    "name": "Tshirt BTP SAP Work Zone L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/SAP Build/Tshirt BTP SAP Work Zone L.url"
+   }
+  ],
+  "/SAP BTP/BTP Intelligent Forms and Processes Framework": [
+   {
+    "name": "Tshirt BTP Intelligent Forms and Processes Framework S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Intelligent Forms and Processes Framework/Tshirt BTP Intelligent Forms and Processes Framework S.url"
+   },
+   {
+    "name": "BTP Intelligent Forms and Processes Framework .pptx",
+    "mod": "2026-07-17",
+    "kb": 18623,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Intelligent Forms and Processes Framework/BTP Intelligent Forms and Processes Framework .pptx"
+   },
+   {
+    "name": "Tshirt BTP Intelligent Forms and Processes Framework L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Intelligent Forms and Processes Framework/Tshirt BTP Intelligent Forms and Processes Framework L.url"
+   },
+   {
+    "name": "Tshirt BTP Intelligent Forms and Processes Framework M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Intelligent Forms and Processes Framework/Tshirt BTP Intelligent Forms and Processes Framework M.url"
+   }
+  ],
+  "/SAP BTP/BTP Digital Experience Platform": [
+   {
+    "name": "BTP as the Digital Experience Platform (2).pptx",
+    "mod": "2026-07-17",
+    "kb": 27040,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Digital Experience Platform/BTP as the Digital Experience Platform (2).pptx"
+   },
+   {
+    "name": "Tshirt BTP Digital Experience Platform L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Digital Experience Platform/Tshirt BTP Digital Experience Platform L.url"
+   },
+   {
+    "name": "Tshirt BTP Digital Experience Platform S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Digital Experience Platform/Tshirt BTP Digital Experience Platform S.url"
+   },
+   {
+    "name": "Tshirt BTP Digital Experience Platform M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Digital Experience Platform/Tshirt BTP Digital Experience Platform M.url"
+   }
+  ],
+  "/SAP BTP/BTP Process Automation and Orchestration": [
+   {
+    "name": "Tshirt BTP Process Automation and Orchestration M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Process Automation and Orchestration/Tshirt BTP Process Automation and Orchestration M.url"
+   },
+   {
+    "name": "Tshirt BTP Process Automation and Orchestration L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Process Automation and Orchestration/Tshirt BTP Process Automation and Orchestration L.url"
+   },
+   {
+    "name": "BTP Process Automation & Orchestration.pptx",
+    "mod": "2026-07-17",
+    "kb": 16975,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Process Automation and Orchestration/BTP Process Automation & Orchestration.pptx"
+   },
+   {
+    "name": "Tshirt BTP Process Automation and Orchestration S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/BTP Process Automation and Orchestration/Tshirt BTP Process Automation and Orchestration S.url"
+   }
+  ],
+  "/SAP BTP/Custom Integrations Leveraging BTP": [
+   {
+    "name": "Custom Integrations Leveraging BTP.pptx",
+    "mod": "2026-07-22",
+    "kb": 19762,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/Custom Integrations Leveraging BTP/Custom Integrations Leveraging BTP.pptx"
+   },
+   {
+    "name": "T-shirt Custom Integrations Leveraging BTP S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/Custom Integrations Leveraging BTP/T-shirt Custom Integrations Leveraging BTP S.url"
+   },
+   {
+    "name": "T-shirt Custom Integrations Leveraging BTP L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/Custom Integrations Leveraging BTP/T-shirt Custom Integrations Leveraging BTP L.url"
+   },
+   {
+    "name": "T-shirt Custom Integrations Leveraging BTP M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP BTP/Custom Integrations Leveraging BTP/T-shirt Custom Integrations Leveraging BTP M.url"
+   }
+  ],
+  "/MDG/Finance": [
+   {
+    "name": "Tshirt MDG Finance XS.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Finance/Tshirt MDG Finance XS.url"
+   },
+   {
+    "name": "Tshirt MDG Finance S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Finance/Tshirt MDG Finance S.url"
+   },
+   {
+    "name": "Tshirt MDG Finance L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Finance/Tshirt MDG Finance L.url"
+   },
+   {
+    "name": "Tshirt MDG Finance M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Finance/Tshirt MDG Finance M.url"
+   }
+  ],
+  "/MDG/Business Partner - Customer": [
+   {
+    "name": "Tshirt MDG Business Partner - Customer M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Customer/Tshirt MDG Business Partner - Customer M.url"
+   },
+   {
+    "name": "Tshirt MDG Business Partner - Customer L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Customer/Tshirt MDG Business Partner - Customer L.url"
+   },
+   {
+    "name": "Tshirt MDG Business Partner - Customer XS.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Customer/Tshirt MDG Business Partner - Customer XS.url"
+   },
+   {
+    "name": "Tshirt MDG Business Partner - Customer S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Customer/Tshirt MDG Business Partner - Customer S.url"
+   }
+  ],
+  "/MDG/Material": [
+   {
+    "name": "Tshirt MDG Material M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Material/Tshirt MDG Material M.url"
+   },
+   {
+    "name": "Tshirt MDG Material XS.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Material/Tshirt MDG Material XS.url"
+   },
+   {
+    "name": "Tshirt MDG Material S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Material/Tshirt MDG Material S.url"
+   },
+   {
+    "name": "Tshirt MDG Material L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Material/Tshirt MDG Material L.url"
+   }
+  ],
+  "/MDG/Business Partner - Supplier": [
+   {
+    "name": "Tshirt MDG Business Partner - Supplier S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Supplier/Tshirt MDG Business Partner - Supplier S.url"
+   },
+   {
+    "name": "Tshirt MDG Business Partner - Supplier L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Supplier/Tshirt MDG Business Partner - Supplier L.url"
+   },
+   {
+    "name": "Tshirt MDG Business Partner - Supplier M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Supplier/Tshirt MDG Business Partner - Supplier M.url"
+   },
+   {
+    "name": "Tshirt MDG Business Partner - Supplier XS.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/MDG/Business Partner - Supplier/Tshirt MDG Business Partner - Supplier XS.url"
+   }
+  ],
+  "/Model Company/Model Company Template Fashion": [
+   {
+    "name": "Model Company Fashion.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Fashion/Model Company Fashion.url"
+   }
+  ],
+  "/Model Company/Model Company Template Airline Back Office": [
+   {
+    "name": "Model Company Airline Back Office.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Airline Back Office/Model Company Airline Back Office.url"
+   }
+  ],
+  "/Model Company/Model Company Template CPG": [
+   {
+    "name": "Model Company CPG.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template CPG/Model Company CPG.url"
+   }
+  ],
+  "/Model Company/Model Company Template Retail": [
+   {
+    "name": "Model Company  Retail.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Retail/Model Company  Retail.url"
+   }
+  ],
+  "/Model Company/Model Company Template Utilities": [
+   {
+    "name": "Model Company Utilities.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Utilities/Model Company Utilities.url"
+   }
+  ],
+  "/Model Company/Model Company Template Enterprise Asset Management": [
+   {
+    "name": "Model Company Enterprise Asset Management.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Enterprise Asset Management/Model Company Enterprise Asset Management.url"
+   }
+  ],
+  "/Model Company/Model Company Template Research and Development": [
+   {
+    "name": "Model Company Research and Development.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Research and Development/Model Company Research and Development.url"
+   }
+  ],
+  "/Model Company/Model Company Template Automotive": [
+   {
+    "name": "Model Company Automotive.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Automotive/Model Company Automotive.url"
+   }
+  ],
+  "/Model Company/Model Company Template EHS": [
+   {
+    "name": "Model Company EHS.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template EHS/Model Company EHS.url"
+   }
+  ],
+  "/Model Company/Model Company Template Oil and Gas": [
+   {
+    "name": "Model Company Oil and Gas.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Model Company/Model Company Template Oil and Gas/Model Company Oil and Gas.url"
+   }
+  ],
+  "/Analytics & BDC/BDC": [
+   {
+    "name": "NA version - ASC BDC Analytics D@S - Upgrade Migration BW on PCE V1.0.pptx",
+    "mod": "2026-07-17",
+    "kb": 2528,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/NA version - ASC BDC Analytics D@S - Upgrade Migration BW on PCE V1.0.pptx"
+   },
+   {
+    "name": "ASC BDC Analytics D@S - Scope options - Upgrade Migration BW on PCE V1.0 (1) (1) (3) (1).pptx",
+    "mod": "2026-07-17",
+    "kb": 1337,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/ASC BDC Analytics D@S - Scope options - Upgrade Migration BW on PCE V1.0 (1) (1) (3) (1).pptx"
+   }
+  ],
+  "/Analytics & BDC/SAC": [],
+  "/Analytics & BDC/Databricks": [],
+  "/Analytics & BDC/Datasphere": [
+   {
+    "name": "ROM Datasphere + SAC June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 11898,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/Datasphere/ROM Datasphere + SAC June 2026.pptx"
+   }
+  ],
+  "/Baseline Templates/NA Fast Track Template": [
+   {
+    "name": "NA Fast Track Template.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Baseline Templates/NA Fast Track Template/NA Fast Track Template.url"
+   }
+  ],
+  "/Baseline Templates/America's Baseline template": [
+   {
+    "name": "America's Baseline template.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Baseline Templates/America's Baseline template/America's Baseline template.url"
+   }
+  ],
+  "/Baseline Templates/FLC Rates": [
+   {
+    "name": "FLC Rates.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Baseline Templates/FLC Rates/FLC Rates.url"
+   }
+  ],
+  "/Baseline Templates/EMT": [
+   {
+    "name": "How to fill out an EMT  (HLRE ) (5).msg",
+    "mod": "2026-07-21",
+    "kb": 382,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Baseline Templates/EMT/How to fill out an EMT  (HLRE ) (5).msg"
+   },
+   {
+    "name": "NASC_EMT_HLRE_Template_2026Jan14_download_only (2).xlsm",
+    "mod": "2026-07-21",
+    "kb": 8143,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Baseline Templates/EMT/NASC_EMT_HLRE_Template_2026Jan14_download_only (2).xlsm"
+   }
+  ],
+  "/Supply Chain - Manufacturing/Retail": [
+   {
+    "name": "S4 Retail M.url",
+    "mod": "2026-07-21",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Retail/S4 Retail M.url"
+   },
+   {
+    "name": "S4 Retail S.url",
+    "mod": "2026-07-21",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Retail/S4 Retail S.url"
+   },
+   {
+    "name": "Tshirt - S4 for Retail.pptx",
+    "mod": "2026-07-21",
+    "kb": 8865,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Retail/Tshirt - S4 for Retail.pptx"
+   },
+   {
+    "name": "S4 Retail L.url",
+    "mod": "2026-07-21",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Retail/S4 Retail L.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/BN4L": [],
+  "/Supply Chain - Manufacturing/IBP": [],
+  "/Supply Chain - Manufacturing/Track and Trace": [],
+  "/Supply Chain - Manufacturing/EAM": [
+   {
+    "name": "EAM_T-Shirt_Presentation.pptx",
+    "mod": "2026-08-01",
+    "kb": 106,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EAM/EAM_T-Shirt_Presentation.pptx"
+   },
+   {
+    "name": "EAM - Large T-shirt.url",
+    "mod": "2026-08-01",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EAM/EAM - Large T-shirt.url"
+   },
+   {
+    "name": "EAM - Medium- T-Shirt.url",
+    "mod": "2026-08-01",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EAM/EAM - Medium- T-Shirt.url"
+   },
+   {
+    "name": "EAM Baseline Template.url",
+    "mod": "2026-08-01",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EAM/EAM Baseline Template.url"
+   },
+   {
+    "name": "EAM Model Company.url",
+    "mod": "2026-08-01",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EAM/EAM Model Company.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/IAM": [],
+  "/Supply Chain - Manufacturing/EHS": [],
+  "/Supply Chain - Manufacturing/DMC": [
+   {
+    "name": "DMC Template.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/DMC/DMC Template.url"
+   },
+   {
+    "name": "EMT_NA_DMC_TShirt_20221410_v1.xlsm",
+    "mod": "2026-07-20",
+    "kb": 8094,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/DMC/EMT_NA_DMC_TShirt_20221410_v1.xlsm"
+   },
+   {
+    "name": "SAP Digital Manufacturing Cloud Presentation.pptx",
+    "mod": "2026-07-17",
+    "kb": 5927,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/DMC/SAP Digital Manufacturing Cloud Presentation.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EWM": [
+   {
+    "name": "S4HANA Extended Warehouse Management (EWM) M.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EWM/S4HANA Extended Warehouse Management (EWM) M.url"
+   },
+   {
+    "name": "S4HANA Extended Warehouse Management (EWM) L.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EWM/S4HANA Extended Warehouse Management (EWM) L.url"
+   },
+   {
+    "name": "S4HANA Extended Warehouse Management (EWM) S.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EWM/S4HANA Extended Warehouse Management (EWM) S.url"
+   },
+   {
+    "name": "EWM_T-Shirt_for_NA_June_2026.pptx",
+    "mod": "2026-07-31",
+    "kb": 124,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EWM/EWM_T-Shirt_for_NA_June_2026.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/TM": [
+   {
+    "name": "Transportation_Management_SAP_Corp_Branded (1).pptx",
+    "mod": "2026-07-17",
+    "kb": 4678,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/TM/Transportation_Management_SAP_Corp_Branded (1).pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/ATTP": [],
+  "/Supply Chain - Manufacturing/Product Compliance": [],
+  "/Supply Chain - Manufacturing/APM": [
+   {
+    "name": "Tshirt Intelligent Asset Management APM S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/APM/Tshirt Intelligent Asset Management APM S.url"
+   },
+   {
+    "name": "Tshirt Intelligent Asset Management APM M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/APM/Tshirt Intelligent Asset Management APM M.url"
+   },
+   {
+    "name": "IAM APM Tshirt and Pricing.pptx",
+    "mod": "2026-07-17",
+    "kb": 17013,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/APM/IAM APM Tshirt and Pricing.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/SAP DRC Brazil": [
+   {
+    "name": "ROM NFe Cloud - package with main dev enhancements June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 5516,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/SAP DRC Brazil/ROM NFe Cloud - package with main dev enhancements June 2026.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EPPM": [
+   {
+    "name": "EPPM PS S.url",
+    "mod": "2026-07-31",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EPPM/EPPM PS S.url"
+   },
+   {
+    "name": "EPPM M.url",
+    "mod": "2026-07-31",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EPPM/EPPM M.url"
+   },
+   {
+    "name": "EPPM L.url",
+    "mod": "2026-07-31",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EPPM/EPPM L.url"
+   },
+   {
+    "name": "EPPM T-Shirt June 2026.pptx",
+    "mod": "2026-07-28",
+    "kb": 16496,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EPPM/EPPM T-Shirt June 2026.pptx"
+   },
+   {
+    "name": "EPPM PM S.url",
+    "mod": "2026-07-31",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EPPM/EPPM PM S.url"
+   }
+  ],
+  "/VAS/Solutioning Tool Links": [
+   {
+    "name": "SAP Business AI \u2014 AI Lead + Activation Bundles.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Solutioning Tool Links/SAP Business AI \u2014 AI Lead + Activation Bundles.url"
+   },
+   {
+    "name": "BDC Innovation Use Cases.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Solutioning Tool Links/BDC Innovation Use Cases.url"
+   },
+   {
+    "name": "SAP Joule Setup & Enablement.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Solutioning Tool Links/SAP Joule Setup & Enablement.url"
+   },
+   {
+    "name": "SAP Signavio \u2014 Process Intelligence.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Solutioning Tool Links/SAP Signavio \u2014 Process Intelligence.url"
+   },
+   {
+    "name": "BDC Build Foundation.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Solutioning Tool Links/BDC Build Foundation.url"
+   },
+   {
+    "name": "BDC Strategy & Roadmap.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Solutioning Tool Links/BDC Strategy & Roadmap.url"
+   }
+  ],
+  "/VAS/Scope Document Samples": [
+   {
+    "name": "Scope_Document_Lubrizol_AI_Agents_VAS-2026-06-30.docx",
+    "mod": "2026-07-17",
+    "kb": 57,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Scope Document Samples/Scope_Document_Lubrizol_AI_Agents_VAS-2026-06-30.docx"
+   },
+   {
+    "name": "Adobe VAS_BDC_SIG_AI_7.7.docx",
+    "mod": "2026-07-17",
+    "kb": 72,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/VAS/Scope Document Samples/Adobe VAS_BDC_SIG_AI_7.7.docx"
+   }
+  ],
+  "/Content/Template Governance": [
+   {
+    "name": "Governance_Model_v3_052026.pptx",
+    "mod": "2026-07-17",
+    "kb": 107,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Content/Template Governance/Governance_Model_v3_052026.pptx"
+   }
+  ],
+  "/Content/SME Master List": [
+   {
+    "name": "DSC Knowledge Library (Master).xlsx",
+    "mod": "2026-07-17",
+    "kb": 72,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Content/SME Master List/DSC Knowledge Library (Master).xlsx"
+   }
+  ],
+  "/Content/AI Acclerators": [
+   {
+    "name": "Accelerators.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Content/AI Acclerators/Accelerators.url"
+   }
+  ],
+  "/Content/General Assumptions": [
+   {
+    "name": "Assumptions 2024 (1).docx",
+    "mod": "2026-07-17",
+    "kb": 35,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Content/General Assumptions/Assumptions 2024 (1).docx"
+   }
+  ],
+  "/Content/Activate Methodology": [
+   {
+    "name": "Activate_Methodology_2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 2695,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Content/Activate Methodology/Activate_Methodology_2026.pptx"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates": [],
+  "/Success Factors/Archives": [
+   {
+    "name": "HCM NA SAP SuccessFactors T-Shirts V1.2.pptx",
+    "mod": "2026-07-17",
+    "kb": 19169,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Archives/HCM NA SAP SuccessFactors T-Shirts V1.2.pptx"
+   }
+  ],
+  "/Security/IAG": [
+   {
+    "name": "IAG Template.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Security/IAG/IAG Template.url"
+   },
+   {
+    "name": "SAP IAG Tshirt and Pricing.pptx",
+    "mod": "2026-07-17",
+    "kb": 17149,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Security/IAG/SAP IAG Tshirt and Pricing.pptx"
+   }
+  ],
+  "/UX/Service and Asset Management": [
+   {
+    "name": "50114833_Mobile_Apps_Asset_Mgt_V6_1_Service_Overview.pptx",
+    "mod": "2026-07-17",
+    "kb": 5653,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/Service and Asset Management/50114833_Mobile_Apps_Asset_Mgt_V6_1_Service_Overview.pptx"
+   }
+  ],
+  "/UX/UX Fiori Apps": [
+   {
+    "name": "Fiori XLarge Tshirt _ Standard Service Model.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/Fiori XLarge Tshirt _ Standard Service Model.url"
+   },
+   {
+    "name": "LS+ Upgrade Fiori Small Tshirt_ Standard Service Model.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/LS+ Upgrade Fiori Small Tshirt_ Standard Service Model.url"
+   },
+   {
+    "name": "LS+Upgrade_EMT_Fiori XLargeTshirt_V1_21Oct_2024 - Standard Service Model.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8134,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/LS+Upgrade_EMT_Fiori XLargeTshirt_V1_21Oct_2024 - Standard Service Model.xlsm"
+   },
+   {
+    "name": "NI_EMT_Fiori XLargeTshirt_V1_21Oct_2024 - Standard Service Model.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8135,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/NI_EMT_Fiori XLargeTshirt_V1_21Oct_2024 - Standard Service Model.xlsm"
+   },
+   {
+    "name": "SC_EMT_Fiori XSmallTshirt_V1_21Oct_2024 - Standard Service Model.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8133,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/SC_EMT_Fiori XSmallTshirt_V1_21Oct_2024 - Standard Service Model.xlsm"
+   },
+   {
+    "name": "LS+ Upgrade Fiori XLarge Tshirt_ Standard Service Model.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/LS+ Upgrade Fiori XLarge Tshirt_ Standard Service Model.url"
+   },
+   {
+    "name": "LS+Upgrade_EMT_Fiori SmallTshirt_V1_21Oct_2024 - Standard Service Model.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8132,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/LS+Upgrade_EMT_Fiori SmallTshirt_V1_21Oct_2024 - Standard Service Model.xlsm"
+   },
+   {
+    "name": "NI_EMT_Fiori SmallTshirt_V1_21Oct_2024 - Standard Service Model.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8134,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/NI_EMT_Fiori SmallTshirt_V1_21Oct_2024 - Standard Service Model.xlsm"
+   },
+   {
+    "name": "Fiori XSmall Tshirt _ Standard Service Model.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/Fiori XSmall Tshirt _ Standard Service Model.url"
+   },
+   {
+    "name": "SAP BTP UX Services Overview - NA T shirts summary v0.1.pptx",
+    "mod": "2026-07-17",
+    "kb": 10806,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/SAP BTP UX Services Overview - NA T shirts summary v0.1.pptx"
+   },
+   {
+    "name": "Fiori Small Tshirt_ Standard Service Model.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX Fiori Apps/Fiori Small Tshirt_ Standard Service Model.url"
+   }
+  ],
+  "/UX/UX WorkZone Sizer and Mobile Start": [
+   {
+    "name": "Copy of 50130949_S4H_UX_S4HANA_V6_Accel_WorK_Zone_Sizer_v1.0.xlsm",
+    "mod": "2026-07-17",
+    "kb": 74,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX WorkZone Sizer and Mobile Start/Copy of 50130949_S4H_UX_S4HANA_V6_Accel_WorK_Zone_Sizer_v1.0.xlsm"
+   },
+   {
+    "name": "SAP_Build_Work_Zone_Sizer.pptx",
+    "mod": "2026-07-17",
+    "kb": 406,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/UX/UX WorkZone Sizer and Mobile Start/SAP_Build_Work_Zone_Sizer.pptx"
+   }
+  ],
+  "/SAP S4 HANA Extensions/Receivables Management (RM)": [
+   {
+    "name": "ROM Receivables Management June 2026 - English.pptx",
+    "mod": "2026-07-17",
+    "kb": 15488,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Receivables Management (RM)/ROM Receivables Management June 2026 - English.pptx"
+   }
+  ],
+  "/SAP S4 HANA Extensions/PaPM": [
+   {
+    "name": "SAP PaPM (2) June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 17276,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/PaPM/SAP PaPM (2) June 2026.pptx"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Profitability & Performance Management (PaPM) S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/PaPM/Tshirt S4HANA Extension Profitability & Performance Management (PaPM) S.url"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Profitability & Performance Management (PaPM) L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/PaPM/Tshirt S4HANA Extension Profitability & Performance Management (PaPM) L.url"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Profitability & Performance Management (PaPM) M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/PaPM/Tshirt S4HANA Extension Profitability & Performance Management (PaPM) M.url"
+   }
+  ],
+  "/SAP S4 HANA Extensions/Archive": [],
+  "/SAP S4 HANA Extensions/AFC": [
+   {
+    "name": "SAP_Advanced_Financial_Closing_AFC ES June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 3850,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/AFC/SAP_Advanced_Financial_Closing_AFC ES June 2026.pptx"
+   }
+  ],
+  "/SAP S4 HANA Extensions/Group Reporting": [
+   {
+    "name": "Tshirt S4HANA Extension Group Reporting M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Group Reporting/Tshirt S4HANA Extension Group Reporting M.url"
+   },
+   {
+    "name": "SAP Group Reporting June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 16578,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Group Reporting/SAP Group Reporting June 2026.pptx"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Group Reporting L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Group Reporting/Tshirt S4HANA Extension Group Reporting L.url"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Group Reporting S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Group Reporting/Tshirt S4HANA Extension Group Reporting S.url"
+   }
+  ],
+  "/SAP S4 HANA Extensions/CLM": [
+   {
+    "name": "S4 HANA CLM Tshirt L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/CLM/S4 HANA CLM Tshirt L.url"
+   },
+   {
+    "name": "S4 HANA CLM Tshirt M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/CLM/S4 HANA CLM Tshirt M.url"
+   },
+   {
+    "name": "S4 HANA CLM Tshirt S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/CLM/S4 HANA CLM Tshirt S.url"
+   }
+  ],
+  "/SAP S4 HANA Extensions/MBC": [
+   {
+    "name": "SAP Multi-Bank Connectivity EN June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 2441,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/MBC/SAP Multi-Bank Connectivity EN June 2026.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen": [],
+  "/ISBN/NextGen": [],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America": [
+   {
+    "name": "CSD_West_SAE_Brownfield_Bootcamp_June_2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 1860,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/CSD_West_SAE_Brownfield_Bootcamp_June_2026.pptx"
+   },
+   {
+    "name": "ASC_Americas_S4Conv & RISE Migration_Tshirt_ECC_AnyDB_master_NA Variant_Oct2025.xlsx",
+    "mod": "2026-07-17",
+    "kb": 141,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/ASC_Americas_S4Conv & RISE Migration_Tshirt_ECC_AnyDB_master_NA Variant_Oct2025.xlsx"
+   }
+  ],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/Latin America": [],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Greenfield/Archives": [
+   {
+    "name": "S4H_Cloud_PCE_Greenfield_Templates - Combined T-shirts Summary of Scope - V4 - Beautified.pptx",
+    "mod": "2026-07-17",
+    "kb": 2484,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Greenfield/Archives/S4H_Cloud_PCE_Greenfield_Templates - Combined T-shirts Summary of Scope - V4 - Beautified.pptx"
+   }
+  ],
+  "/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud Startup": [
+   {
+    "name": "S4 HANA MTE Startup.url",
+    "mod": "2026-07-30",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud Startup/S4 HANA MTE Startup.url"
+   },
+   {
+    "name": "S4 HANA Public Cloud Startup_072026_v3.pptx",
+    "mod": "2026-08-03",
+    "kb": 20840,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud Startup/S4 HANA Public Cloud Startup_072026_v3.pptx"
+   }
+  ],
+  "/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield": [
+   {
+    "name": "06 S4 HANA Public Cloud Finance, Sales, Logistics T Shirt XL NA.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/06 S4 HANA Public Cloud Finance, Sales, Logistics T Shirt XL NA.url"
+   },
+   {
+    "name": "S4 HANA Public Cloud June 2026.pptx",
+    "mod": "2026-07-31",
+    "kb": 21577,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/S4 HANA Public Cloud June 2026.pptx"
+   },
+   {
+    "name": "01 S4 HANA Public Cloud Finance T Shirt XS NA.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/01 S4 HANA Public Cloud Finance T Shirt XS NA.url"
+   },
+   {
+    "name": "03 S4 HANA Public Cloud Finance, Sales, Procurement T Shirt M NA.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/03 S4 HANA Public Cloud Finance, Sales, Procurement T Shirt M NA.url"
+   },
+   {
+    "name": "05 S4 HANA Public Cloud _Manufacturing Finance, Sales, Logistics T Shirt L NA.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/05 S4 HANA Public Cloud _Manufacturing Finance, Sales, Logistics T Shirt L NA.url"
+   },
+   {
+    "name": "02 S4 HANA Public Cloud Finance, Procurement T Shirt S NA.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/02 S4 HANA Public Cloud Finance, Procurement T Shirt S NA.url"
+   },
+   {
+    "name": "04 S4 HANA Public Cloud Prof_Services Finance, Sales, Logistics T Shirt L N.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/04 S4 HANA Public Cloud Prof_Services Finance, Sales, Logistics T Shirt L N.url"
+   }
+  ],
+  "/Business AI/AI Activation/Archives": [
+   {
+    "name": "AIActivationOnePager.pptx",
+    "mod": "2026-07-17",
+    "kb": 37,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/AI Activation/Archives/AIActivationOnePager.pptx"
+   }
+  ],
+  "/Business AI/Joule Activation/Archives": [
+   {
+    "name": "Joule Activation LAC V2 translated_es-ES-en-US.pptx",
+    "mod": "2026-07-17",
+    "kb": 11636,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/Joule Activation/Archives/Joule Activation LAC V2 translated_es-ES-en-US.pptx"
+   },
+   {
+    "name": "Joule Activation LAC V2.pptx",
+    "mod": "2026-07-17",
+    "kb": 11641,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Business AI/Joule Activation/Archives/Joule Activation LAC V2.pptx"
+   }
+  ],
+  "/BTM/LeanIX/Integration service for SAP LeanIX solutions": [
+   {
+    "name": "Integration service for SAP LeanIX solutions.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Integration service for SAP LeanIX solutions/Integration service for SAP LeanIX solutions.url"
+   },
+   {
+    "name": "Integration service for SAP LeanIX solutions.pptx",
+    "mod": "2026-07-17",
+    "kb": 17122,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Integration service for SAP LeanIX solutions/Integration service for SAP LeanIX solutions.pptx"
+   }
+  ],
+  "/BTM/LeanIX/Cloud readiness assessment service with SAP LeanIX": [
+   {
+    "name": "Cloud readiness assessment service with SAP LeanIX.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Cloud readiness assessment service with SAP LeanIX/Cloud readiness assessment service with SAP LeanIX.url"
+   },
+   {
+    "name": "Cloud readiness assessment service with SAP LeanIX.pptx",
+    "mod": "2026-07-17",
+    "kb": 18143,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Cloud readiness assessment service with SAP LeanIX/Cloud readiness assessment service with SAP LeanIX.pptx"
+   }
+  ],
+  "/BTM/LeanIX/Optimization Service for SAP LeanIX Solutions": [
+   {
+    "name": "Optimization Service for SAP LeanIX Solutions.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Optimization Service for SAP LeanIX Solutions/Optimization Service for SAP LeanIX Solutions.url"
+   },
+   {
+    "name": "OptimizationOptimization Service for SAP LeanIX Solutions.pptx",
+    "mod": "2026-07-17",
+    "kb": 16518,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Optimization Service for SAP LeanIX Solutions/OptimizationOptimization Service for SAP LeanIX Solutions.pptx"
+   }
+  ],
+  "/BTM/LeanIX/Accelerated Implementation SAP LeanIX": [
+   {
+    "name": "Accelerated Implementation SAP LeanIX.pptx",
+    "mod": "2026-07-17",
+    "kb": 6143,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Accelerated Implementation SAP LeanIX/Accelerated Implementation SAP LeanIX.pptx"
+   },
+   {
+    "name": "Accelerated Implementation SAP LeanIX.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/BTM/LeanIX/Accelerated Implementation SAP LeanIX/Accelerated Implementation SAP LeanIX.url"
+   }
+  ],
+  "/Analytics & BDC/BDC/BDC Lift and Shift with Upgrade": [
+   {
+    "name": "BDC Lift and Shift with Upgrade M Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift with Upgrade/BDC Lift and Shift with Upgrade M Tshirt NA.url"
+   },
+   {
+    "name": "BDC Lift and Shift with Upgrade L Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift with Upgrade/BDC Lift and Shift with Upgrade L Tshirt NA.url"
+   },
+   {
+    "name": "BDC Lift and Shift with Upgrade S Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift with Upgrade/BDC Lift and Shift with Upgrade S Tshirt NA.url"
+   }
+  ],
+  "/Analytics & BDC/BDC/BDC Analaytics - BDC Greenfield": [
+   {
+    "name": "ASC BDC Analaytics - BDC Greenfield S Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Analaytics - BDC Greenfield/ASC BDC Analaytics - BDC Greenfield S Tshirt NA.url"
+   },
+   {
+    "name": "NA - ASC BDC Analytics D@S - BDC Greenfield T-Shirt Sizing V1.0 (1).pptx",
+    "mod": "2026-08-03",
+    "kb": 4245,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Analaytics - BDC Greenfield/NA - ASC BDC Analytics D@S - BDC Greenfield T-Shirt Sizing V1.0 (1).pptx"
+   },
+   {
+    "name": "ASC BDC Analaytics - BDC Greenfield M Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Analaytics - BDC Greenfield/ASC BDC Analaytics - BDC Greenfield M Tshirt NA.url"
+   },
+   {
+    "name": "ASC BDC Analaytics - BDC Greenfield L Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Analaytics - BDC Greenfield/ASC BDC Analaytics - BDC Greenfield L Tshirt NA.url"
+   }
+  ],
+  "/Analytics & BDC/BDC/BW4HANA Conversion": [],
+  "/Analytics & BDC/BDC/BDC Lift & Shift": [
+   {
+    "name": "BDC Lift and Shift S.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift & Shift/BDC Lift and Shift S.url"
+   },
+   {
+    "name": "BDC Lift and Shift M.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift & Shift/BDC Lift and Shift M.url"
+   },
+   {
+    "name": "BDC Lift and Shift L.url",
+    "mod": "2026-08-03",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift & Shift/BDC Lift and Shift L.url"
+   },
+   {
+    "name": "ASC BDC Analytics D@S - BDC BW4HANA_ConversionTShirts_V1.0 (2).pptx",
+    "mod": "2026-07-17",
+    "kb": 1537,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift & Shift/ASC BDC Analytics D@S - BDC BW4HANA_ConversionTShirts_V1.0 (2).pptx"
+   }
+  ],
+  "/Analytics & BDC/BDC/Archives": [],
+  "/Analytics & BDC/BDC/BDC Lift and Shift with DB Migrate": [
+   {
+    "name": "BDC Lift and Shift with DB Migrate M Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift with DB Migrate/BDC Lift and Shift with DB Migrate M Tshirt NA.url"
+   },
+   {
+    "name": "BDC Lift and Shift with DB Migrate S Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift with DB Migrate/BDC Lift and Shift with DB Migrate S Tshirt NA.url"
+   },
+   {
+    "name": "BDC Lift and Shift with DB Migrate L Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift with DB Migrate/BDC Lift and Shift with DB Migrate L Tshirt NA.url"
+   }
+  ],
+  "/Analytics & BDC/BDC/BDC Lift and Shift _DB Migrate_Upgrade": [
+   {
+    "name": "BDC Lift and Shift _DB Migrate_Upgrade S Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift _DB Migrate_Upgrade/BDC Lift and Shift _DB Migrate_Upgrade S Tshirt NA.url"
+   },
+   {
+    "name": "BDC Lift and Shift _DB Migrate_Upgrade M Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift _DB Migrate_Upgrade/BDC Lift and Shift _DB Migrate_Upgrade M Tshirt NA.url"
+   },
+   {
+    "name": "BDC Lift and Shift _DB Migrate_Upgrade L Tshirt NA.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BDC Lift and Shift _DB Migrate_Upgrade/BDC Lift and Shift _DB Migrate_Upgrade L Tshirt NA.url"
+   }
+  ],
+  "/Analytics & BDC/SAC/SAC Business Intelligence": [
+   {
+    "name": "SAC Business Intelligence June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 15958,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Business Intelligence/SAC Business Intelligence June 2026.pptx"
+   },
+   {
+    "name": "Tshirt SAC Business Intelligence S.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Business Intelligence/Tshirt SAC Business Intelligence S.url"
+   },
+   {
+    "name": "Tshirt SAC Business Intelligence XL.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Business Intelligence/Tshirt SAC Business Intelligence XL.url"
+   },
+   {
+    "name": "Tshirt SAC Business Intelligence L.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Business Intelligence/Tshirt SAC Business Intelligence L.url"
+   },
+   {
+    "name": "Tshirt SAC Business Intelligence M.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Business Intelligence/Tshirt SAC Business Intelligence M.url"
+   }
+  ],
+  "/Analytics & BDC/SAC/SAC Planning": [
+   {
+    "name": "SAC Planning for S4 HANA Tshirt S.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Planning/SAC Planning for S4 HANA Tshirt S.url"
+   },
+   {
+    "name": "SAC Analytics Cloud Planning June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 19242,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Planning/SAC Analytics Cloud Planning June 2026.pptx"
+   },
+   {
+    "name": "SAC Planning for S4 HANA Tshirt L.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Planning/SAC Planning for S4 HANA Tshirt L.url"
+   },
+   {
+    "name": "SAC Planning for S4 HANA Tshirt XL.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Planning/SAC Planning for S4 HANA Tshirt XL.url"
+   },
+   {
+    "name": "SAC Planning for S4 HANA Tshirt M.url",
+    "mod": "2026-07-24",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Planning/SAC Planning for S4 HANA Tshirt M.url"
+   }
+  ],
+  "/Analytics & BDC/SAC/SAC LA": [
+   {
+    "name": "ROM SAC June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 13205,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC LA/ROM SAC June 2026.pptx"
+   }
+  ],
+  "/Analytics & BDC/Datasphere/Archives": [
+   {
+    "name": "ROM Datasphere + SAC.pptx",
+    "mod": "2026-07-17",
+    "kb": 11902,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/Datasphere/Archives/ROM Datasphere + SAC.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/BN4L/Final": [],
+  "/Supply Chain - Manufacturing/BN4L/In Process": [],
+  "/Supply Chain - Manufacturing/IBP/IBP Sales & Operations Planning": [
+   {
+    "name": "IBP Sales & Operations Planning M.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Sales & Operations Planning/IBP Sales & Operations Planning M.url"
+   },
+   {
+    "name": "IBP Sales & Operations Planning S.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Sales & Operations Planning/IBP Sales & Operations Planning S.url"
+   },
+   {
+    "name": "IBP S&OPT.pptx",
+    "mod": "2026-07-17",
+    "kb": 20009,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Sales & Operations Planning/IBP S&OPT.pptx"
+   },
+   {
+    "name": "IBP Sales & Operations Planning L.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Sales & Operations Planning/IBP Sales & Operations Planning L.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/IBP/IBP Inventory Optimization": [
+   {
+    "name": "IBP Inventory M.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Inventory Optimization/IBP Inventory M.url"
+   },
+   {
+    "name": "IBP Inventory Optimization.pptx",
+    "mod": "2026-07-17",
+    "kb": 21320,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Inventory Optimization/IBP Inventory Optimization.pptx"
+   },
+   {
+    "name": "IBP Inventory L.url",
+    "mod": "2026-07-17",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Inventory Optimization/IBP Inventory L.url"
+   },
+   {
+    "name": "IBP Inventory S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Inventory Optimization/IBP Inventory S.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/IBP/IBP Supply Chain Control Tower": [
+   {
+    "name": "IBP Supply Chain Control Tower.pptx",
+    "mod": "2026-07-17",
+    "kb": 19519,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Supply Chain Control Tower/IBP Supply Chain Control Tower.pptx"
+   },
+   {
+    "name": "Tshirt IBP Supply Chain Control Tower.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Supply Chain Control Tower/Tshirt IBP Supply Chain Control Tower.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/IBP/IBP Response & Supply": [
+   {
+    "name": "Tshirt IBP Response & Supply S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Response & Supply/Tshirt IBP Response & Supply S.url"
+   },
+   {
+    "name": "Tshirt IBP Response & Supply M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Response & Supply/Tshirt IBP Response & Supply M.url"
+   },
+   {
+    "name": "Tshirt IBP Response & Supply L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Response & Supply/Tshirt IBP Response & Supply L.url"
+   },
+   {
+    "name": "IBP Response & Supply.pptx",
+    "mod": "2026-07-17",
+    "kb": 21509,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Response & Supply/IBP Response & Supply.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/IBP/IBP Demand": [
+   {
+    "name": "Tshirt IBP Demand M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Demand/Tshirt IBP Demand M.url"
+   },
+   {
+    "name": "Tshirt IBP Demand L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Demand/Tshirt IBP Demand L.url"
+   },
+   {
+    "name": "IBP_Demand.pptx",
+    "mod": "2026-07-17",
+    "kb": 19757,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Demand/IBP_Demand.pptx"
+   },
+   {
+    "name": "Tshirt IBP Demand S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IBP/IBP Demand/Tshirt IBP Demand S.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/IAM/IAM APM": [
+   {
+    "name": "Tshirt Intelligent Asset Management APM S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IAM/IAM APM/Tshirt Intelligent Asset Management APM S.url"
+   },
+   {
+    "name": "IAM APM Tshirt and Pricing.pptx",
+    "mod": "2026-07-17",
+    "kb": 17311,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IAM/IAM APM/IAM APM Tshirt and Pricing.pptx"
+   },
+   {
+    "name": "Tshirt Intelligent Asset Management APM M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/IAM/IAM APM/Tshirt Intelligent Asset Management APM M.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Industrial Hygiene and Safety": [
+   {
+    "name": "Tshirt EHS Industrial Hygiene L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Industrial Hygiene and Safety/Tshirt EHS Industrial Hygiene L.url"
+   },
+   {
+    "name": "Tshirt EHS Industrial Hygiene M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Industrial Hygiene and Safety/Tshirt EHS Industrial Hygiene M.url"
+   },
+   {
+    "name": "SAP EHS Industrial Hygiene and Safety.pptx",
+    "mod": "2026-07-17",
+    "kb": 16562,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Industrial Hygiene and Safety/SAP EHS Industrial Hygiene and Safety.pptx"
+   },
+   {
+    "name": "Tshirt EHS Industrial Hygiene S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Industrial Hygiene and Safety/Tshirt EHS Industrial Hygiene S.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Risk Assessment": [
+   {
+    "name": "Tshirt EHS Risk Assessment L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Risk Assessment/Tshirt EHS Risk Assessment L.url"
+   },
+   {
+    "name": "SAP EHS Risk Assessment .pptx",
+    "mod": "2026-07-17",
+    "kb": 18095,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Risk Assessment/SAP EHS Risk Assessment .pptx"
+   },
+   {
+    "name": "Tshirt EHS Risk Assessment M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Risk Assessment/Tshirt EHS Risk Assessment M.url"
+   },
+   {
+    "name": "Tshirt EHS Risk Assessment S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Risk Assessment/Tshirt EHS Risk Assessment S.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Management of Change": [
+   {
+    "name": "SAP EHS Management of Change .pptx",
+    "mod": "2026-07-17",
+    "kb": 21330,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Management of Change/SAP EHS Management of Change .pptx"
+   },
+   {
+    "name": "Tshirt EHS Management of Change L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Management of Change/Tshirt EHS Management of Change L.url"
+   },
+   {
+    "name": "Tshirt EHS Management of Change M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Management of Change/Tshirt EHS Management of Change M.url"
+   },
+   {
+    "name": "Tshirt EHS Management of Change S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Management of Change/Tshirt EHS Management of Change S.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Occupational Health": [
+   {
+    "name": "Tshirt EHS Occupational Health L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Occupational Health/Tshirt EHS Occupational Health L.url"
+   },
+   {
+    "name": "Tshirt EHS Occupational Health M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Occupational Health/Tshirt EHS Occupational Health M.url"
+   },
+   {
+    "name": "SAP EHS Occupational Health.pptx",
+    "mod": "2026-07-17",
+    "kb": 16928,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Occupational Health/SAP EHS Occupational Health.pptx"
+   },
+   {
+    "name": "Tshirt EHS Occupational Health S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Occupational Health/Tshirt EHS Occupational Health S.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Incident Management": [
+   {
+    "name": "Tshirt EHS Incident Management S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Incident Management/Tshirt EHS Incident Management S.url"
+   },
+   {
+    "name": "Tshirt EHS Incident Management L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Incident Management/Tshirt EHS Incident Management L.url"
+   },
+   {
+    "name": "Tshirt EHS Incident Management M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Incident Management/Tshirt EHS Incident Management M.url"
+   },
+   {
+    "name": "SAP EHS Incident Management.pptx",
+    "mod": "2026-07-17",
+    "kb": 16562,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Incident Management/SAP EHS Incident Management.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Environment Management": [
+   {
+    "name": "T-shirt EHS Environment Management M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Environment Management/T-shirt EHS Environment Management M.url"
+   },
+   {
+    "name": "T-shirt EHS Environment Management L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Environment Management/T-shirt EHS Environment Management L.url"
+   },
+   {
+    "name": "SAP EHS Environment Management.pptx",
+    "mod": "2026-07-17",
+    "kb": 16423,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Environment Management/SAP EHS Environment Management.pptx"
+   },
+   {
+    "name": "T-shirt EHS Environment Management S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Environment Management/T-shirt EHS Environment Management S.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Chemical Data Management": [
+   {
+    "name": "Tshirt EH&S Chemical Data Management.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Chemical Data Management/Tshirt EH&S Chemical Data Management.url"
+   },
+   {
+    "name": "SAP EHS Chemical Data Management.pptx",
+    "mod": "2026-07-17",
+    "kb": 16427,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Chemical Data Management/SAP EHS Chemical Data Management.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/Product Compliance/Discrete": [
+   {
+    "name": "PC - Discrete Large.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Discrete/PC - Discrete Large.url"
+   },
+   {
+    "name": "PC- Discrete Medium.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Discrete/PC- Discrete Medium.url"
+   },
+   {
+    "name": "PC-Discrete Small.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Discrete/PC-Discrete Small.url"
+   },
+   {
+    "name": "SAP Product Compliance for Discrete T-shirt Presentation 1.pptx",
+    "mod": "2026-07-17",
+    "kb": 3983,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Discrete/SAP Product Compliance for Discrete T-shirt Presentation 1.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/Product Compliance/Classic": [
+   {
+    "name": "PC Classic L.url",
+    "mod": "2026-07-22",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Classic/PC Classic L.url"
+   },
+   {
+    "name": "SAP Product Compliance Classic_TShirt size.pptx",
+    "mod": "2026-07-22",
+    "kb": 17397,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Classic/SAP Product Compliance Classic_TShirt size.pptx"
+   },
+   {
+    "name": "PC Classic S.url",
+    "mod": "2026-07-22",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Classic/PC Classic S.url"
+   },
+   {
+    "name": "PC Classic M.url",
+    "mod": "2026-07-22",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/Product Compliance/Classic/PC Classic M.url"
+   }
+  ],
+  "/Supply Chain - Manufacturing/SAP DRC Brazil/Archives": [
+   {
+    "name": "ROM NFe Cloud - package with main dev enhancements.pptx",
+    "mod": "2026-07-17",
+    "kb": 5521,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/SAP DRC Brazil/Archives/ROM NFe Cloud - package with main dev enhancements.pptx"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Performance and Goals": [
+   {
+    "name": "Tshirt SuccessFactors Performance and Goals M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Performance and Goals/Tshirt SuccessFactors Performance and Goals M.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Performance and Goals S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Performance and Goals/Tshirt SuccessFactors Performance and Goals S.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Performance and Goals L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Performance and Goals/Tshirt SuccessFactors Performance and Goals L.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Succession and Development": [
+   {
+    "name": "Tshirt SuccessFactors Succession and Development M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Succession and Development/Tshirt SuccessFactors Succession and Development M.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Succession and Development S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Succession and Development/Tshirt SuccessFactors Succession and Development S.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Succession and Development L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Succession and Development/Tshirt SuccessFactors Succession and Development L.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Onboarding": [
+   {
+    "name": "Tshirt SuccessFactors Onboarding L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Onboarding/Tshirt SuccessFactors Onboarding L.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Onboarding M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Onboarding/Tshirt SuccessFactors Onboarding M.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Onboarding S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Onboarding/Tshirt SuccessFactors Onboarding S.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Cloud Architecture": [
+   {
+    "name": "SuccessFactors Cloud Architecture L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Cloud Architecture/SuccessFactors Cloud Architecture L.url"
+   },
+   {
+    "name": "SuccessFactors Cloud Architecture S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Cloud Architecture/SuccessFactors Cloud Architecture S.url"
+   },
+   {
+    "name": "SuccessFactors Cloud Architecture M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Cloud Architecture/SuccessFactors Cloud Architecture M.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Learning": [
+   {
+    "name": "SuccessFactors Learning M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Learning/SuccessFactors Learning M.url"
+   },
+   {
+    "name": "SuccessFactors Learning L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Learning/SuccessFactors Learning L.url"
+   },
+   {
+    "name": "SuccessFactors Learning S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Learning/SuccessFactors Learning S.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Platform Foundation": [
+   {
+    "name": "Tshirt SuccessFactors Platform Foundation L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Platform Foundation/Tshirt SuccessFactors Platform Foundation L.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Platform Foundation M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Platform Foundation/Tshirt SuccessFactors Platform Foundation M.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Platform Foundation S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Platform Foundation/Tshirt SuccessFactors Platform Foundation S.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Workforce Analytics": [
+   {
+    "name": "Tshirt SuccessFactors Workforce Analytics L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Workforce Analytics/Tshirt SuccessFactors Workforce Analytics L.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Workforce Analytics M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Workforce Analytics/Tshirt SuccessFactors Workforce Analytics M.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Workforce Analytics S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Workforce Analytics/Tshirt SuccessFactors Workforce Analytics S.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central Payroll": [
+   {
+    "name": "SuccessFactors Employee Central Payroll M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central Payroll/SuccessFactors Employee Central Payroll M.url"
+   },
+   {
+    "name": "SuccessFactors Employee Central Payroll XL.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central Payroll/SuccessFactors Employee Central Payroll XL.url"
+   },
+   {
+    "name": "SuccessFactors Employee Central Payroll S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central Payroll/SuccessFactors Employee Central Payroll S.url"
+   },
+   {
+    "name": "SuccessFactors Employee Central Payroll L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central Payroll/SuccessFactors Employee Central Payroll L.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central": [
+   {
+    "name": "SuccessFactors Employee Central S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central/SuccessFactors Employee Central S.url"
+   },
+   {
+    "name": "SuccessFactors Employee Central M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central/SuccessFactors Employee Central M.url"
+   },
+   {
+    "name": "SuccessFactors Employee Central L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central/SuccessFactors Employee Central L.url"
+   },
+   {
+    "name": "SuccessFactors Employee Central XL.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Employee Central/SuccessFactors Employee Central XL.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Compensation": [
+   {
+    "name": "SuccessFactors Compensation L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Compensation/SuccessFactors Compensation L.url"
+   },
+   {
+    "name": "SuccessFactors Compensation S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Compensation/SuccessFactors Compensation S.url"
+   },
+   {
+    "name": "SuccessFactors Compensation M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Compensation/SuccessFactors Compensation M.url"
+   }
+  ],
+  "/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Recruiting": [
+   {
+    "name": "Tshirt SuccessFactors Recruiting S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Recruiting/Tshirt SuccessFactors Recruiting S.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Recruiting L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Recruiting/Tshirt SuccessFactors Recruiting L.url"
+   },
+   {
+    "name": "Tshirt SuccessFactors Recruiting M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Success Factors/Effort Estimations - Solutioning Templates/SuccessFactors Recruiting/Tshirt SuccessFactors Recruiting M.url"
+   }
+  ],
+  "/SAP S4 HANA Extensions/Receivables Management (RM)/Archives": [
+   {
+    "name": "ROM Receivables Management June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 15754,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Receivables Management (RM)/Archives/ROM Receivables Management June 2026.pptx"
+   },
+   {
+    "name": "ROM Receivables Management V1.pptx",
+    "mod": "2026-07-17",
+    "kb": 15749,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Receivables Management (RM)/Archives/ROM Receivables Management V1.pptx"
+   }
+  ],
+  "/SAP S4 HANA Extensions/PaPM/Archives": [
+   {
+    "name": "SAP PaPM.pptx",
+    "mod": "2026-07-17",
+    "kb": 17410,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/PaPM/Archives/SAP PaPM.pptx"
+   }
+  ],
+  "/SAP S4 HANA Extensions/Archive/S4HANA Extension Profitability & Performance Management (PaPM)": [
+   {
+    "name": "SAP PaPM June 2026.pptx",
+    "mod": "2026-07-17",
+    "kb": 17269,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Archive/S4HANA Extension Profitability & Performance Management (PaPM)/SAP PaPM June 2026.pptx"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Profitability & Performance Management (PaPM) L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Archive/S4HANA Extension Profitability & Performance Management (PaPM)/Tshirt S4HANA Extension Profitability & Performance Management (PaPM) L.url"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Profitability & Performance Management (PaPM) S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Archive/S4HANA Extension Profitability & Performance Management (PaPM)/Tshirt S4HANA Extension Profitability & Performance Management (PaPM) S.url"
+   },
+   {
+    "name": "Tshirt S4HANA Extension Profitability & Performance Management (PaPM) M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Archive/S4HANA Extension Profitability & Performance Management (PaPM)/Tshirt S4HANA Extension Profitability & Performance Management (PaPM) M.url"
+   }
+  ],
+  "/SAP S4 HANA Extensions/AFC/Archives": [
+   {
+    "name": "SAP_Advanced_Financial_Closing_AFC ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 3855,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/AFC/Archives/SAP_Advanced_Financial_Closing_AFC ES.pptx"
+   }
+  ],
+  "/SAP S4 HANA Extensions/Group Reporting/Archives": [
+   {
+    "name": "SAP Group Reporting.pptx",
+    "mod": "2026-07-17",
+    "kb": 16713,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Group Reporting/Archives/SAP Group Reporting.pptx"
+   }
+  ],
+  "/SAP S4 HANA Extensions/MBC/Archives": [
+   {
+    "name": "SAP Multi-Bank Connectivity EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 2445,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/MBC/Archives/SAP Multi-Bank Connectivity EN.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/FG": [],
+  "/ISBN/CurrentGen/Ariba": [],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Conv & RISE Migration": [
+   {
+    "name": "Brownfield S4 Conv & RISE Migration Tshirt M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Conv & RISE Migration/Brownfield S4 Conv & RISE Migration Tshirt M.url"
+   },
+   {
+    "name": "Brownfield S4 Conv & RISE Migration Tshirt L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Conv & RISE Migration/Brownfield S4 Conv & RISE Migration Tshirt L.url"
+   },
+   {
+    "name": "Brownfield S4 Conv & RISE Migration Tshirt S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Conv & RISE Migration/Brownfield S4 Conv & RISE Migration Tshirt S.url"
+   }
+  ],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Upgrade & RISE Migration": [
+   {
+    "name": "Brownfield S4 Upgrade & RISE Migration Tshirt M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Upgrade & RISE Migration/Brownfield S4 Upgrade & RISE Migration Tshirt M.url"
+   },
+   {
+    "name": "Brownfield S4 Upgrade & RISE Migration Tshirt S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Upgrade & RISE Migration/Brownfield S4 Upgrade & RISE Migration Tshirt S.url"
+   },
+   {
+    "name": "Brownfield S4 Upgrade & RISE Migration Tshirt L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Brownfield S4 Upgrade & RISE Migration/Brownfield S4 Upgrade & RISE Migration Tshirt L.url"
+   }
+  ],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Archives": [
+   {
+    "name": "CSD West SAE Boot camp_v1 (006).pptx",
+    "mod": "2026-07-17",
+    "kb": 1998,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Archives/CSD West SAE Boot camp_v1 (006).pptx"
+   }
+  ],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Customer PPT Examples": [
+   {
+    "name": "Materion Migration Scope Details_v1 (1).pptx",
+    "mod": "2026-07-17",
+    "kb": 647,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Customer PPT Examples/Materion Migration Scope Details_v1 (1).pptx"
+   },
+   {
+    "name": "Crescent Energy Company Joint Proposal for S4_TEAMS Deck_26.01.2026 (1).pptx",
+    "mod": "2026-07-17",
+    "kb": 1657,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/North America/Customer PPT Examples/Crescent Energy Company Joint Proposal for S4_TEAMS Deck_26.01.2026 (1).pptx"
+   }
+  ],
+  "/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/Latin America/Lift & Shift - LAC": [
+   {
+    "name": "ROM L&S ECC.pptx",
+    "mod": "2026-07-17",
+    "kb": 2454,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/Latin America/Lift & Shift - LAC/ROM L&S ECC.pptx"
+   },
+   {
+    "name": "ROM L&S S4HANA.pptx",
+    "mod": "2026-07-17",
+    "kb": 2455,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/Latin America/Lift & Shift - LAC/ROM L&S S4HANA.pptx"
+   },
+   {
+    "name": "ROM L&S + Upgrade S4HANA.pptx",
+    "mod": "2026-07-17",
+    "kb": 5024,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Cloud Private/S4 HANA Private Cloud - Brownfield/Latin America/Lift & Shift - LAC/ROM L&S + Upgrade S4HANA.pptx"
+   }
+  ],
+  "/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/Archives": [
+   {
+    "name": "S4 HANA Public Cloud.pptx",
+    "mod": "2026-07-28",
+    "kb": 23800,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP Cloud ERP (Public)/NA/S4 HANA Public Cloud - Greenfield/Archives/S4 HANA Public Cloud.pptx"
+   }
+  ],
+  "/Analytics & BDC/BDC/BW4HANA Conversion/BW 4HANA In-Place Conversion": [
+   {
+    "name": "BW 4HANA In-Place Conversion S.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW 4HANA In-Place Conversion/BW 4HANA In-Place Conversion S.url"
+   },
+   {
+    "name": "BW 4HANA In-Place Conversion M.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW 4HANA In-Place Conversion/BW 4HANA In-Place Conversion M.url"
+   },
+   {
+    "name": "BW 4HANA In-Place Conversion L.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW 4HANA In-Place Conversion/BW 4HANA In-Place Conversion L.url"
+   }
+  ],
+  "/Analytics & BDC/BDC/BW4HANA Conversion/BW 4 HANA Remote System Conversion": [
+   {
+    "name": "BW 4 HANA Remote System Conversion L.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW 4 HANA Remote System Conversion/BW 4 HANA Remote System Conversion L.url"
+   },
+   {
+    "name": "BW 4 HANA Remote System Conversion S.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW 4 HANA Remote System Conversion/BW 4 HANA Remote System Conversion S.url"
+   },
+   {
+    "name": "BW 4 HANA Remote System Conversion M.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW 4 HANA Remote System Conversion/BW 4 HANA Remote System Conversion M.url"
+   }
+  ],
+  "/Analytics & BDC/BDC/BW4HANA Conversion/BW4HANA Shell Conversion": [
+   {
+    "name": "BW 4HANA Shell Conversion M.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW4HANA Shell Conversion/BW 4HANA Shell Conversion M.url"
+   },
+   {
+    "name": "BW 4HANA Shell Conversion S.url",
+    "mod": "2026-07-27",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW4HANA Shell Conversion/BW 4HANA Shell Conversion S.url"
+   },
+   {
+    "name": "BW 4HANA Shell Conversion L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/BDC/BW4HANA Conversion/BW4HANA Shell Conversion/BW 4HANA Shell Conversion L.url"
+   }
+  ],
+  "/Analytics & BDC/SAC/SAC Business Intelligence/Archives": [
+   {
+    "name": "SAC Busnuss Intelligence.pptx",
+    "mod": "2026-07-17",
+    "kb": 15891,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Business Intelligence/Archives/SAC Busnuss Intelligence.pptx"
+   }
+  ],
+  "/Analytics & BDC/SAC/SAC Planning/Archives": [
+   {
+    "name": "SAC Analytics Cloud Planning - Updated.pptx",
+    "mod": "2026-07-17",
+    "kb": 19377,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC Planning/Archives/SAC Analytics Cloud Planning - Updated.pptx"
+   }
+  ],
+  "/Analytics & BDC/SAC/SAC LA/Archives": [
+   {
+    "name": "ROM SAC.pptx",
+    "mod": "2026-07-17",
+    "kb": 13204,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Analytics & BDC/SAC/SAC LA/Archives/ROM SAC.pptx"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Incident Management/EMTs": [
+   {
+    "name": "EMT_Large_Incident Management_V1_30Jul22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8007,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Incident Management/EMTs/EMT_Large_Incident Management_V1_30Jul22.xlsm"
+   },
+   {
+    "name": "EMT_Small_Incident Management_V1_30Jul22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8043,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Incident Management/EMTs/EMT_Small_Incident Management_V1_30Jul22.xlsm"
+   },
+   {
+    "name": "EMT_Medium_Incident Management_V1_30Jul22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8044,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Incident Management/EMTs/EMT_Medium_Incident Management_V1_30Jul22.xlsm"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Environment Management/EMT": [
+   {
+    "name": "EMT_Medium_Environment Management_V1_30Jul22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8035,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Environment Management/EMT/EMT_Medium_Environment Management_V1_30Jul22.xlsm"
+   },
+   {
+    "name": "EMT_Small_Environment Management_V1_30Jul22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8042,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Environment Management/EMT/EMT_Small_Environment Management_V1_30Jul22.xlsm"
+   },
+   {
+    "name": "EMT_Large_Environment Management_V1_30Jul22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8043,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Environment Management/EMT/EMT_Large_Environment Management_V1_30Jul22.xlsm"
+   }
+  ],
+  "/Supply Chain - Manufacturing/EHS/Chemical Data Management/EMT": [
+   {
+    "name": "EMT_Large_Chemical Data Management_V1_15Nov22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8043,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Chemical Data Management/EMT/EMT_Large_Chemical Data Management_V1_15Nov22.xlsm"
+   },
+   {
+    "name": "EMT_Small_Chemical Data Management_V1_15Nov22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8043,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Chemical Data Management/EMT/EMT_Small_Chemical Data Management_V1_15Nov22.xlsm"
+   },
+   {
+    "name": "EMT_Medium_Chemical Data Management_V1_15Nov22.xlsm",
+    "mod": "2026-07-17",
+    "kb": 8044,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/Supply Chain - Manufacturing/EHS/Chemical Data Management/EMT/EMT_Medium_Chemical Data Management_V1_15Nov22.xlsm"
+   }
+  ],
+  "/SAP S4 HANA Extensions/Archive/S4HANA Extension Profitability & Performance Management (PaPM)/Archives": [
+   {
+    "name": "SAP PaPM.pptx",
+    "mod": "2026-07-17",
+    "kb": 17288,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/SAP S4 HANA Extensions/Archive/S4HANA Extension Profitability & Performance Management (PaPM)/Archives/SAP PaPM.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/FG/In Process": [],
+  "/ISBN/CurrentGen/Ariba/LAC": [],
+  "/ISBN/CurrentGen/Ariba/NA": [],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone": [],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone": [],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado": [],
+  "/ISBN/CurrentGen/Ariba/NA/Contracts": [
+   {
+    "name": "Contracts - Medium.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Contracts/Contracts - Medium.url"
+   },
+   {
+    "name": "Ariba_Contracts_T-Shirts_June_2026.pptx",
+    "mod": "2026-07-22",
+    "kb": 14977,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Contracts/Ariba_Contracts_T-Shirts_June_2026.pptx"
+   },
+   {
+    "name": "Contracts - Small.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Contracts/Contracts - Small.url"
+   },
+   {
+    "name": "Contracts - Large.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Contracts/Contracts - Large.url"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Sourcing": [
+   {
+    "name": "Tshirt Ariba (ISBN) Sourcing M.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Sourcing/Tshirt Ariba (ISBN) Sourcing M.url"
+   },
+   {
+    "name": "Tshirt Ariba (ISBN) Sourcing S.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Sourcing/Tshirt Ariba (ISBN) Sourcing S.url"
+   },
+   {
+    "name": "Ariba_Sourcing_T-Shirts_June_2026.pptx",
+    "mod": "2026-07-22",
+    "kb": 19045,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Sourcing/Ariba_Sourcing_T-Shirts_June_2026.pptx"
+   },
+   {
+    "name": "Tshirt Ariba (ISBN) Sourcing L.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Sourcing/Tshirt Ariba (ISBN) Sourcing L.url"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/SLP": [
+   {
+    "name": "SLP - Medium.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/SLP/SLP - Medium.url"
+   },
+   {
+    "name": "Ariba_SLP_T-Shirts_June_2026.pptx",
+    "mod": "2026-07-22",
+    "kb": 15182,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/SLP/Ariba_SLP_T-Shirts_June_2026.pptx"
+   },
+   {
+    "name": "SLP - Small.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/SLP/SLP - Small.url"
+   },
+   {
+    "name": "SLP - Large.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/SLP/SLP - Large.url"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Supplier Risk": [
+   {
+    "name": "Supplier Risk - Medium.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Supplier Risk/Supplier Risk - Medium.url"
+   },
+   {
+    "name": "Supplier Risk - Small.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Supplier Risk/Supplier Risk - Small.url"
+   },
+   {
+    "name": "Ariba_Risk_June_2026.pptx",
+    "mod": "2026-07-21",
+    "kb": 15121,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Supplier Risk/Ariba_Risk_June_2026.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing": [
+   {
+    "name": "Ariba_BI_June_2026.pptx",
+    "mod": "2026-07-23",
+    "kb": 9264,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Ariba_BI_June_2026.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XS": [
+   {
+    "name": "Ariba Contracts Stand Alone XS_EN.docx",
+    "mod": "2026-07-17",
+    "kb": 551,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XS/Ariba Contracts Stand Alone XS_EN.docx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone XS ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 355,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XS/Ariba Contracts Stand Alone XS ES.pptx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone XS EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 350,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XS/Ariba Contracts Stand Alone XS EN.pptx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone XS.docx",
+    "mod": "2026-07-17",
+    "kb": 555,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XS/Ariba Contracts Stand Alone XS.docx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XXS": [
+   {
+    "name": "Ariba Contracts Stand Alone XXS EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 350,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XXS/Ariba Contracts Stand Alone XXS EN.pptx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone XXS_EN.docx",
+    "mod": "2026-07-17",
+    "kb": 549,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XXS/Ariba Contracts Stand Alone XXS_EN.docx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone XXS.docx",
+    "mod": "2026-07-17",
+    "kb": 552,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XXS/Ariba Contracts Stand Alone XXS.docx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone XXS ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 354,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/XXS/Ariba Contracts Stand Alone XXS ES.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/M": [
+   {
+    "name": "Ariba Contracts Stand Alone M EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 352,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/M/Ariba Contracts Stand Alone M EN.pptx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone M ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 357,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/M/Ariba Contracts Stand Alone M ES.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/S": [
+   {
+    "name": "Ariba Contracts Stand Alone S EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 350,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/S/Ariba Contracts Stand Alone S EN.pptx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone S.docx",
+    "mod": "2026-07-17",
+    "kb": 578,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/S/Ariba Contracts Stand Alone S.docx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone S ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 355,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/S/Ariba Contracts Stand Alone S ES.pptx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone S_EN.docx",
+    "mod": "2026-07-17",
+    "kb": 570,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/S/Ariba Contracts Stand Alone S_EN.docx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/L": [
+   {
+    "name": "Ariba Contracts Stand Alone L ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 357,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/L/Ariba Contracts Stand Alone L ES.pptx"
+   },
+   {
+    "name": "Ariba Contracts Stand Alone L EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 351,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Contracts Stand Alone/L/Ariba Contracts Stand Alone L EN.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/S": [
+   {
+    "name": "Sourcing Stand Alone S.docx",
+    "mod": "2026-07-17",
+    "kb": 575,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/S/Sourcing Stand Alone S.docx"
+   },
+   {
+    "name": "Ariba Sourcing Stand Alone S EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 355,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/S/Ariba Sourcing Stand Alone S EN.pptx"
+   },
+   {
+    "name": "Sourcing Stand Alone S_EN.docx",
+    "mod": "2026-07-17",
+    "kb": 568,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/S/Sourcing Stand Alone S_EN.docx"
+   },
+   {
+    "name": "Ariba Sourcing Stand Alone S ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 354,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/S/Ariba Sourcing Stand Alone S ES.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XXS": [
+   {
+    "name": "Ariba Sourcing Stand Alone XXS ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 355,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XXS/Ariba Sourcing Stand Alone XXS ES.pptx"
+   },
+   {
+    "name": "Ariba Sourcing Stand Alone XXS EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 348,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XXS/Ariba Sourcing Stand Alone XXS EN.pptx"
+   },
+   {
+    "name": "Sourcing Stand Alone XXS_EN.docx",
+    "mod": "2026-07-17",
+    "kb": 545,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XXS/Sourcing Stand Alone XXS_EN.docx"
+   },
+   {
+    "name": "Sourcing Stand Alone XXS.docx",
+    "mod": "2026-07-17",
+    "kb": 555,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XXS/Sourcing Stand Alone XXS.docx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XS": [
+   {
+    "name": "Sourcing Stand Alone XS_EN.docx",
+    "mod": "2026-07-17",
+    "kb": 549,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XS/Sourcing Stand Alone XS_EN.docx"
+   },
+   {
+    "name": "Sourcing Stand Alone XS.docx",
+    "mod": "2026-07-17",
+    "kb": 554,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XS/Sourcing Stand Alone XS.docx"
+   },
+   {
+    "name": "Ariba Sourcing Stand Alone XS ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 354,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XS/Ariba Sourcing Stand Alone XS ES.pptx"
+   },
+   {
+    "name": "Ariba Sourcing Stand Alone XS EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 349,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/XS/Ariba Sourcing Stand Alone XS EN.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/M": [
+   {
+    "name": "04-Ariba Sourcing Stand Alone M ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 350,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/M/04-Ariba Sourcing Stand Alone M ES.pptx"
+   },
+   {
+    "name": "04-Ariba Sourcing Stand Alone M EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 350,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/M/04-Ariba Sourcing Stand Alone M EN.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/L": [
+   {
+    "name": "02-Ariba Sourcing Stand Alone L ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 350,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/L/02-Ariba Sourcing Stand Alone L ES.pptx"
+   },
+   {
+    "name": "02-Ariba Sourcing Stand Alone L EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 351,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Stand Alone/L/02-Ariba Sourcing Stand Alone L EN.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/M": [
+   {
+    "name": "Ariba Sourcing Integrated M ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 423,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/M/Ariba Sourcing Integrated M ES.pptx"
+   },
+   {
+    "name": "Ariba Sourcing Integrated M EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 424,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/M/Ariba Sourcing Integrated M EN.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/S": [
+   {
+    "name": "Ariba Sourcing Integrated S ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 427,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/S/Ariba Sourcing Integrated S ES.pptx"
+   },
+   {
+    "name": "Ariba Sourcing Integrated S EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 420,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/S/Ariba Sourcing Integrated S EN.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/L": [
+   {
+    "name": "Ariba Sourcing Integrated L EN.pptx",
+    "mod": "2026-07-17",
+    "kb": 420,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/L/Ariba Sourcing Integrated L EN.pptx"
+   },
+   {
+    "name": "Ariba Sourcing Integrated L ES.pptx",
+    "mod": "2026-07-17",
+    "kb": 428,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/LAC/SAP Ariba Sourcing Integrado/L/Ariba Sourcing Integrated L ES.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Contracts/Archives": [
+   {
+    "name": "Ariba_Contracts_SAP_Corp_Branded_June2026 (1).pptx",
+    "mod": "2026-07-20",
+    "kb": 15197,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Contracts/Archives/Ariba_Contracts_SAP_Corp_Branded_June2026 (1).pptx"
+   },
+   {
+    "name": "SAP Ariba Contracts T-Shirts Presentation.pptx",
+    "mod": "2026-07-17",
+    "kb": 15385,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Contracts/Archives/SAP Ariba Contracts T-Shirts Presentation.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Sourcing/Archives": [
+   {
+    "name": "SAP Ariba Sourcing T-Shirts Presentation.pptx",
+    "mod": "2026-07-17",
+    "kb": 16920,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Sourcing/Archives/SAP Ariba Sourcing T-Shirts Presentation.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/SLP/Archives": [
+   {
+    "name": "Ariba_SLP_T-Shirts_June_2026.pptx",
+    "mod": "2026-07-21",
+    "kb": 15440,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/SLP/Archives/Ariba_SLP_T-Shirts_June_2026.pptx"
+   },
+   {
+    "name": "SAP Ariba SLP T-Shirts Presentation.pptx",
+    "mod": "2026-07-17",
+    "kb": 15589,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/SLP/Archives/SAP Ariba SLP T-Shirts Presentation.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Supplier Risk/Archives": [
+   {
+    "name": "SAP Ariba Risk T-Shirts Presentation.pptx",
+    "mod": "2026-07-17",
+    "kb": 15326,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Supplier Risk/Archives/SAP Ariba Risk T-Shirts Presentation.pptx"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Solutioning Tool Links": [
+   {
+    "name": "Buying and Invoicing - Medium.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Solutioning Tool Links/Buying and Invoicing - Medium.url"
+   },
+   {
+    "name": "Buying and Invoicing - XL.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Solutioning Tool Links/Buying and Invoicing - XL.url"
+   },
+   {
+    "name": "Buying and Invoicing - Large.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Solutioning Tool Links/Buying and Invoicing - Large.url"
+   },
+   {
+    "name": "Buying and Invoicing - Small.url",
+    "mod": "2026-07-28",
+    "kb": 0,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Solutioning Tool Links/Buying and Invoicing - Small.url"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/EMTs": [
+   {
+    "name": "OneDrive_1_6-12-2026.zip",
+    "mod": "2026-07-17",
+    "kb": 35723,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/EMTs/OneDrive_1_6-12-2026.zip"
+   }
+  ],
+  "/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Archives": [
+   {
+    "name": "Ariba B&I T-shirt Presentation_Draft.pptx",
+    "mod": "2026-07-17",
+    "kb": 3580,
+    "url": "/teams/Americas-CBDO/Shared Documents/Deal Success Center/Sharepoint Resources/Templates/ISBN/CurrentGen/Ariba/NA/Buying & Invoicing/Archives/Ariba B&I T-shirt Presentation_Draft.pptx"
+   }
+  ]
+ }
+}
