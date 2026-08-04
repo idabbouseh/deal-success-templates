@@ -246,6 +246,8 @@ button{font-family:inherit;cursor:pointer}
     <button class="fchip" data-f="fav" onclick="setFilter(this)">★ Favorites</button>
   </div>
 
+  <div id="stats" style="display:flex;gap:22px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:13px 22px;margin:14px 0 4px;font-size:12px;color:var(--txt2)"></div>
+
   <div class="newstrip"><h3>Recently added / updated</h3><div class="newrow" id="newrow"></div></div>
 
   <div class="grid" id="grid"></div>
@@ -468,8 +470,41 @@ const WIZ = {
    {q:"Scale of rollout?", opts:[["Team / pilot",{S:2}],["Department",{M:2}],["Enterprise-wide",{L:2}]]}]},
  isbn: {intro:"Which FG integration t-shirt fits?", qs:[
    {q:"What is being integrated?", opts:[["Worker download only",{S:2}],["P2R or master data (pick one flavor)",{M:2}],["Full P2R + WD + master data",{L:2}]]},
-   {q:"How many files/connectors?", opts:[["Up to 2",{S:2}],["Up to 5",{M:2}],["10 or more",{L:2}]]}]}
+   {q:"How many files/connectors?", opts:[["Up to 2",{S:2}],["Up to 5",{M:2}],["10 or more",{L:2}]]}]},
+ s4pce: {intro:"Which S/4HANA PCE Greenfield t-shirt fits?", qs:[
+   {q:"Company codes in scope?", opts:[["Up to 2",{S:2}],["3–4",{M:2}],["5–6+",{L:2}]]},
+   {q:"Countries / sites?", opts:[["1 country, ≤3 sites",{S:2}],["≤3 countries, ≤6 sites",{M:2}],["≤6 countries, ≤10 sites",{L:2}]]},
+   {q:"Custom objects (RICEFW) appetite?", opts:[["Lean (≤25)",{S:2}],["Moderate (≤50)",{M:2}],["Extensive (≤100)",{L:2}]]}]},
+ sf: {intro:"Which size fits this module?", qs:[
+   {q:"Countries in scope?", opts:[["One",{S:2}],["Up to 5",{M:2}],["Up to 8–10",{L:2}],["15 or more",{XL:2}]]},
+   {q:"Configuration complexity (custom fields, rules, workflows)?", opts:[["Standard, minimal custom",{S:2}],["Moderate customization",{M:2}],["Heavy customization",{L:2,XL:1}]]},
+   {q:"Languages?", opts:[["English only",{S:2}],["Up to 5",{M:2}],["8 or more",{L:1,XL:2}]]}]},
+ s4ext: {intro:"Which size fits?", qs:[
+   {q:"Consolidation / process footprint?", opts:[["Single entity group, standard",{S:2}],["Multiple entity groups",{M:2}],["Complex multi-entity, multi-GAAP",{L:2}]]},
+   {q:"Integration & reporting breadth?", opts:[["Standard content",{S:2}],["Some custom reports/interfaces",{M:2}],["Extensive custom landscape",{L:2}]]}]},
+ bdc: {intro:"Which BW-on-PCE migration size fits?", qs:[
+   {q:"BW landscape size & complexity?", opts:[["Compact, few sources",{S:2}],["Mid-size, moderate flows",{M:2}],["Large, many sources & flows",{L:2}]]},
+   {q:"Upgrade path needed?", opts:[["Lift & shift only",{S:2}],["+ upgrade or DB migrate",{M:2}],["+ DB migrate AND upgrade",{L:2}]]}]},
+ bai: {intro:"Which AI activation tier fits?", qs:[
+   {q:"AI ambition today?", opts:[["Activate & explore (quick start)",{S:2}],["Pilot agents in production",{M:2}],["Scale across the enterprise",{L:2}]]},
+   {q:"Data & platform readiness?", opts:[["Greenfield / early",{S:2}],["Foundations in place",{M:2}],["Mature BTP/BDC landscape",{L:2}]]}]}
 };
+
+/* SAP Activate phase-bar rendering */
+const PHASECOLORS = {prep:"#1B90FF", explore:"#33C1B0", realize:"#8FCB5A", deploy:"#E9A800", run:"#E76500"};
+function phaseBar(str){
+  if(!str) return "—";
+  const parts = [...str.matchAll(/(Prep\w*|Explore\w*|Realize|Deploy\w*|Run|Hypercare)\s*&?\s*\w*\s*(\d+(?:\.\d+)?)(?:\s*[-–]\s*(\d+))?/gi)]
+    .map(m => ({name: m[1], w: parseFloat(m[3] || m[2])}));
+  if(parts.length < 2) return `<span style="font-size:11px">${str}</span>`;
+  const total = parts.reduce((a,p)=>a+p.w,0);
+  const seg = parts.map(p => {
+    const key = p.name.toLowerCase().slice(0,3);
+    const col = key.startsWith("pre")?PHASECOLORS.prep:key.startsWith("exp")?PHASECOLORS.explore:key.startsWith("rea")?PHASECOLORS.realize:key.startsWith("dep")?PHASECOLORS.deploy:PHASECOLORS.run;
+    return `<div title="${p.name} ${p.w}w" style="flex:${p.w} ${p.w} 0;background:${col};min-width:8px"></div>`;
+  }).join("");
+  return `<div style="display:flex;height:14px;border-radius:4px;overflow:hidden;margin-bottom:3px">${seg}</div><span style="font-size:10px;color:var(--txt2)">${str}</span>`;
+}
 
 let FILTER = "all";
 const favs = new Set(JSON.parse(localStorage.getItem("dsc.favs")||"[]"));
@@ -623,7 +658,7 @@ function matrixHtml(c){
   html += `<tr><td><b>Price</b></td>` + ss.map(s=>`<td>${s.usd?`<span class="price">${fmtUsd(s.usd)}</span><div class="cad">${s.cad?("C"+fmtUsd(s.cad)):""} USD list</div>`:`<span class="cad">see deck</span>`}</td>`).join("") + `</tr>`;
   html += `<tr><td><b>Duration</b></td>` + ss.map(s=>`<td>${s.weeks?s.weeks+" wks":"—"}</td>`).join("") + `</tr>`;
   if(ss.some(s=>s.hours)) html += `<tr><td><b>Est. hours</b></td>` + ss.map(s=>`<td>${s.hours?s.hours.toLocaleString():"—"}</td>`).join("") + `</tr>`;
-  if(ss.some(s=>s.phases)) html += `<tr><td><b>Phases</b></td>` + ss.map(s=>`<td style="font-size:11px">${s.phases||"—"}</td>`).join("") + `</tr>`;
+  if(ss.some(s=>s.phases)) html += `<tr><td><b>Phases</b></td>` + ss.map(s=>`<td>${phaseBar(s.phases)}</td>`).join("") + `</tr>`;
   html += `<tr class="hd"><td colspan="${ss.length+1}">Scope highlights</td></tr>`;
   html += `<tr><td></td>` + ss.map(s=>`<td><ul>${(s.scope||[]).map(x=>`<li>${x}</li>`).join("")}</ul></td>`).join("") + `</tr>`;
   html += `<tr><td></td>` + ss.map((s,i)=>`<td><button class="btn sec mini" onclick="addCompare('${c.id}',${CUROFF},${i})">⇄ Compare</button> <button class="btn sec mini" onclick="addKitSize('${c.id}',${CUROFF},${i})">+ Kit</button></td>`).join("") + `</tr>`;
@@ -756,7 +791,7 @@ function showCompare(){
   h += `<tr><td><b>Price</b></td>` + cols.map(c=>`<td>${c.s.usd?`<span class="price">${fmtUsd(c.s.usd)}</span><div class="cad">${c.s.cad?("C"+fmtUsd(c.s.cad)):""}</div>`:"—"}</td>`).join("") + `</tr>`;
   h += `<tr><td><b>Duration</b></td>` + cols.map(c=>`<td>${c.s.weeks?c.s.weeks+" wks":"—"}</td>`).join("") + `</tr>`;
   h += `<tr><td><b>Hours</b></td>` + cols.map(c=>`<td>${c.s.hours?c.s.hours.toLocaleString():"—"}</td>`).join("") + `</tr>`;
-  h += `<tr><td><b>Phases</b></td>` + cols.map(c=>`<td style="font-size:11px">${c.s.phases||"—"}</td>`).join("") + `</tr>`;
+  h += `<tr><td><b>Phases</b></td>` + cols.map(c=>`<td>${phaseBar(c.s.phases)}</td>`).join("") + `</tr>`;
   h += `<tr class="hd"><td colspan="${cols.length+1}">Scope</td></tr><tr><td></td>` + cols.map(c=>`<td><ul>${(c.s.scope||[]).map(x=>`<li>${x}</li>`).join("")}</ul></td>`).join("") + `</tr></table></div>`;
   h += `<div class="srcflag">⚠ Extracted draft data — indicative & non-binding.</div>`;
   document.getElementById("cmpBody").innerHTML = h;
@@ -842,7 +877,19 @@ async function liveReindex(){
   document.querySelector(".draftchip").textContent = "LIVE · indexed from library just now";
 }
 
-renderGrid(); renderNew(); renderHealth(); buildPalIndex(); renderTray(); route();
+function renderStats(){
+  let offs = 0, sized = 0, prices = [];
+  Object.values(SIZES).forEach(v => v.forEach(o => { offs++; o.sizes.forEach(s => { sized++; if(s.usd) prices.push(s.usd); }); }));
+  const lo = Math.min(...prices), hi = Math.max(...prices);
+  const slides = Object.values(SLIDECOUNTS).reduce((a,b)=>a+b,0);
+  const stat = (v,l) => `<div><b style="font-size:19px;color:#0A3D8F">${v}</b><br>${l}</div>`;
+  document.getElementById("stats").innerHTML =
+    stat(CATALOG.length, "categories") + stat(offs, "priced/scoped offerings") + stat(sized, "size points") +
+    stat(fmtUsd(lo) + " – " + fmtUsd(hi), "price range (list, draft)") +
+    stat(slides, "slides readable in-page") + stat(Object.keys(DETAILS).length, "decks deep-dived") +
+    `<div style="margin-left:auto;align-self:center;font-size:11px">library indexed 30-Jul-2026 · extractions ⚠ owner to confirm</div>`;
+}
+renderGrid(); renderNew(); renderHealth(); buildPalIndex(); renderTray(); renderStats(); route();
 window.addEventListener("hashchange", route);
 liveReindex();
 </script>
